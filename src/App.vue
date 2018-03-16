@@ -1,12 +1,17 @@
 <template>
   <div id="app">
+    <top-nav></top-nav>
     <router-view/>
   </div>
 </template>
 
 <script>
+import TopNav from './components/ui/TopNav'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TopNav,
+  }
 }
 </script>
 

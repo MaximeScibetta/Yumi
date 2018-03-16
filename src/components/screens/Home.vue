@@ -1,18 +1,17 @@
 <template>
     <div>
-        <top-nav></top-nav>
-        <h1>Home</h1>
+        <postal-input></postal-input>
     </div>
 </template>
 
 
 <script>
-import TopNav from '../ui/TopNav'
+import PostalInput from '../ui/PostalInput'
 
 export default {
     name: 'Home',
     components: {
-        TopNav,
+        PostalInput
     }
 }
 </script>
