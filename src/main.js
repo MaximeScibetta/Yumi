@@ -6,6 +6,13 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// Import library
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
+
+// Use library
+Vue.use(VueMaterial)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
