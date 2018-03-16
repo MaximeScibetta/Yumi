@@ -14,11 +14,16 @@
 // COMPONENTS PERSO.
 @import "components/topNav";
 @import "components/postalInput";
+@import "components/menuNav";
+@import "components/menu";
+
+
 
 html{
     font-size: 62.5%;
     line-height: 1.3;
     background-color: $background;
+    width: 100vw !important; 
     body{
         font-size: 1.6rem;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";

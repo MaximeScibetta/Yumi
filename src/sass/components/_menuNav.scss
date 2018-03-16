@@ -1,0 +1,24 @@
+.md-tabs.md-theme-default .md-tabs-navigation .md-button.md-active{
+    color: $green !important;
+}
+.md-tabs.md-theme-default .md-tabs-navigation,
+.md-content.md-tabs-content.md-theme-default{
+    background-color: $background;
+}
+
+.md-tabs-indicator.md-tabs-indicator-left,
+.md-tabs-indicator.md-tabs-indicator-right{
+    background-color: $green !important;
+}
+.md-tabs.md-theme-default .md-tabs-navigation .md-button{
+    min-width: 58px !important;
+}
+.md-content.md-tabs-content.md-theme-default{
+    height: 100% !important;
+}
+
+:root {
+  --md-theme-default-primary: $green !important;
+  --md-theme-default-accent: #ff5252;
+  --md-theme-default-theme: "light";
+}

@@ -1,0 +1,67 @@
+@include mq($from: 0px){
+    .menuContent{
+        h1{
+            margin-top: $Ru;
+            text-transform: uppercase;
+        }
+        .image{
+            // height: 200px;
+            margin-top: $Rsu;
+            width: 100%;
+            overflow: hidden;
+            img{
+                min-width: 100%;
+            }
+        }
+        .addToKart{
+            margin-top: $Ru;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .green{
+                background: $green;
+                border: none;
+                padding: $Rsu $Ru;
+                color: $white;
+                font-size: 1.6rem;
+            }
+            .price{
+                font-size: 3rem;
+                font-weight: 600;
+            }
+        }
+        .md-tabs.md-alignment-left.md-dynamic-height.md-theme-default {
+            // Plat & ingrédient tabs
+            .md-tabs.md-alignment-left.md-theme-default{
+                margin-top: $Ru;
+                .md-tabs-navigation.md-elevation-0 {
+                  display: flex !important;
+                  flex-direction: row !important;
+                  justify-content: flex-start !important;
+                  button {
+                    width: 50% !important;
+                    max-width: inherit !important;
+                  }
+                  .md-tabs-indicator.md-tabs-indicator-left {
+                    width: 50%;
+                    max-width: inherit !important;
+                  }
+                }
+
+            }
+            #plats, #ingredient{
+                ul{
+                    li:nth-child(2n+1){
+                        margin-top: $Ru;
+                        font-weight: 650;
+                    }
+                    li:nth-child(2n+2) {
+                        margin-top: $Rtu;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
