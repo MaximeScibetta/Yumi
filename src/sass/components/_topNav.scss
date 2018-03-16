@@ -1,0 +1,146 @@
+@include mq($from: 0px){
+    .navigation {
+        position: fixed;
+        width: calc(100vw);
+        &__mobile {
+            display: block;
+            background: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            align-items: center;
+            position: relative;
+            svg{
+                &#menu{
+                    fill: $core;
+                    height: 30px;
+                    width: 30px;
+                    position: absolute;
+                    left: $Rsu;
+                    top: $Rsu;
+                }
+                &#logo{
+                    height: 30px;
+                    display: block;
+                    margin: 0 auto;
+                    padding: $Rsu 0;
+                    .st0 {
+                        fill: $green;
+                    }
+    
+                    .st1 {
+                        fill: #6D492C;
+                    }
+    
+                    .st2 {
+                        fill: #8A5D3B;
+                    }
+    
+                }
+                &#kart{
+                    fill: $core;
+                    width: 30px;height: 30px;
+                    position: absolute;
+                    top: $Rsu;
+                    right: $Rsu;
+                }
+            }
+            .menu{
+                transform: translateX(-100vw);
+                transition: .5s;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: $green;
+                height: 100vh;
+                width: 100vw;
+                color: $white;
+                display: flex;
+                align-items: center;
+                svg{
+                    height: 30px;width: 30px;
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                    path{
+                        fill: $white;
+                    }
+                }
+                ul{
+                    margin: 0 auto;
+                    li {
+                      font-size: $Ru;
+                      margin: $Ru auto;
+                      text-align: center;
+                      &.active{
+                          color: #6D492C;
+                      }
+                    }
+                }
+                &.isOpen {
+                  transform: translateX(0);
+                  transition: .5s;
+                }
+            }
+            @include mq($from: desktop) {
+              display: none;
+            }
+        }
+        &__desktop {
+            display: none;
+            @include mq($from: desktop){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                height: 60px;
+                background-color: $white;
+                padding: 0 $hu;
+                align-items: center;
+                svg{
+                    height: 40px;
+                    &#logo {
+                      .st0 {
+                        fill: $green;
+                      }
+                      .st1 {
+                        fill: #6D492C;
+                      }
+                      .st2 {
+                        fill: #8A5D3B;
+                      }
+                    }
+                }
+                ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        color: $brown;
+                        display: inline-block;
+                        &:first-child{
+                            margin-right: $Rlu;
+                        }
+                        #kart {
+                            margin-left: $Rlu;
+                            fill: $core;
+                        }
+                    }
+                }
+            }
+        }
+        #logo {
+            transition: .3s;
+            &:hover {
+              transform: scale(1.1);
+              transform: rotate(-5deg);
+              transition: .3s;
+              cursor: pointer;
+              .st0 {
+                fill: #829D62;
+              }
+            }
+
+        }
+    }
+}
