@@ -1,6 +1,6 @@
 <template>
     <div class="menuContent">
-        <md-tabs md-active-tab="tab-day1" md-dynamic-height>
+        <md-tabs md-active-tab="tab-day1" md-dynamic-height class="days">
             <md-tab id="tab-day1" md-label="LUN 2">
                 <h1>Faux filet et sa sauce au vin rouge</h1>
                 <div class="image" style="background-image: url('https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80');">

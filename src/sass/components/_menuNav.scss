@@ -22,3 +22,11 @@
   --md-theme-default-accent: #ff5252;
   --md-theme-default-theme: "light";
 }
+
+@include mq($from: 700px){
+    .days>.md-tabs-navigation.md-elevation-0:first-of-type {
+      position: absolute;
+      top: 62px;
+      right: 0;
+    }
+}

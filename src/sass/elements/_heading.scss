@@ -17,6 +17,7 @@ h1 {
         }
         li:nth-child(2n+2) {
             margin-top: $Rtu;
+            max-width: 500px;
         }
     }
 }

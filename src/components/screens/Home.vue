@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <postal-input></postal-input>
         <menu-slider></menu-slider>
     </div>
