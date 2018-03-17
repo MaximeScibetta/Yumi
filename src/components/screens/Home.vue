@@ -1,5 +1,19 @@
 <template>
     <div class="home">
+        <swiper :options="swiperOption">
+            <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1474898856510-884a2c0be546?ixlib=rb-0.3.5&s=8a79a6c04ef1aa308d31a13646a4c8e5&auto=format&fit=crop&w=1267&q=80');">
+
+            </swiper-slide>
+            <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-0.3.5&s=06a5f840ce65add98e535354489598b9&auto=format&fit=crop&w=1350&q=80');">
+            </swiper-slide>
+            <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');">
+            </swiper-slide>
+            <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=1350&q=80');">
+            </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
+        </swiper>
         <postal-input></postal-input>
         <menu-slider></menu-slider>
     </div>
@@ -9,12 +23,31 @@
 <script>
 import PostalInput from '../ui/PostalInput'
 import MenuSlider from '../ui/MenuSlider'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
     name: 'Home',
     components: {
         PostalInput,
-        MenuSlider
+        MenuSlider,
+        swiper,
+        swiperSlide
+    },
+    data() {
+      return {
+        swiperOption: {
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        }
+      }
     }
 }
 </script>

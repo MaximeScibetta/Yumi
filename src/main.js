@@ -9,9 +9,12 @@ Vue.config.productionTip = false
 // Import library
 import VueMaterial from 'vue-material'
 // import 'vue-material/dist/vue-material.min.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
 
 // Use library
-Vue.use(VueMaterial)
+Vue.use(VueMaterial, VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,0 +1,20 @@
+@include mq($from: 0px){
+    .swiper-container{
+        display: none;
+        @include mq($from: desktop){
+            display: block;
+            height: 300px;
+            padding-top: 60px;
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+            }
+            .swiper-pagination-bullet{
+                background-color: $white;
+                &-active{
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}
