@@ -28,5 +28,11 @@
       position: absolute;
       top: 62px;
       right: 0;
+      @include mq($from: desktop) {
+        top: 69px;
+        right: 96px;
+      }
+
     }
 }
+

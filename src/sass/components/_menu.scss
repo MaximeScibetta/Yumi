@@ -40,6 +40,35 @@
 
             }
         }
-
+        @include mq($from: desktop){
+            padding: 0 $Rhu;
+            @include mq($from: 1100px){
+               .md-tab{
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: flex-start;
+                   flex-wrap: wrap;
+                    .image {
+                      max-width: 60%;
+                    }
+                    .group{
+                        width: 37%;
+                        margin-left: $Ru;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .md-tabs{
+                            order: 0;
+                            .md-tab{
+                                padding: 0;
+                            }
+                        }
+                        .addToKart{
+                            order: 1;
+                        }
+                    }
+               }
+            }
+        }
     }
 }
