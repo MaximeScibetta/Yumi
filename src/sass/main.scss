@@ -19,7 +19,7 @@
 @import "components/menuNav";
 @import "components/menu";
 @import "components/footer";
-
+@import "components/completeMenu";
 
 
 
@@ -27,7 +27,7 @@ html{
     font-size: 62.5%;
     line-height: 1.3;
     background-color: $background;
-    width: 100vw !important; 
+    width: 100%; 
     body{
         font-size: 1.6rem;
         font-family: 'Fira Sans', -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";

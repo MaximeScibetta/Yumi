@@ -1,0 +1,71 @@
+@include mq($from: 0px){
+    .complete{
+        padding: 0 $Rsu;
+        h1{
+            text-align: center;
+            margin-bottom: $Rlu;
+            @include mq($from: 1000px){
+                margin-top: $Rlu;
+            }
+            span{
+                margin: 0 $Rsu;
+            }
+            &::before,
+            &::after{
+                content: "";
+                display: inline-block;
+                height: 2px;
+                width: 15%;
+                border-bottom: 1px solid $core;
+                vertical-align: middle;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &--item{
+                width: 100%;
+                &:not(:first-of-type){
+                    margin-top: $Ru;
+                }
+                img{
+                    width: 100%;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: nowrap;
+                    position: relative;
+                    top: -3px;
+                    &__data{
+                        padding-left: $Rsu;
+                        p{
+                            margin-top: $Rtu;
+                        }
+                    }
+                }
+                @include mq($from: 500px) {
+                  width: 45%;
+                  margin-top: 0 !important;
+                  &:nth-child(1n+3){
+                      margin-top: $Ru !important;
+                  }
+                }
+                @include mq($from: 1000px){
+                    width: 30%;
+                    margin-top: 0 !important;
+                    &:nth-child(1n+3) {
+                      margin-top: 0 !important;
+                    }
+                    &:nth-child(1n+4) {
+                      margin-top: $Ru !important;
+                    }
+                }
+
+            }
+        }
+    }
+}

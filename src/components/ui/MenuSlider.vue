@@ -50,13 +50,18 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nihil vel beatae a obcaecati dolore quasi, odio veritatis ab, facilis quo cupiditate sapiente deleniti sequi quidem aperiam eum qui iusto.</p>
             </md-tab>
         </md-tabs>
+        <complete-menu></complete-menu>
     </div>
 </template>
 
 <script>
+import CompleteMenu from './CompleteMenu'
 
 export default {  
     name: 'MenuSlider',
+    components: {
+        CompleteMenu,
+    }
 }
 </script>
 

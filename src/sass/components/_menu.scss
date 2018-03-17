@@ -24,6 +24,9 @@
             // Plat & ingrédient tabs
             .md-tabs.md-alignment-left.md-theme-default{
                 margin-top: $Ru;
+                @include mq($from: 1100px){
+                    margin-top: $Rsu;
+                }
                 .md-tabs-navigation.md-elevation-0 {
                   display: flex !important;
                   flex-direction: row !important;

@@ -6,6 +6,13 @@
     background-color: $background;
 }
 
+.md-button:not([disabled]).md-focused:before,
+.md-button:not([disabled]):active:before,
+.md-button:not([disabled]):hover:before{
+    background-color: $green;
+}
+
+
 .md-tabs-indicator.md-tabs-indicator-left,
 .md-tabs-indicator.md-tabs-indicator-right{
     background-color: $green !important;
