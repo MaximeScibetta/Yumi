@@ -3,12 +3,12 @@
         <md-tabs md-active-tab="tab-day1" md-dynamic-height>
             <md-tab id="tab-day1" md-label="LUN 2">
                 <h1>Faux filet et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <img src="../../assets/boeuf.jpg" alt="">
+                <div class="image" style="background-image: url('https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80');">
+                    <!-- <img src= alt=""> -->
                 </div>
                 <div class="addToKart">
                     <span class="price">15€</span>
-                    <button class="green">
+                    <button class="addKart">
                         + Ajouter au panier
                     </button>
                 </div>

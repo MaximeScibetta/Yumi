@@ -1,0 +1,22 @@
+h1 {
+    margin-top: $Ru;
+    font-weight: 500;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+#plats,
+#ingredient {
+    ul {
+        li:nth-child(2n+1) {
+            margin-top: $Ru;
+            font-weight: 500;
+        }
+        li:nth-child(2n+2) {
+            margin-top: $Rtu;
+        }
+    }
+}
