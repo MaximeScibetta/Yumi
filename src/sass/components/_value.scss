@@ -1,0 +1,13 @@
+@include mq($from: 0px){
+    .value{
+        display: none;
+        @include mq($from: desktop){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            background: $green;
+            color: $white;
+        }
+    }
+}

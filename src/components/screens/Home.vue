@@ -15,6 +15,7 @@
             <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
         <postal-input></postal-input>
+        <value></value>
         <menu-slider></menu-slider>
     </div>
 </template>
@@ -23,11 +24,13 @@
 <script>
 import PostalInput from '../ui/PostalInput'
 import MenuSlider from '../ui/MenuSlider'
+import Value from '../ui/Value'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 export default {
     name: 'Home',
     components: {
+        Value,
         PostalInput,
         MenuSlider,
         swiper,
