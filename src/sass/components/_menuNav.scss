@@ -33,13 +33,18 @@
 @include mq($from: 700px){
     .days>.md-tabs-navigation.md-elevation-0:first-of-type {
       position: absolute;
-      top: 62px;
+      top: -48px;
       right: 0;
+      z-index: 0;
       @include mq($from: desktop) {
-        top: 310px;
+        top: -126px;
         right: 96px;
       }
-
+    }
+    @include mq($from: desktop){
+        .md-tabs-indicator{
+            height: 4px;
+        }
     }
 }
 
