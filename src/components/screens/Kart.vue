@@ -56,6 +56,41 @@
                     </div>
                 </div>
                 <div class="recap__form" v-else>
+                    <h1>Formulaire</h1>
+                    <md-field>
+                        <md-icon>account_circle</md-icon>
+                        <label for="first-name">Prénom</label>
+                        <md-input name="first-name" id="first-name" v-model="form.firstName"/>
+                    </md-field>
+                    <md-field>
+                        <md-icon>account_circle</md-icon>
+                        <label for="surnname">Nom</label>
+                        <md-input name="surnname" id="surnname" v-model="form.surname"/>
+                    </md-field>
+                    <md-field>
+                        <md-icon>email</md-icon>
+                        <label for="email">Email</label>
+                        <md-input name="email" id="email" v-model="form.email"/>
+                    </md-field>
+                    <md-field>
+                        <md-icon>location_on</md-icon>
+                        <label for="address">Adresse de livraison</label>
+                        <md-input name="address" id="address" v-model="form.address"/>
+                    </md-field>
+                    <md-field>
+                        <md-icon>access_time</md-icon>
+                        <label for="movie">Tranche horaire</label>
+                        <md-select v-model="form.time" name="time" id="time">
+                            <md-option value="fight-club">Fight Club</md-option>
+                            <md-option value="godfather">Godfather</md-option>
+                            <md-option value="godfather-ii">Godfather II</md-option>
+                            <md-option value="godfather-iii">Godfather III</md-option>
+                            <md-option value="godfellas">Godfellas</md-option>
+                            <md-option value="pulp-fiction">Pulp Fiction</md-option>
+                            <md-option value="scarface">Scarface</md-option>
+                        </md-select>
+                    </md-field>
+                    <button class="commande">Acheter</button>
                 </div>
             </div>
         </div>
@@ -70,6 +105,13 @@ export default {
     data(){
         return{
             startCommande: false,
+            form: {
+                firstName: null,
+                surname: null,
+                email: null,
+                address: null,
+                time: null,
+            }
         }
     }
 }

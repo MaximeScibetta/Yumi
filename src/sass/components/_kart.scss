@@ -128,7 +128,39 @@
                         }
                     }
                 }
+                &__form{
+                    margin: $Ru $Rsu;
+                    .md-field{
+                        border-bottom: 1px solid $green;
+                    }
+                    .md-icon{
+                        color: $green;
+                    }
+                    .commande {
+                      background: $green;
+                      padding: $Rsu $Ru;
+                      display: block;
+                      width: calc(100% - 24px);
+                      margin: $Rsu auto;
+                    }
+
+                }
             }
         }
+    }
+    .md-list{
+        background: $white !important;
+        .md-list-item-content{
+            &:hover{
+                background: #eaf1df;
+
+            }
+            span{
+                color: $core !important;
+            }
+        }
+    }
+    .md-input.md-input.md-select-value{
+        margin-left: $Rsu;
     }
 }
