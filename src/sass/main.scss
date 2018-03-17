@@ -22,6 +22,8 @@
 @import "components/completeMenu";
 @import "components/headerSlide";
 @import "components/value";
+@import "components/kart";
+
 
 
 html{
@@ -35,7 +37,7 @@ html{
     }
 }
 
-.home{
+.home, .kart{
     position: relative;
-    min-height: calc(100vh - 47px);
+    min-height: calc(100vh - 280px);
 }

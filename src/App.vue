@@ -16,7 +16,7 @@
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
     <value></value>
-    <postal-input></postal-input>
+    <postal-input v-if="$route.name == 'Home'"></postal-input>
     <router-view/>
     <footer-item></footer-item>
   </div>

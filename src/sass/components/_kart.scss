@@ -1,0 +1,134 @@
+@include mq($from: 0px){
+    .kart{
+        padding-top: 54px;
+        &__mobile{
+            .recap{
+                &__header{
+                    background-color: $white;
+                    color: $white;
+                    padding: 0 0 $Rsu;
+                    .total{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        background-color: $green;
+                        padding: $Rsu $Rsu;
+                        &__price{
+                            font-weight: 600;
+                        }
+                    }
+                    .commande{
+                        background: $green;
+                        padding: $Rsu $Ru;
+                        display: block;
+                        width: calc(100% - 24px);
+                        margin: $Rsu auto;
+                        transform: inherit;
+                        &:hover{
+                            background-color: $white;
+                            color: $green;
+                        }
+                    }
+                    .description{
+                        color: $core;
+                        &__content{
+                            padding: $Ru 0;
+                            margin: 0 $Rsu;
+                            border-bottom: 1px solid $green;
+                            li{
+                                padding-left: $Rsu;
+                                border-left: 4px solid $green;
+                                &:not(:last-child){
+                                    margin-bottom: $Rsu;
+                                }
+                            }
+                        }
+                        &__price{
+                            padding: $Ru $Rsu;
+                            border-bottom: 1px solid $green;
+                            dl{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                flex-wrap: wrap;
+                                dt, dd {
+                                    width: 50%;
+                                    margin-bottom: $Rtu;
+                                }
+                                dd{
+                                    text-align: right;
+                                }
+                                .end{
+                                    margin: $Ru 0 0 0;
+                                    font-weight: 600;
+                                }
+                           }
+                        }
+                    }
+                }
+                &__content{
+                    margin: $Rsu;
+                    .item{
+                        margin-top: $Rsu;
+                        padding-bottom: $Ru;
+                        border-bottom: 1px solid $green;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: flex-start;
+                        &__image{
+                            position: relative;
+                            img{
+                                width: 100%;
+                            }
+                            .date{
+                                position: absolute;
+                                top: 0;left: 0;
+                                background-color: $green;
+                                color: $white;
+                                padding: $Rtu $Rsu;
+                            }
+                            .delete{
+                                background: $green;
+                                position: absolute;
+                                top: 0;right: 0;
+                                padding: $Rtu $Rsu;
+                                &:hover{
+                                    transform: inherit;
+                                    background: #bc2929;
+
+
+                                }
+                            }
+                        }
+                        &__description{
+                            .title{
+                                font-weight: 600;
+                                margin: $Rtu 0;
+                            }
+                            .boisson{
+                                margin-bottom: $Rtu;
+                            }
+                            .item__price{
+                            }
+                        }
+                        @include mq($from: 700px){
+                            flex-direction: row;
+                            &__image{
+                                max-width: 320px;
+                                min-width: 320px;
+                            }
+                            &__description{
+                                margin-left: $Rsu;
+                                .title{
+                                    margin-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
