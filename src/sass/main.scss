@@ -18,6 +18,8 @@
 @import "components/postalInput";
 @import "components/menuNav";
 @import "components/menu";
+@import "components/footer";
+
 
 
 
@@ -34,4 +36,5 @@ html{
 
 .home{
     position: relative;
+    min-height: calc(100vh - 47px);
 }

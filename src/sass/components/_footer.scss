@@ -1,0 +1,84 @@
+@include mq($from: 0px){
+    .footer{
+        background: $green;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: $Rsu;
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+        svg{
+            height: 40px;
+            width: 40px;
+            fill: $white;
+        }
+        .left{
+            h2{
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: $Rsu;
+            }
+            p{
+                margin-bottom: $Rtu;
+            }
+            a{
+                text-decoration: underline;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            @include mq($from: 500px){
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                h2{
+                    margin: 0 $Rlu 0 0;
+                    align-self: flex-end;
+                }
+                p{
+                    margin: 0 $Ru 0 0;
+                    align-self: flex-end;
+                }
+                a{
+                    margin: 0;
+                    align-self: flex-end;
+                }
+            }
+        }
+        .right{
+            margin-top: $Rlu;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            align-self: center;
+            a{
+                &:hover{
+                    cursor: pointer;
+                    svg{
+                        fill: $brown;
+                    }
+                }
+                &:nth-child(2) {
+                  margin: 0 $Ru;
+                }
+
+            }
+        }
+        @include mq($from: 800px){
+            flex-direction: row;
+            .right{
+                margin-top: 0;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
