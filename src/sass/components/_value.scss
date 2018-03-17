@@ -8,6 +8,21 @@
             flex-wrap: nowrap;
             background: $green;
             color: $white;
+            padding: $Ru $Rhu;
+            &__item{
+                width: 25%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                align-items: center;
+                margin-right: $Rlu;
+                svg {
+                  fill: $white;
+                  height: 30px;
+                  margin-right: $Ru;
+                }
+            }
         }
     }
 }
