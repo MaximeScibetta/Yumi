@@ -12,11 +12,11 @@
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=1350&q=80');">
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
+        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
-    <postal-input></postal-input>
     <value></value>
+    <postal-input></postal-input>
     <router-view/>
     <footer-item></footer-item>
   </div>
