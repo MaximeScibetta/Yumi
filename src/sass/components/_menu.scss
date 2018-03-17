@@ -10,8 +10,15 @@
             background-size: cover;
             background-position: center;
             overflow: hidden;
-            img{
-                min-width: 100%;
+            .swiper-container{
+                // padding-top: 0;
+                &[data-v-508947c8] {
+                  background-color: #f8f8f8;
+                }
+                &.gallery-top[data-v-508947c8]{
+                    padding-top: 0;
+                }
+
             }
         }
         .addToKart{
