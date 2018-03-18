@@ -32,13 +32,26 @@
 
 @include mq($from: 700px){
     .days>.md-tabs-navigation.md-elevation-0:first-of-type {
-      position: absolute;
-      top: -48px;
-      right: 0;
-      z-index: 0;
-      @include mq($from: desktop) {
-        right: 96px;
-      }
+        position: absolute;
+        top: -48px;
+        right: 0;
+        z-index: 0;
+        background-color: #f8f8f8;
+        @include mq($from: 980px){
+            top: 31px;
+            right: 10%;
+            z-index: 11;
+            background-color: #fff;
+        }
+        @include mq($from: 1041px) {
+            top: 12px;
+        }
+
+        @include mq($from: 1570px) {
+          top: 1px;
+        }
+
+
     }
     @include mq($from: desktop){
         .md-tabs-indicator{

@@ -9,7 +9,9 @@
             flex-wrap: nowrap;
             background: $green;
             color: $white;
-            padding: $Ru $Rhu;
+            padding: $Rsu $Ru;
+            // width: 80%;
+            // margin: 0 auto;
             &__item{
                 width: 25%;
                 display: flex;

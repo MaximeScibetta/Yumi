@@ -15,8 +15,11 @@
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
-    <value v-if="$route.name != 'Kart'"></value>
     <postal-input v-if="$route.name == 'Home'"></postal-input>
+    <div class="horse">
+        <value v-if="$route.name != 'Kart'"></value>
+        <postal-input v-if="$route.name == 'Home'"></postal-input>
+    </div>
     <router-view/>
     <footer-item></footer-item>
   </div>
