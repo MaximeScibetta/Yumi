@@ -1,0 +1,11 @@
+@include mq($from: 0px){
+    .about{
+        &__image{
+
+        }   
+        &__content {
+            &:nth-child(2n+1) {}
+            &:nth-child(2n+2){}
+        }    
+    }
+}
