@@ -144,6 +144,46 @@
                         <button class="commande" @click="startCommande = true">Passer la commande</button>
                     </div>
                 </div>
+                <md-dialog :md-active.sync="startCommande">
+                    <md-dialog-title>Formulaire</md-dialog-title>
+                    <md-dialog-content>
+                        <md-field>
+                            <md-icon>account_circle</md-icon>
+                            <label for="first-name">Prénom</label>
+                            <md-input name="first-name" id="first-name" v-model="form.firstName"/>
+                        </md-field>
+                        <md-field>
+                            <md-icon>account_circle</md-icon>
+                            <label for="surnname">Nom</label>
+                            <md-input name="surnname" id="surnname" v-model="form.surname"/>
+                        </md-field>
+                        <md-field>
+                            <md-icon>email</md-icon>
+                            <label for="email">Email</label>
+                            <md-input name="email" id="email" v-model="form.email"/>
+                        </md-field>
+                        <md-field>
+                            <md-icon>location_on</md-icon>
+                            <label for="address">Adresse de livraison</label>
+                            <md-input name="address" id="address" v-model="form.address"/>
+                        </md-field>
+                        <md-field>
+                            <md-icon>access_time</md-icon>
+                            <label for="movie">Tranche horaire</label>
+                            <md-select v-model="form.time" name="time" id="time">
+                                <md-option value="12:00-12:30">12h00 - 12h30</md-option>
+                                <md-option value="12:30-13:00">12h30 - 13h00</md-option>
+                                <md-option value="13:00-13:30">13h00 - 13h30</md-option>
+                                <md-option value="13:30-14:00">13h30 - 14h00</md-option>
+                                <md-option value="14:00-14:30">14h00 - 14h30</md-option>
+                            </md-select>
+                        </md-field>
+                    </md-dialog-content>
+                    <md-dialog-actions>
+                        <md-button class="close" @click="startCommande = false">Fermer</md-button>
+                        <md-button class="buy" @click="startCommande = false">Acheter</md-button>
+                    </md-dialog-actions>
+                </md-dialog>
             </div>
         </div>
     </div>

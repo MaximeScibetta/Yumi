@@ -301,4 +301,40 @@
     .md-input.md-input.md-select-value{
         margin-left: $Rsu;
     }
+    // Form dialog & overlay
+    .md-dialog.md-dialog-fullscreen.md-theme-default,
+    .md-overlay {
+        display: none !important;
+        @include mq($from: desktop){
+            display: block !important;
+        }
+    }
+
+    // Re design md-dialog on desktop
+    .md-dialog{
+        background-color: #f8f8f8;
+        width: 50%;
+        .md-field {
+            border-bottom: 1px solid $green;
+        }
+        .md-icon {
+            color: $green;
+        }
+        &-actions{
+            justify-content: space-between;
+            .md-button{
+                &.close{
+                    color: $red;
+                }
+                &.buy{
+                    color: $white;
+                    background-color: $green;
+                }
+            }
+        }
+    }
+    .md-menu-content.md-select-menu{
+        z-index: 10;
+    }
+
 }
