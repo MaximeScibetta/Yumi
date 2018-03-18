@@ -11,10 +11,23 @@ import VueMaterial from 'vue-material'
 // import 'vue-material/dist/vue-material.min.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+var VueScrollTo = require('vue-scrollto');
 
 
 // Use library
 Vue.use(VueMaterial, VueAwesomeSwiper)
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 500,
+  easing: "ease",
+  offset: 0,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
 
 /* eslint-disable no-new */
 new Vue({

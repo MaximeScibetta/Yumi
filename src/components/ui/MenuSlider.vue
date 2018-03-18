@@ -21,7 +21,7 @@
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">15€</span>
-                        <button @click="showKart = true" class="addKart">
+                        <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
                     </div>
@@ -242,7 +242,7 @@
                 </div>
             </md-tab>
         </md-tabs>
-        <complete-menu></complete-menu>
+        <complete-menu id="drinks"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">
             <md-dialog-title>Récapitulatif</md-dialog-title>
             <md-dialog-content>
