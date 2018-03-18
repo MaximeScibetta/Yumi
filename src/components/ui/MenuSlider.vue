@@ -21,7 +21,7 @@
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">15€</span>
-                        <button class="addKart">
+                        <button @click="showKart = true" class="addKart">
                             + Ajouter au panier
                         </button>
                     </div>
@@ -243,6 +243,34 @@
             </md-tab>
         </md-tabs>
         <complete-menu></complete-menu>
+        <md-dialog class="recapKart" :md-active.sync="showKart">
+            <md-dialog-title>Récapitulatif</md-dialog-title>
+            <md-dialog-content>
+                <div class="description">
+                    <ul class="description__content">
+                        <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
+                        <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
+                        <li><p>Bouteille de vin 50cl</p></li>
+                    </ul>
+                    <div class="description__price">
+                        <dl>
+                            <dt>Articles :</dt>
+                            <dd>33,00 €</dd>
+                            <dt>Livraison :</dt>
+                            <dd>1,50 €</dd>
+                            <dt>T.V.A. :</dt>
+                            <dd>12,00 %</dd>
+                            <dt class="end">Montant :</dt>
+                            <dd class="end">34,50 €</dd>
+                        </dl>
+                    </div>
+                </div>
+            </md-dialog-content>
+            <md-dialog-actions>
+                <md-button class="close" @click="showKart = false">Fermer</md-button>
+                <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
+            </md-dialog-actions>
+        </md-dialog>
     </div>
 </template>
 
@@ -275,7 +303,8 @@ export default {
           loop: true,
           loopedSlides: 3, //looped slides should be the same
           slideToClickedSlide: true,
-        }
+        },
+        showKart: false,
       }
     },
     mounted() {
