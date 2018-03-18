@@ -12,13 +12,33 @@
                 </g>
             </svg>
         </label>
-        <input type="number" class="postal__input" placeholder="Où souhaitez-vous être livré?">
+        <places
+            class="postal__input"
+            v-model="form.country.label"
+            placeholder="Où souhaitez-vous être livré ?"
+            :options="{ countries: ['BE'] }">
+        </places>
     </div>
 </template>
 
 <script>
+import Places from 'vue-places'
+
 export default {
     name: 'PostalInput',
+    components: {
+        Places
+    },
+    data() {
+        return {
+        form: {
+            country: {
+            label: null,
+            data: {},
+            },
+        },
+        };
+    },
 }
 </script>
 
