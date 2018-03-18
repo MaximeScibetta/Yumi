@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <top-nav></top-nav>
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="$route.name == 'Home'">
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1474898856510-884a2c0be546?ixlib=rb-0.3.5&s=8a79a6c04ef1aa308d31a13646a4c8e5&auto=format&fit=crop&w=1267&q=80');">
 
         </swiper-slide>
@@ -15,7 +15,7 @@
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
-    <value></value>
+    <value v-if="$route.name == 'Home'"></value>
     <postal-input v-if="$route.name == 'Home'"></postal-input>
     <router-view/>
     <footer-item></footer-item>

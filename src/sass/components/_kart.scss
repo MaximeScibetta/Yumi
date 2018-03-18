@@ -96,7 +96,7 @@
                                 padding: $Rtu $Rsu;
                                 &:hover{
                                     transform: inherit;
-                                    background: #bc2929;
+                                    background: $red;
 
 
                                 }
@@ -144,6 +144,144 @@
                       margin: $Rsu auto;
                     }
 
+                }
+            }
+        }
+        &__desktop{
+            display: none;
+        }
+        @include mq($from: desktop){
+            &__mobile{
+                display: none;
+            }
+            &__desktop{
+                display: block;
+                margin: $Rlu $Rhu 0;
+                color: $core;
+                .recap{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    h2{
+                        font-size: 2rem;
+                        font-weight: 500;
+                        margin-bottom: $Ru;
+                    }
+                    &__content{
+                        width: 55%;
+                        .item {
+                            margin-top: $Rsu;
+                            padding-bottom: $Ru;
+                            border-bottom: 1px solid $green;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            justify-content: flex-start;
+                            position: relative;
+                            &__image {
+                                position: relative;
+                                width: 168px;
+                                img {
+                                    width: 100%;
+                                }
+                                .date {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: $green;
+                                    color: $white;
+                                    padding: $Rtu $Rsu;
+                                }
+                            }
+                            &__description {
+                                margin-left: $Ru;
+                                .title {
+                                    font-weight: 600;
+                                    margin: $Rtu 0;
+                                    max-width: 350px;
+                                }
+                                .boisson {
+                                    margin-bottom: $Rtu;
+                                }
+                                .item__price {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 35%;
+                                    font-weight: 600;
+                                    font-size: 2rem;
+                                }
+                                .delete {
+                                    color: $green;
+                                    text-decoration: underline;
+                                    background: none;
+                                    padding: 0;
+                                    &:hover{
+                                        transform: inherit;
+                                        color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__description{
+                        background: $white;
+                        padding: $su 0 0;
+                        width: 40%;
+                        h2{
+                            margin-left: $Ru;
+                        }
+                        .description{
+                            &__content {
+                                padding: 0 $Rlu;
+                                color: $green;
+                                border-bottom: 1px solid $green;
+                                li{
+                                    list-style-type: disc;
+                                    max-width: 350px;
+                                    margin: 0 auto;
+                                    margin-bottom: $Rsu;
+                                    &:last-of-type{
+                                        margin-bottom: $Rlu;
+                                    }
+                                    p{
+                                        color: $core;
+                                    }
+                                }
+                             }
+                             &__price{
+                                padding: $Ru 20%;
+                                dl {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-start;
+                                    flex-wrap: wrap;
+                                    dt,
+                                    dd {
+                                    width: 50%;
+                                    margin-bottom: $Rtu;
+                                    }
+                                    dd {
+                                    text-align: right;
+                                    }
+                                    .end {
+                                    margin: $Ru 0 0 0;
+                                    font-weight: 600;
+                                    }
+                                }
+                             }
+                            .commande{
+                                background: $green;
+                                width: 100%;
+                                padding: $Rsu 0 ;
+                                &:hover{
+                                    transform: inherit;
+                                    background: $white;
+                                    color: $green;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

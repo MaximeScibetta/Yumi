@@ -40,4 +40,7 @@ html{
 .home, .kart{
     position: relative;
     min-height: calc(100vh - 280px);
+    @include mq($from: desktop) {
+      min-height: calc(100vh - 143px);
+    }
 }
