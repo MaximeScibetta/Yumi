@@ -267,7 +267,7 @@
                 </div>
             </md-dialog-content>
             <md-dialog-actions>
-                <md-button class="close" @click="showKart = false">Fermer</md-button>
+                <md-button class="close" @click="showKart = false">Continuer les achats</md-button>
                 <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
             </md-dialog-actions>
         </md-dialog>

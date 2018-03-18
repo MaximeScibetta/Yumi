@@ -118,69 +118,74 @@
         }
     }
     .recapKart{
-        position: inherit;
-        top: inherit;
-        left: inherit;
-        transform: inherit;
-        max-width: inherit;
-        max-height: inherit;
-        min-width: inherit;
-        position: fixed;
-        right: 0;
-        top: 60px;
-        max-width: 450px !important;
-        .md-dialog-content{
-            .description {
-              &__content {
-                // padding: 0 $Rlu;
-                color: $green;
-                border-bottom: 1px solid $green;
-                li {
-                  list-style-type: disc;
-                  max-width: 350px;
-                  margin: 0 auto;
-                  margin-bottom: $Rsu;
-                  &:last-of-type {
-                    margin-bottom: $Rlu;
-                  }
-                  p {
-                    color: $core;
-                  }
-                }
-              }
-              &__price {
-                padding: $Ru 0;
-                dl {
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: flex-start;
-                  flex-wrap: wrap;
-                  dt,
-                  dd {
-                    width: 50%;
-                    margin-bottom: $Rtu;
-                  }
-                  dd {
-                    text-align: right;
-                  }
-                  .end {
-                    margin: $Ru 0 0 0;
-                    font-weight: 600;
-                  }
-                }
-              }
-              .commande {
-                background: $green;
-                width: 100%;
-                padding: $Rsu 0;
-                &:hover {
-                  transform: inherit;
-                  background: $white;
+      display: none;
+    }
+    @include mq($from: desktop){
+          .recapKart {
+            position: inherit;
+            top: inherit;
+            left: inherit;
+            transform: inherit;
+            max-width: inherit;
+            max-height: inherit;
+            min-width: inherit;
+            position: fixed;
+            right: 0;
+            top: 60px;
+            max-width: 450px !important;
+            .md-dialog-content {
+              .description {
+                &__content {
+                  // padding: 0 $Rlu;
                   color: $green;
+                  border-bottom: 1px solid $green;
+                  li {
+                    list-style-type: disc;
+                    max-width: 350px;
+                    margin: 0 auto;
+                    margin-bottom: $Rsu;
+                    &:last-of-type {
+                      margin-bottom: $Rlu;
+                    }
+                    p {
+                      color: $core;
+                    }
+                  }
+                }
+                &__price {
+                  padding: $Ru 0;
+                  dl {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    dt,
+                    dd {
+                      width: 50%;
+                      margin-bottom: $Rtu;
+                    }
+                    dd {
+                      text-align: right;
+                    }
+                    .end {
+                      margin: $Ru 0 0 0;
+                      font-weight: 600;
+                    }
+                  }
+                }
+                .commande {
+                  background: $green;
+                  width: 100%;
+                  padding: $Rsu 0;
+                  &:hover {
+                    transform: inherit;
+                    background: $white;
+                    color: $green;
+                  }
                 }
               }
             }
+          }
 
-        }
     }
 }
