@@ -1,11 +1,74 @@
 @include mq($from: 0px){
     .about{
+        padding: 0 $Rsu;
+        padding-top: 55px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 2.4rem;
+            margin-bottom: $Ru;
+        }
         &__image{
-
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            border-radius: 25px;
+            margin-bottom: $Ru;
+            display: none;
+            transition: .2s;
+            &:hover {
+                filter: blur(3px);
+                transition: .2s;
+            }
         }   
         &__content {
-            &:nth-child(2n+1) {}
-            &:nth-child(2n+2){}
+            padding: $Rlu;
+            border-radius: 25px;
+            margin-bottom: $Ru;
+            &.green{
+            background: $green;
+                color: $white;
+            }
+            &.transparent{
+                border: 2px solid $green;
+                background: #f8f8f8;
+                color: $green;
+            }
+            h2{
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: $Ru;
+            }
+            p{
+                margin-bottom: $Ru;
+            }
         }    
+        @include mq($from: 900px){
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: stretch;
+            box-sizing: border-box;
+            &__image{
+                display: block;
+                height: auto;
+            }
+            &__content{
+            }
+            div{
+                width: calc(50% - 1.2rem);
+                &:nth-child(2n){
+                    margin-right: $Ru;
+                    transform: translate3d(0, 60px, 0);
+                }
+                &:nth-child(2n-1){
+                    transform: translate3d(0, -40px, 0);
+                }
+            }
+            @include mq($from: desktop){
+                padding: 55px $Rhu 0 $Rhu
+            }
+        }
     }
 }
