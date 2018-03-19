@@ -20,12 +20,17 @@
         <value v-if="$route.name != 'Kart'"></value>
         <postal-input v-if="$route.name == 'Home'"></postal-input>
     </div>
+    
+        <transition name="fadeLeft">
     <router-view/>
+        </transition>
     <footer-item></footer-item>
   </div>
 </template>
 
 <script>
+require('vue2-animate/dist/vue2-animate.min.css');
+
 import TopNav from './components/ui/TopNav'
 import PostalInput from './components/ui/PostalInput'
 import Value from './components/ui/Value'

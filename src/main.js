@@ -12,10 +12,13 @@ import VueMaterial from 'vue-material'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 var VueScrollTo = require('vue-scrollto');
+import ToggleButton from 'vue-js-toggle-button'
 
 
 // Use library
 Vue.use(VueMaterial, VueAwesomeSwiper)
+Vue.use(ToggleButton)
+
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 500,
