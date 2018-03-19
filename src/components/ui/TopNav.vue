@@ -97,7 +97,13 @@
         <div class="navigation__desktop">
             <div class="left">
                 <ul>
-                    <li><router-link to="/">Menus</router-link></li>
+                    <li>
+                        <router-link to="/">Menus</router-link>
+                        <!-- <ul class="dropdown">
+                            <li><router-link to="/">Classique</router-link></li>
+                            <li><router-link to="/">Veggie</router-link></li>
+                        </ul> -->
+                    </li>
                     <li><a href="mailto:yumi@info.be">Nous contacter</a></li>
                 </ul>
             </div>
