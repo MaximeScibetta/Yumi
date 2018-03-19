@@ -1,0 +1,100 @@
+{
+    "data":{
+        "classic_menus": [
+            {
+                "name": "Faux filet et sa sauce au vin rouge",
+                "price": "15",
+                "day": "LUN",
+                "images": {
+                    "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
+                    "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
+                    "dessert": "TON_URL_DE_LIMAGE_DU_DESSERT"
+                },
+                "dish": {
+                  "entry": "LE_TITRE_DE_TON_ENTREE",
+                  "dish": "LE_TITRE_DE_TON_PLAT",
+                  "dessert": "LE_TITRE_DE_TON_DESSERT"
+                },
+                "ingredient": {
+                  "entry": "oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta",
+                  "dish": "faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre",
+                  "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
+                }
+            }, 
+            {
+              "name": "Faux filet et sa sauce au vin rouge",
+              "price": "15",
+              "day": "LUN",
+              "images": {
+                "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
+                "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
+                "dessert": "TON_URL_DE_LIMAGE_DU_DESSERT"
+              },
+              "dish": {
+                "entry": "LE_TITRE_DE_TON_ENTREE",
+                "dish": "LE_TITRE_DE_TON_PLAT",
+                "dessert": "LE_TITRE_DE_TON_DESSERT"
+              },
+              "ingredient": {
+                "entry": "oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta",
+                "dish": "faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre",
+                "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
+              }
+            }
+        ],
+        "veggie_menus": [{
+            "name": "Faux filet et sa sauce au vin rouge",
+            "price": "15",
+            "day": "LUN",
+            "images": {
+              "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
+              "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
+              "dessert": "TON_URL_DE_LIMAGE_DU_DESSERT"
+            },
+            "dish": {
+              "entry": "LE_TITRE_DE_TON_ENTREE",
+              "dish": "LE_TITRE_DE_TON_PLAT",
+              "dessert": "LE_TITRE_DE_TON_DESSERT"
+            },
+            "ingredient": {
+              "entry": "oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta",
+              "dish": "faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre",
+              "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
+            }
+          },
+          {
+            "name": "Faux filet et sa sauce au vin rouge",
+            "price": "15",
+            "day": "LUN",
+            "images": {
+              "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
+              "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
+              "dessert": "TON_URL_DE_LIMAGE_DU_DESSERT"
+            },
+            "dish": {
+              "entry": "LE_TITRE_DE_TON_ENTREE",
+              "dish": "LE_TITRE_DE_TON_PLAT",
+              "dessert": "LE_TITRE_DE_TON_DESSERT"
+            },
+            "ingredient": {
+              "entry": "oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta",
+              "dish": "faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre",
+              "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
+            }
+          }
+        ],
+        "drinks": [
+            {
+                "name": "Bouteille de cristaline",
+                "size": "50cl",
+                "price": "3.25"
+            }, 
+            {
+              "name": "Bouteille de cristaline",
+              "size": "50cl",
+              "price": "3.25"
+            }
+        ]
+
+    }
+}

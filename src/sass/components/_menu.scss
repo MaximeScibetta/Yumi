@@ -10,52 +10,9 @@
             background-size: cover;
             background-position: center;
             overflow: hidden;
-            .swiper-container{
-                display: block;
-                padding: 0;
-                &[data-v-508947c8] {
-                  background-color: #f8f8f8;
-                }
-                &.gallery-top[data-v-508947c8]{
-                    padding-top: 0;
-                }
+            .slider{
+              height: 100% !important;
             }
-              .swiper-slide {
-                background-size: cover;
-                background-position: center;
-                &.slide-1 {
-                  background-image: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A');
-
-                }
-                &.slide-2 {
-                  background-image: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD');
-
-                }
-                &.slide-3 {
-                  background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');
-                }
-              }
-
-              .gallery-top {
-                height: 80% !important;
-                width: 100%;
-              }
-
-              .gallery-thumbs {
-                height: 20% !important;
-                box-sizing: border-box;
-                padding: 10px 0;
-              }
-
-              .gallery-thumbs .swiper-slide {
-                width: 25%;
-                height: 100%;
-                opacity: 0.4;
-              }
-
-              .gallery-thumbs .swiper-slide-active {
-                opacity: 1;
-              }
 
         }
         .addToKart {

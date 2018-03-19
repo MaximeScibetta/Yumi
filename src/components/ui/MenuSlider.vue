@@ -255,23 +255,24 @@
                 <p class="date">Lundi 2 avril</p>
                 <h1>Faux filet et sa sauce au vin rouge</h1>
                 <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop1">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs1">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
+                    <slider animation="fade">
+                        <slider-item>
+                            <div style="background: url('https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A'); height: 100%; width: 100%; background-size: cover; background-position: center;">
+                            </div>
+                        </slider-item>
+                        <slider-item>
+                            <div style="background: url('https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD'); height: 100%; width: 100%; background-size: cover; background-position: center;">
+                            </div>
+                        </slider-item>
+                        <slider-item>
+                            <div style="background: url('https://images.unsplash.com/photo-1485704686097-ed47f7263ca4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b3a0347e68dba64f130c186dc3f396ea&auto=format&fit=crop&w=1369&q=80'); height: 100%; width: 100%; background-size: cover; background-position: center;">
+                            </div>
+                        </slider-item>
+                    </slider>
                 </div>
                 <div class="group">
                     <div class="addToKart">
-                        <p>Prix du menu: <span class="price">15€</span></p>
+                        <span class="price">15€</span>
                         <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
@@ -542,11 +543,13 @@
 <script>
 import CompleteMenu from './CompleteMenu'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-
+import { Slider, SliderItem } from 'vue-easy-slider'
 export default {  
     name: 'MenuSlider',
     components: {
-        CompleteMenu, swiper, swiperSlide
+        CompleteMenu, swiper, swiperSlide,
+    Slider,
+    SliderItem
     },
     
     data() {

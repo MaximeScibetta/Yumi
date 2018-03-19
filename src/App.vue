@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <top-nav></top-nav>
-    <swiper :options="swiperOption" v-if="$route.name != 'Kart'">
+    <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1474898856510-884a2c0be546?ixlib=rb-0.3.5&s=8a79a6c04ef1aa308d31a13646a4c8e5&auto=format&fit=crop&w=1267&q=80');">
-
         </swiper-slide>
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-0.3.5&s=06a5f840ce65add98e535354489598b9&auto=format&fit=crop&w=1350&q=80');">
         </swiper-slide>
@@ -49,7 +48,7 @@ export default {
   },
   data() {
     return {
-      swiperOption: {
+      swiperOptions: {
           spaceBetween: 30,
           loop: true,
           pagination: {
