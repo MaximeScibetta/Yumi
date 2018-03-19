@@ -335,4 +335,23 @@
         z-index: 10;
     }
 
+    .md-dialog.addDrink#addDrink{
+        height: 75%;
+        width: 100%;
+        display: block !important;
+        overflow: auto;
+        .md-dialog-actions{
+            height: 6px !important;
+            min-height: inherit;
+            .x{
+                top: 0;
+            }
+        }
+        .complete__menu--item{
+            img{
+
+            }
+        }
+
+    }
 }

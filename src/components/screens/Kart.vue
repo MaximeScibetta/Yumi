@@ -12,7 +12,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore">+ Ajoutée une boisson</button>
+                            <button class="addMore" @click="addDrink = true">+ Ajoutée une boisson</button>
                             <p class="item__price">15,00 €</p>
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore">+ Ajoutée une boisson</button>
+                            <button class="addMore" @click="addDrink = true">+ Ajoutée une boisson</button>
                             <p class="item__price">15,00 €</p>
                             <button class="delete">Supprimer</button>
                         </div>
@@ -174,6 +174,76 @@
                         <md-button class="buy" @click="startCommande = false">Acheter</md-button>
                     </md-dialog-actions>
                 </md-dialog>
+                <md-dialog id="addDrink" class="addDrink" :md-active.sync="addDrink">
+                    <md-dialog-actions>
+                        <md-button class="x" @click="addDrink = false"><md-icon>close</md-icon></md-button>
+                    </md-dialog-actions>
+                    <md-dialog-title>Compléter votre menu</md-dialog-title>
+                    <md-dialog-content>
+                        <div class="complete__menu">
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="complete__menu--item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                                <div class="info">
+                                    <button class="add">+</button>
+                                    <div class="info__data">
+                                        <p>Bouteille d'eau 50cl</p>
+                                        <p>3,00 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </md-dialog-content>
+                </md-dialog>
             </div>
         </div>
     </div>
@@ -187,6 +257,7 @@ export default {
     data(){
         return{
             startCommande: false,
+            addDrink: false,
             form: {
                 firstName: null,
                 surname: null,
