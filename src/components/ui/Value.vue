@@ -67,7 +67,7 @@
                     </g>
                 </g>
             </svg>
-            <p>Des porduits du terroir</p>
+            <p>Issus du terroir</p>
         </div>
         <div class="value__item">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -104,7 +104,7 @@
                     </g>
                 </g>
             </svg>
-            <p>Commandé en trois clics</p>
+            <p>Chez vous en 3 clics</p>
         </div>
         <div class="value__item">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
@@ -141,7 +141,7 @@
                     </g>
                 </g>
             </svg>
-            <p>Livré chaud en 30 minutes</p>
+            <p>Livré en 30 min.</p>
         </div>
     </div>
 </template>

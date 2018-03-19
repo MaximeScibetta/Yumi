@@ -64,6 +64,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            .payData{
+              width: 100%;
+              margin-top: $Rsu;
+              i{
+                margin-right: $Rsu;
+              }
+              &:hover{
+                cursor: pointer;
+                span{
+                  text-decoration: underline;
+                }
+              }
+            }
         }
         .md-tabs.md-alignment-left.md-dynamic-height.md-theme-default {
             // Plat & ingrédient tabs
@@ -206,6 +220,18 @@
         display: block;
         margin: 0 $Rsu;
         padding-bottom: $Ru; 
+      }
+    }
+    .md-dialog.payData{
+      .md-dialog-actions{
+        height: 30px !important;
+        min-height: inherit;
+        .md-button.x{
+          top: inherit;
+        }
+      }
+      .md-dialog-title.md-title {
+        padding-top: 0 !important;
       }
     }
 }

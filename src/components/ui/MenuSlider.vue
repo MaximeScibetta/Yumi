@@ -275,6 +275,7 @@
                         <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
+                        <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
                     </div>
                     <md-tabs>
                         <md-tab id="plats" md-label="plats">
@@ -522,6 +523,19 @@
                 <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
             </md-dialog-actions>
         </md-dialog>
+        <md-dialog class="payData" :md-active.sync="payData">
+            <md-dialog-actions>                
+                <md-button class="x" @click="payData = false"><md-icon>close</md-icon></md-button>
+            </md-dialog-actions>
+            <md-dialog-title>Moyens de paiement acceptés</md-dialog-title>
+            <md-dialog-content>
+                <div class="flex">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem obcaecati non quo sed nisi hic enim libero sint aut molestiae fugiat, laborum iure nobis provident ipsam voluptatibus omnis eveniet.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem obcaecati non quo sed nisi hic enim libero sint aut molestiae fugiat, laborum iure nobis provident ipsam voluptatibus omnis eveniet.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem obcaecati non quo sed nisi hic enim libero sint aut molestiae fugiat, laborum iure nobis provident ipsam voluptatibus omnis eveniet.</p>
+                </div>
+            </md-dialog-content>
+        </md-dialog>
     </div>
 </template>
 
@@ -538,6 +552,7 @@ export default {
     data() {
       return {
         veggieMode: false,
+        payData: false,
         swiperOptionTop: {
           spaceBetween: 10,
           loop: true,
