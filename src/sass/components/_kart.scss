@@ -333,6 +333,9 @@
             display: block !important;
         }
     }
+    .md-dialog{
+        overflow-y: scroll !important;
+    }
 
     // Re design md-dialog on desktop
     .md-dialog{

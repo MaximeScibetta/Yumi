@@ -37,7 +37,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="recap__form" v-else>
+                <div class="recap__header">
+                    <div class="description">
+                        <div class="description__price">
+                            <dl>
+                                <dt>Articles :</dt>
+                                <dd>33,00 €</dd>
+                                <dt>Livraison :</dt>
+                                <dd>1,50 €</dd>
+                                <dt>T.V.A. :</dt>
+                                <dd>12,00 %</dd>
+                                <dt class="end">Montant :</dt>
+                                <dd class="end">34,50 €</dd>
+                            </dl>
+                        </div>
+                        <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
+                    </div>
+                </div>
+                <div class="recap__form" v-if="startCommande">
                     <h1>Formulaire</h1>
                     <md-field>
                         <md-icon>account_circle</md-icon>
@@ -71,28 +88,6 @@
                         </md-select>
                     </md-field>
                     <button class="commande">Acheter</button>
-                </div>
-                <div class="recap__header">
-                    <div class="description">
-                        <ul class="description__content">
-                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
-                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
-                            <li><p>Bouteille de vin 50cl</p></li>
-                        </ul>
-                        <div class="description__price">
-                            <dl>
-                                <dt>Articles :</dt>
-                                <dd>33,00 €</dd>
-                                <dt>Livraison :</dt>
-                                <dd>1,50 €</dd>
-                                <dt>T.V.A. :</dt>
-                                <dd>12,00 %</dd>
-                                <dt class="end">Montant :</dt>
-                                <dd class="end">34,50 €</dd>
-                            </dl>
-                        </div>
-                        <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
-                    </div>
                 </div>
             </div>
         </div>
