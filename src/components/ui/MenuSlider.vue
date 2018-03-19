@@ -1,10 +1,12 @@
 <template>
     <div class="menuContent">
         <div class="center">
-            <toggle-button 
-                :color="{checked: '#8a5d3b', unchecked: '#84BC29'}"
-                v-model="veggieMode" 
-                :labels="{checked: 'Veggie', unchecked: 'Classique'}" :width="90" :height="30"/>
+            <div class="can-toggle demo-rebrand-1">
+                <input id="d" type="checkbox" v-model="veggieMode">
+                <label for="d">
+                    <div class="can-toggle__switch" data-checked="Veggie" data-unchecked="Classic"></div>
+                </label>
+            </div>
         </div>
         <md-tabs key="1" v-show="veggieMode" md-active-tab="tab-day1" md-dynamic-height class="days">
             <md-tab id="tab-day1" md-label="LUN 2">
@@ -250,6 +252,7 @@
         </md-tabs>
         <md-tabs key="2"  v-show="!veggieMode"  md-active-tab="tab-day1" md-dynamic-height class="days">
             <md-tab id="tab-day1" md-label="LUN 2">
+                <p class="date">Lundi 2 avril</p>
                 <h1>Faux filet et sa sauce au vin rouge</h1>
                 <div class="image">
                     <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop1">
@@ -514,8 +517,8 @@
                     </div>
                 </div>
             </md-dialog-content>
-            <md-dialog-actions>
-                <md-button class="close" @click="showKart = false">Continuer les achats</md-button>
+            <md-dialog-actions>                
+                <md-button class="x" @click="showKart = false"><md-icon>close</md-icon></md-button>
                 <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
             </md-dialog-actions>
         </md-dialog>

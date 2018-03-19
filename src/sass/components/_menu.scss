@@ -56,8 +56,8 @@
               }
 
         }
-        .addToKart{
-            margin-top: $Ru;
+        .addToKart {
+            padding: $Ru $Rsu;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -102,7 +102,7 @@
                         margin-left: $Ru;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        justify-content: flex-start;
                         .md-tabs{
                             order: 0;
                             .md-tab{
@@ -111,6 +111,7 @@
                         }
                         .addToKart{
                             order: 1;
+                            padding: $Ru $Rsu;
                         }
                     }
                }
@@ -188,6 +189,9 @@
             .md-dialog-actions{
               .buy{
                 width: auto !important;
+              }
+              .x{
+                top: -435px !important;
               }
             }
           }
