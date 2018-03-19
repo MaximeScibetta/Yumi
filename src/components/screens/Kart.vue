@@ -13,6 +13,10 @@
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
                             <button class="addMore" @click="addDrink = true">+ Ajoutée une boisson</button>
+                            <div class="item__quantity">
+                                <p>Quantité:</p>
+                                <input type="number" min="0" max="100" value="1">
+                            </div>
                             <p class="item__price">15,00 €</p>
                         </div>
                     </div>
@@ -25,6 +29,10 @@
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
                             <p class="boisson">Bouteille d'eau 50cl</p>
+                            <div class="item__quantity">
+                                <p>Quantité:</p>
+                                <input type="number" min="0" max="100" value="1">
+                            </div>
                             <p class="item__price">15,00 €</p>
                         </div>
                     </div>
@@ -103,6 +111,10 @@
                             <p class="item__price">15,00 €</p>
                             <button class="delete">Supprimer</button>
                         </div>
+                        <div class="item__quantity">
+                            <p>Quantité:</p>
+                            <input type="number" min="0" max="100" value="1">
+                        </div>
                     </div>
                     <div class="item">
                         <div class="item__image">
@@ -114,6 +126,10 @@
                             <p class="boisson">Bouteille d'eau 50cl</p>
                             <p class="item__price">15,00 €</p>
                             <button class="delete">Supprimer</button>
+                        </div>
+                        <div class="item__quantity">
+                            <p>Quantité:</p>
+                            <input type="number" min="0" max="100" value="1">
                         </div>
                     </div>
                 </div>

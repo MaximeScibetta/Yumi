@@ -121,6 +121,23 @@
                             .item__price{
                             }
                         }
+                        &__quantity {
+                          align-self: center;
+                          margin: $Rtu 0;
+                          input{
+                            background: none;
+                            border: none;
+                            width: 42px;
+                            border: 1px solid $core;
+                            padding: 2px $Rtu;
+                            border-radius: 5px;
+                          }
+                          p {
+                            display: inline;
+                          }
+
+                        }
+
                         @include mq($from: 700px){
                             flex-direction: row;
                             &__image{
@@ -229,6 +246,24 @@
                                     }
                                 }
                             }
+
+                            &__quantity {
+                              align-self: center;
+                              margin-left: $Rlu;
+                              input {
+                                background: none;
+                                border: none;
+                                width: 42px;
+                                border: 1px solid $core;
+                                padding: 2px $Rtu;
+                                border-radius: 5px;
+                              }
+
+                              p{
+                                  display: inline;
+                              }
+                            }
+
                         }
                     }
                     &__description{
