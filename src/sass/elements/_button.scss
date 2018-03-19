@@ -19,4 +19,12 @@ button:not(.md-button){
         font-size: 4rem;
         font-weight: 400;
     }
+    &.addMore{
+        transform: inherit;
+        display: block;
+        background: $green; 
+        color: $white;
+        padding: $Rtu $Rsu;
+        margin: $Rtu 0;
+    }
 }

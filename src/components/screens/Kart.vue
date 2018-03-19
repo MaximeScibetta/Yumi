@@ -2,34 +2,8 @@
     <div class="kart">
         <div class="kart__mobile">
             <div class="recap">
-                <div class="recap__header">
-                    <div class="total">
-                        <p>Sous-total (3 articles) :</p>
-                        <p class="total__price">33,00 €</p>
-                    </div>
-                    <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
-                    <div v-else class="description">
-                        <ul class="description__content">
-                            <li>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</li>
-                            <li>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</li>
-                            <li>Bouteille de vin 50cl</li>
-                        </ul>
-                        <div class="description__price">
-                            <dl>
-                                <dt>Articles :</dt>
-                                <dd>33,00 €</dd>
-                                <dt>Livraison :</dt>
-                                <dd>1,50 €</dd>
-                                <dt>T.V.A. :</dt>
-                                <dd>12,00 %</dd>
-                                <dt class="end">Montant :</dt>
-                                <dd class="end">34,50 €</dd>
-                            </dl>
-                        </div>
-                        <button class="commande" @click="startCommande = false">Retour</button>
-                    </div>
-                </div>
                 <div class="recap__content" v-if="!startCommande">
+                    <h1>Votre panier</h1>
                     <div class="item">
                         <div class="item__image">
                             <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80" alt="">
@@ -38,7 +12,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <p class="boisson">Aucune boisson n'a été ajoutée</p>
+                            <button class="addMore">+ Ajoutée une boisson</button>
                             <p class="item__price">15,00 €</p>
                         </div>
                     </div>
@@ -90,6 +64,28 @@
                     </md-field>
                     <button class="commande">Acheter</button>
                 </div>
+                <div class="recap__header">
+                    <div class="description">
+                        <ul class="description__content">
+                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
+                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
+                            <li><p>Bouteille de vin 50cl</p></li>
+                        </ul>
+                        <div class="description__price">
+                            <dl>
+                                <dt>Articles :</dt>
+                                <dd>33,00 €</dd>
+                                <dt>Livraison :</dt>
+                                <dd>1,50 €</dd>
+                                <dt>T.V.A. :</dt>
+                                <dd>12,00 %</dd>
+                                <dt class="end">Montant :</dt>
+                                <dd class="end">34,50 €</dd>
+                            </dl>
+                        </div>
+                        <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="kart__desktop">
@@ -103,7 +99,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <p class="boisson">Aucune boisson n'a été ajoutée</p>
+                            <button class="addMore">+ Ajoutée une boisson</button>
                             <p class="item__price">15,00 €</p>
                             <button class="delete">Supprimer</button>
                         </div>
@@ -122,13 +118,7 @@
                     </div>
                 </div>
                 <div class="recap__description">
-                    <h2>Récapitulatif</h2>
                     <div class="description">
-                        <ul class="description__content">
-                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
-                            <li><p>Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p></li>
-                            <li><p>Bouteille de vin 50cl</p></li>
-                        </ul>
                         <div class="description__price">
                             <dl>
                                 <dt>Articles :</dt>
@@ -180,7 +170,7 @@
                         </md-field>
                     </md-dialog-content>
                     <md-dialog-actions>
-                        <md-button class="close" @click="startCommande = false">Fermer</md-button>
+                        <md-button class="x" @click="startCommande = false"><md-icon>close</md-icon></md-button>
                         <md-button class="buy" @click="startCommande = false">Acheter</md-button>
                     </md-dialog-actions>
                 </md-dialog>

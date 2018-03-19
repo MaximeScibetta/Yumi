@@ -4,7 +4,7 @@
         &__mobile{
             .recap{
                 &__header{
-                    background-color: $white;
+                    background-color: #f8f8f8;
                     color: $white;
                     padding: 0 0 $Rsu;
                     .total{
@@ -23,6 +23,7 @@
                         padding: $Rsu $Ru;
                         display: block;
                         width: calc(100% - 24px);
+                        max-width: 350px;
                         margin: $Rsu auto;
                         transform: inherit;
                         &:hover{
@@ -32,16 +33,23 @@
                     }
                     .description{
                         color: $core;
-                        &__content{
-                            padding: $Ru 0;
-                            margin: 0 $Rsu;
-                            border-bottom: 1px solid $green;
-                            li{
-                                padding-left: $Rsu;
-                                border-left: 4px solid $green;
-                                &:not(:last-child){
-                                    margin-bottom: $Rsu;
+                        &__content {
+                          padding: 0 $Rlu;
+                          color: $green;
+                          border-bottom: 1px solid $green;
+
+                            li {
+                                list-style-type: disc;
+                                margin: 0 auto;
+                                margin-bottom: $Rsu;
+                                &:last-of-type {
+                                  margin-bottom: $Ru;
                                 }
+
+                                p {
+                                  color: $core;
+                                }
+
                             }
                         }
                         &__price{
@@ -160,7 +168,7 @@
                 color: $core;
                 .recap{
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: space-between;
                     flex-wrap: nowrap;
                     h2{
@@ -169,7 +177,6 @@
                         margin-bottom: $Ru;
                     }
                     &__content{
-                        width: 55%;
                         .item {
                             margin-top: $Rsu;
                             padding-bottom: $Ru;
@@ -227,28 +234,7 @@
                     &__description{
                         background: $white;
                         padding: $su 0 0;
-                        width: 40%;
-                        h2{
-                            margin-left: $Ru;
-                        }
                         .description{
-                            &__content {
-                                padding: 0 $Rlu;
-                                color: $green;
-                                border-bottom: 1px solid $green;
-                                li{
-                                    list-style-type: disc;
-                                    max-width: 350px;
-                                    margin: 0 auto;
-                                    margin-bottom: $Rsu;
-                                    &:last-of-type{
-                                        margin-bottom: $Rlu;
-                                    }
-                                    p{
-                                        color: $core;
-                                    }
-                                }
-                             }
                              &__price{
                                 padding: $Ru 20%;
                                 dl {
@@ -273,7 +259,10 @@
                             .commande{
                                 background: $green;
                                 width: 100%;
-                                padding: $Rsu 0 ;
+                                max-width: 350px;
+                                display: block;
+                                margin: 0 auto $Ru;
+                                padding: $Rsu 0;
                                 &:hover{
                                     transform: inherit;
                                     background: $white;
@@ -322,6 +311,7 @@
         }
         &-actions{
             justify-content: space-between;
+            padding: 0 $Rsu;
             .md-button{
                 &.close{
                     color: $red;
@@ -329,6 +319,14 @@
                 &.buy{
                     color: $white;
                     background-color: $green;
+                    width: 100%;
+                    margin: 0;
+                }
+                &.x{
+                    color: $red;
+                    position: absolute;
+                    top: -450px;
+                    right: 0;
                 }
             }
         }

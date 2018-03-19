@@ -188,4 +188,11 @@
           }
 
     }
+    #ingredient, #plats{
+      ul{
+        display: block;
+        margin: 0 $Rsu;
+        padding-bottom: $Ru; 
+      }
+    }
 }
