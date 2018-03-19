@@ -271,7 +271,7 @@
                 </div>
                 <div class="group">
                     <div class="addToKart">
-                        <span class="price">15€</span>
+                        <p>Prix du menu: <span class="price">15€</span></p>
                         <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>

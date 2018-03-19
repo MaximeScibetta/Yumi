@@ -57,6 +57,7 @@
 
         }
         .addToKart {
+            background: $white;
             padding: $Ru $Rsu;
             display: flex;
             justify-content: space-between;
@@ -123,6 +124,7 @@
     }
     @include mq($from: desktop){
           .recapKart {
+            z-index: 11;
             position: inherit;
             top: inherit;
             left: inherit;

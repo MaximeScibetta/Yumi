@@ -7,7 +7,7 @@
             text-decoration: none;
             color: inherit;
             position: relative;
-            &:hover{
+            &:not(.svg):item__quantity{
                 text-decoration: none;
                 &:before{
                     content: "• ";
@@ -56,13 +56,25 @@
                     }
     
                 }
-                &#kart{
+            }
+            a.svg{
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                svg {
+                  &#kart {
                     fill: $core;
-                    width: 30px;height: 30px;
+                    width: 30px;
+                    height: 30px;
                     position: absolute;
                     top: $Rsu;
                     right: $Rsu;
+                  }
                 }
+
             }
             .menu{
                 transform: translateX(-100vw);
@@ -152,7 +164,7 @@
         }
         #logo {
             transition: .3s;
-            &:hover {
+            &:item__quantity {
               transform: scale(1.1);
               transform: rotate(-5deg);
               transition: .3s;
