@@ -56,6 +56,8 @@
             font-size: $cu;
         }
     }
+    .ap-input-icon.ap-icon-pin{svg{display: none;}}
+
     @include mq($from: desktop){
         .postal{
             display: none;
