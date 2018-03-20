@@ -9,6 +9,7 @@
         padding: $Rsu;
         margin-top: $Rhu;
         @include mq($from: desktop){
+            text-align: center;
             padding: $Ru $Rhu;
         }
         a{
