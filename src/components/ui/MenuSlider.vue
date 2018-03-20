@@ -252,10 +252,11 @@
             </md-tab>
         </md-tabs>
         <md-tabs key="2"  v-show="!veggieMode"  md-active-tab="tab-day1" md-dynamic-height class="days">
-            <md-tab v-for="menu in weekClassicMenu" :key="menu.id" 
+<template v-for="day in weekDay">
+            <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
                     :id="'tab-day'+menu.id" 
-                    :md-label="menu.day+' '+menu.id">
-                <p class="date">{{menu.day}} {{menu.id}} avril</p>
+                    :md-label="menu.shortDate">
+                <p class="date">{{menu.longDate}}</p>
                 <h1>{{menu.name}}</h1>
                 <div class="image">
                     <slider animation="fade">
@@ -305,6 +306,7 @@
                     </md-tabs>
                 </div>
             </md-tab>
+</template>
         </md-tabs>
         <complete-menu id="drinks"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">
@@ -395,41 +397,8 @@ export default {
     computed: {
         ...mapGetters([
             'weekClassicMenu'
-        ])
-    },
-    mounted() {
-      this.$nextTick(() => {
-        const swiperTop1 = this.$refs.swiperTop1.swiper
-        const swiperThumbs1 = this.$refs.swiperThumbs1.swiper
-        swiperTop1.controller.control = swiperThumbs1
-        swiperThumbs1.controller.control = swiperTop1
-
-        const swiperTop2 = this.$refs.swiperTop2.swiper
-        const swiperThumbs2 = this.$refs.swiperThumbs2.swiper
-        swiperTop2.controller.control = swiperThumbs2
-        swiperThumbs2.controller.control = swiperTop2
-
-        
-        const swiperTop3 = this.$refs.swiperTop3.swiper
-        const swiperThumbs3 = this.$refs.swiperThumbs3.swiper
-        swiperTop3.controller.control = swiperThumbs3
-        swiperThumbs3.controller.control = swiperTop3
-
-    
-        const swiperTop4 = this.$refs.swiperTop4.swiper
-        const swiperThumbs4 = this.$refs.swiperThumbs4.swiper
-        swiperTop4.controller.control = swiperThumbs4
-        swiperThumbs4.controller.control = swiperTop4
-        
-
-        const swiperTop5 = this.$refs.swiperTop5.swiper
-        const swiperThumbs5 = this.$refs.swiperThumbs5.swiper
-        swiperTop5.controller.control = swiperThumbs5
-        swiperThumbs5.controller.control = swiperTop5
-      })
-    },
-    methods:{
-        week(){
+        ]),
+        weekDay(){
             var week = [];
             var i = 0;
             while (i != 7) {
@@ -494,12 +463,43 @@ export default {
                 i++;
                 
             }
-            console.log(week)
+            return week;
 
         },
     },
-    created(){
-        this.week()
-    }
+    mounted() {
+      this.$nextTick(() => {
+        const swiperTop1 = this.$refs.swiperTop1.swiper
+        const swiperThumbs1 = this.$refs.swiperThumbs1.swiper
+        swiperTop1.controller.control = swiperThumbs1
+        swiperThumbs1.controller.control = swiperTop1
+
+        const swiperTop2 = this.$refs.swiperTop2.swiper
+        const swiperThumbs2 = this.$refs.swiperThumbs2.swiper
+        swiperTop2.controller.control = swiperThumbs2
+        swiperThumbs2.controller.control = swiperTop2
+
+        
+        const swiperTop3 = this.$refs.swiperTop3.swiper
+        const swiperThumbs3 = this.$refs.swiperThumbs3.swiper
+        swiperTop3.controller.control = swiperThumbs3
+        swiperThumbs3.controller.control = swiperTop3
+
+    
+        const swiperTop4 = this.$refs.swiperTop4.swiper
+        const swiperThumbs4 = this.$refs.swiperThumbs4.swiper
+        swiperTop4.controller.control = swiperThumbs4
+        swiperThumbs4.controller.control = swiperTop4
+        
+
+        const swiperTop5 = this.$refs.swiperTop5.swiper
+        const swiperThumbs5 = this.$refs.swiperThumbs5.swiper
+        swiperTop5.controller.control = swiperThumbs5
+        swiperThumbs5.controller.control = swiperTop5
+      })
+    },
+    methods:{
+        
+    },
 }
 </script>
