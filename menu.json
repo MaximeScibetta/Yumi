@@ -86,11 +86,13 @@
         "drinks": [
             {
                 "name": "Bouteille de cristaline",
+                "image": "URL_DE_LA_BOISSON",
                 "size": "50cl",
                 "price": "3.25"
             }, 
             {
               "name": "Bouteille de cristaline",
+              "image": "URL_DE_LA_BOISSON",
               "size": "50cl",
               "price": "3.25"
             }
