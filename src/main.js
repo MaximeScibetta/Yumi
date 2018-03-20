@@ -13,7 +13,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 var VueScrollTo = require('vue-scrollto');
 import ToggleButton from 'vue-js-toggle-button'
-
+import { store } from './store'
 
 // Use library
 Vue.use(VueMaterial, VueAwesomeSwiper)
@@ -36,6 +36,7 @@ Vue.use(VueScrollTo, {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
