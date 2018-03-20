@@ -2,7 +2,7 @@
   <div id="app">
     <top-nav></top-nav>
     <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
-        <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1474898856510-884a2c0be546?ixlib=rb-0.3.5&s=8a79a6c04ef1aa308d31a13646a4c8e5&auto=format&fit=crop&w=1267&q=80');">
+        <swiper-slide style="background-image: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t34.0-12/29019396_10213809633987226_1672873170_n.png?oh=c74508f4b49e4303b3e8478c53654258&oe=5AB37029');">
         </swiper-slide>
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-0.3.5&s=06a5f840ce65add98e535354489598b9&auto=format&fit=crop&w=1350&q=80');">
         </swiper-slide>

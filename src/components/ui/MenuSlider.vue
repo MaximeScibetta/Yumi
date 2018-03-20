@@ -1,7 +1,7 @@
 <template>
     <div class="menuContent">
         <div class="center">
-            <p class="write">Faites votre choix :</p>
+            <p class="write">Faites votre choix</p>
             <div class="can-toggle demo-rebrand-1">
                 <input id="d" type="checkbox" v-model="veggieMode">
                 <label for="d">
