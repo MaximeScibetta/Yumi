@@ -11,6 +11,24 @@
           font-size: 2rem;
           text-align: center;
           margin-bottom: $Rsu;
+          position: relative;
+          &:after{
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 75%;
+            content: "";
+            width: 100px;height: 50px;
+            background: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29391311_10213805573245710_189346069_o.png?oh=b77be9637766ae941153e0b0961d039e&oe=5AB37353');
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include mq($from: 500px){
+              left: 68%;
+            }
+            @include mq($from: 650px) {
+              left: 65%;
+            }
+          }
         }
     }
 @mixin can-toggle-branding( 
@@ -219,4 +237,28 @@
   }
 }
 
+@include mq($from: 700px){
+  .center{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding-top: $Rlu;
+    @include mq($from: desktop){
+      padding-top: $Rsu;
+    }
+    width: 360px;
+    .write{
+      width: auto;
+      &:after{
+        left: 85%;
+        transform: rotate(-90deg);
+        top: -60px;
+      }
+    }
+    .can-toggle{
+      margin: 0 0 0 $Ru;
+    }
+  }
+}
 }

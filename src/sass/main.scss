@@ -17,7 +17,6 @@
 @import "components/topNav";
 @import "components/postalInput";
 @import "components/menuNav";
-@import "components/menu";
 @import "components/footer";
 @import "components/completeMenu";
 @import "components/headerSlide";
@@ -25,6 +24,7 @@
 @import "components/about";
 @import "components/toggle";
 @import "components/kart";
+@import "components/menu";
 
 
 
@@ -62,4 +62,7 @@ html{
     @include mq($from: desktop) {
       min-height: calc(100vh - 143px);
     }
+}
+.md-dialog{
+    z-index: 100 !important;
 }

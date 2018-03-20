@@ -326,7 +326,7 @@
         margin-left: $Rsu;
     }
     // Form dialog & overlay
-    .md-dialog.md-dialog-fullscreen.md-theme-default,
+    .md-dialog.md-dialog-fullscreen.md-theme-default.recapKart,
     .md-overlay {
         display: none !important;
         @include mq($from: desktop){

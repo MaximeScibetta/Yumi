@@ -525,7 +525,7 @@
                 <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
             </md-dialog-actions>
         </md-dialog>
-        <md-dialog class="payData" :md-active.sync="payData">
+        <md-dialog class="payData" id="payData" :md-active.sync="payData">
             <md-dialog-actions>                
                 <md-button class="x" @click="payData = false"><md-icon>close</md-icon></md-button>
             </md-dialog-actions>

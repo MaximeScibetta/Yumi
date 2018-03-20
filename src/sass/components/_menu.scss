@@ -25,8 +25,10 @@
             .payData{
               width: 100%;
               margin-top: $Rsu;
+              font-size: 1.1rem;
               i{
-                margin-right: $Rsu;
+                font-size: 20px !important;
+                margin-right: $Rtu;
               }
               &:hover{
                 cursor: pointer;
@@ -35,6 +37,9 @@
                 }
               }
             }
+        }
+        .md-dialog#payData{
+          display: block !important;
         }
         .md-tabs.md-alignment-left.md-dynamic-height.md-theme-default {
             // Plat & ingrédient tabs
