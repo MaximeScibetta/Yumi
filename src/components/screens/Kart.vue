@@ -3,39 +3,30 @@
         <div class="kart__mobile">
             <div class="recap">
                 <div class="recap__content" v-if="!startCommande">
-                    <h1>Votre panier</h1>
-                    <div class="item">
-                        <div class="item__image">
-                            <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80" alt="">
-                            <p class="date">02/04</p>
-                            <button class="delete">Supprimer</button>
-                        </div>
-                        <div class="item__description">
-                            <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
-                            <div class="item__quantity">
-                                <p>Quantité:</p>
-                                <input type="number" min="0" max="100" value="1">
+                    <h2 v-if="Object.keys(myShopKart).length !== 0">Votre panier</h2>
+                    <h2 v-else>Votre panier est vide</h2>
+                    <template v-if="Object.keys(myShopKart).length !== 0" v-for="(item, key) in myShopKart">
+                        <div class="item" :key="key">
+                            <div class="item__image">
+                                <img :src="item.image" alt="">
+                                <p class="date">{{item.shortDate}}</p>
+                                <button class="delete">Supprimer</button>
                             </div>
-                            <p class="item__price">15,00 €</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__image">
-                            <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80" alt="">
-                            <p class="date">03/04</p>
-                            <button class="delete">Supprimer</button>
-                        </div>
-                        <div class="item__description">
-                            <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <p class="boisson">Bouteille d'eau 50cl</p>
-                            <div class="item__quantity">
-                                <p>Quantité:</p>
-                                <input type="number" min="0" max="100" value="1">
+                            <div class="item__description">
+                                <p class="title">{{item.name}}</p>
+                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
+                                <template v-else v-for="(drink, key) in item.drinks">
+                                    <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
+                                </template>
+                                <div class="item__quantity">
+                                    <p>Quantité:</p>
+                                    <input type="number" min="0" max="100" :value="item.quantity">
+                                </div>
+                                <p class="item__price">{{item.price}} €</p>
                             </div>
-                            <p class="item__price">15,00 €</p>
                         </div>
-                    </div>
+                    </template>
+                    <p v-else>Vous n'avez aucun élément dans votre panier.</p>
                 </div>
                 <div class="recap__header">
                     <div class="description">
@@ -94,39 +85,29 @@
         <div class="kart__desktop">
             <div class="recap">
                 <div class="recap__content">
-                    <h2>Votre panier</h2>
-                    <div class="item">
-                        <div class="item__image">
-                            <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80" alt="">
-                            <p class="date">02/04</p>
+                    <h2 v-if="Object.keys(myShopKart).length !== 0">Votre panier</h2>
+                    <h2 v-else>Votre panier est vide</h2>
+                    <template v-if="Object.keys(myShopKart).length !== 0" v-for="(item, key) in myShopKart">
+                        <div :key="key" class="item">
+                            <div class="item__image">
+                                <img :src="item.image" alt="">
+                                <p class="date">{{item.shortDate}}</p>
+                            </div>
+                            <div class="item__description">
+                                <p class="title">{{item.name}}</p>
+                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
+                                <template v-else v-for="(drink, key) in item.drinks">
+                                    <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
+                                </template>
+                                <p class="item__price">{{item.price}} €</p>
+                                <button class="delete">Supprimer</button>
+                            </div>
+                            <div class="item__quantity">
+                                <p>Quantité:</p>
+                                <input type="number" min="0" max="100" :value="item.quantity">
+                            </div>
                         </div>
-                        <div class="item__description">
-                            <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
-                            <p class="item__price">15,00 €</p>
-                            <button class="delete">Supprimer</button>
-                        </div>
-                        <div class="item__quantity">
-                            <p>Quantité:</p>
-                            <input type="number" min="0" max="100" value="1">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item__image">
-                            <img src="https://images.unsplash.com/photo-1504973960431-1c467e159aa4?ixlib=rb-0.3.5&s=2195ba5081c67a1865b0d2c284d43853&auto=format&fit=crop&w=1350&q=80" alt="">
-                            <p class="date">03/04</p>
-                        </div>
-                        <div class="item__description">
-                            <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <p class="boisson">Bouteille d'eau 50cl</p>
-                            <p class="item__price">15,00 €</p>
-                            <button class="delete">Supprimer</button>
-                        </div>
-                        <div class="item__quantity">
-                            <p>Quantité:</p>
-                            <input type="number" min="0" max="100" value="1">
-                        </div>
-                    </div>
+                    </template>
                 </div>
                 <div class="recap__description">
                     <div class="description">
@@ -261,6 +242,8 @@
 </template>
 
 <script>
+import {mapGetters, mapMutations} from 'vuex'
+
 export default {
     name: 'Kart',
     components: {
@@ -277,6 +260,12 @@ export default {
                 time: null,
             }
         }
-    }
+    },
+    computed: {
+        ...mapGetters([
+            'myShopKart',
+            'priceKart'
+        ]),
+    },
 }
 </script>

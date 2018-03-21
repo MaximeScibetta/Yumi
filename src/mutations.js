@@ -6,9 +6,11 @@ export const mutations = {
             date = payload[0].longDate,
             currentMenuDay = payload[1],
             quantity = 1,
+            image = payload[0].images.dish,
+            shortDate = payload[0].shortDate,
             drinks = [];
 
-        let newObject = { id, name, price, date, drinks, quantity, currentMenuDay }
+        let newObject = { id, name, price, date, drinks, quantity, currentMenuDay, image, shortDate }
 
         state.myShopKart[currentMenuDay] = newObject;
     },
