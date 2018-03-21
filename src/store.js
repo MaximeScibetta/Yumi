@@ -36,6 +36,7 @@ export const store = new Vuex.Store({
                 "price": 15,
                 "shortDate": "MER 21",
                 "longDate": "Mercredi 21 mars",
+                "idDate": "210318",
                 "images": {
                     "entry": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A",
                     "dish": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD",
@@ -58,6 +59,7 @@ export const store = new Vuex.Store({
                 "price": 15,
                 "shortDate": "JEU 22",
                 "longDate": "Jeudi 22 mars",
+                "idDate": "220318",
                 "images": {
                     "entry": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A",
                     "dish": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD",
@@ -80,6 +82,7 @@ export const store = new Vuex.Store({
                 "price": 15,
                 "shortDate": "VEN 23",
                 "longDate": "Vendredi 23 mars",
+                "idDate": "230318",
                 "images": {
                     "entry": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A",
                     "dish": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD",
@@ -102,6 +105,7 @@ export const store = new Vuex.Store({
                 "price": 15,
                 "shortDate": "LUN 26",
                 "longDate": "Lundi 26 mars",
+                "idDate": "260318",
                 "images": {
                     "entry": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A",
                     "dish": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD",
@@ -126,6 +130,7 @@ export const store = new Vuex.Store({
                 "price": 15,
                 "shortDate": "MAR 27",
                 "longDate": "Mardi 27 mars",
+                "idDate": "270318",
                 "images": {
                     "entry": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29242617_10213798307984083_1950571214_o.jpg?oh=8a557f13f8c6e498e940cf9e7bf3335f&oe=5AB2DE0A",
                     "dish": "https://scontent.fbru3-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/28945230_10213798307304066_1793869592_o.jpg?oh=cd56eaa0073d76e2cace39ee54e93bd4&oe=5AB1F3BD",
@@ -231,6 +236,7 @@ export const store = new Vuex.Store({
                 }
             }, 
         ],
+        myShopKart: [],
     },
     mutations,
     getters

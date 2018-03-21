@@ -2,7 +2,7 @@ export const getters = {
     weekClassicMenu(state){
         return state.classic_menus;
     },
-    weekDay(state) {
+    weekDay() {
         var week = [];
         var i = 0;
         Date.prototype.addDays = function (days) {

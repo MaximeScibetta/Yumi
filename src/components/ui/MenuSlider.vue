@@ -251,10 +251,10 @@
                 </div>
             </md-tab>
         </md-tabs>
-        <md-tabs key="2"  v-show="!veggieMode"  md-active-tab="tab-day1" md-dynamic-height class="days">
+        <md-tabs key="2"  v-show="!veggieMode" md-dynamic-height class="days">
 <template v-for="day in weekDay">
             <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
-                    :id="'tab-day'+menu.id" 
+                    :id="menu.idDate" 
                     :md-label="menu.shortDate">
                 <p class="date">{{menu.longDate}}</p>
                 <h1>{{menu.name}}</h1>
@@ -277,7 +277,7 @@
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
-                        <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
+                        <button @click="addMenu(menu); showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
                         <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
@@ -359,7 +359,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import { Slider, SliderItem } from 'vue-easy-slider'
 import moment from 'moment'
 
-import {mapGetters} from 'vuex'
+import {mapGetters, mapMutations} from 'vuex'
 import { totalmem } from 'os';
 export default {  
     name: 'MenuSlider',
@@ -399,7 +399,11 @@ export default {
             'weekClassicMenu',
             'weekDay'
         ]),
-
     },
+    methods: {
+        ...mapMutations([
+            'addMenu'
+        ])
+    }
 }
 </script>

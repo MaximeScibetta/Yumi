@@ -12,7 +12,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore" @click="addDrink = true">+ Ajoutée une boisson</button>
+                            <button class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
                             <div class="item__quantity">
                                 <p>Quantité:</p>
                                 <input type="number" min="0" max="100" value="1">
@@ -102,7 +102,7 @@
                         </div>
                         <div class="item__description">
                             <p class="title">Potage vert, Faux filet et sa sauce au vin rouge, Crème au chocolat</p>
-                            <button class="addMore" @click="addDrink = true">+ Ajoutée une boisson</button>
+                            <button class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
                             <p class="item__price">15,00 €</p>
                             <button class="delete">Supprimer</button>
                         </div>

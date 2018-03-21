@@ -141,7 +141,7 @@
                     </g>
                 </g>
             </svg>
-            <p>Livré en 30 min.</p>
+            <p>Livré en 30 min</p>
         </div>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="complete">
-        <h1><span>Compeleter votre repas</span></h1>
+        <h1><span>Compléter votre repas</span></h1>
         <div class="complete__menu">
             <div class="complete__menu--item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
