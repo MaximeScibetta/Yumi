@@ -251,11 +251,11 @@
                 </div>
             </md-tab>
         </md-tabs>
-        <md-tabs key="2"  v-show="!veggieMode" md-dynamic-height class="days">
+        <md-tabs key="2"  v-show="!veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
 <template v-for="day in weekDay">
             <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
-                    :id="menu.idDate" 
-                    :md-label="menu.shortDate">
+            :id="menu.idDate" 
+            :md-label="menu.shortDate">
                 <p class="date">{{menu.longDate}}</p>
                 <h1>{{menu.name}}</h1>
                 <div class="image">
@@ -403,7 +403,10 @@ export default {
     methods: {
         ...mapMutations([
             'addMenu'
-        ])
-    }
+        ]),
+        emitValue(data){
+            this.$emit('currentMenuDay', data)
+        }
+    },
 }
 </script>

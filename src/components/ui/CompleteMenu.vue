@@ -68,7 +68,8 @@
 
 <script>
 export default {
-    name: 'CompleteMenu'
+    name: 'CompleteMenu',
+
 }
 </script>
 
