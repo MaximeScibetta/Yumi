@@ -401,105 +401,49 @@ export default {
         weekDay(){
             var week = [];
             var i = 0;
-            while (i != 7) {
-                var today = new Date();
-                var dateNbr = new Date(today).getDate()+i;
-                var dateDay = new Date(today).getDay()+i;
+            Date.prototype.addDays = function(days) {
+                var date = new Date(this.valueOf());
+                date.setDate(date.getDate() + days);
+                return date;
+            }
 
-                switch (dateDay) {
-                    case 1:
-                        var dateDay = 'LUN';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-                    case 2:
-                        var dateDay = 'MAR';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-                
-                    case 3:
-                        var dateDay = 'MER';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-                
-                    case 4:
-                        var dateDay = 'JEU';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-        
-                    case 5:
-                        var dateDay = 'VEN';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-                
-                    case 6:
-                        break;
-                                
-                    case 7:
-                        break;
-                        
-                    case 8:
-                        var dateDay = 'LUN';
-                        var fromatArray = Array.concat(dateDay, dateNbr);
-                        var formatDay = fromatArray.join(' ');             
-                        week.push(formatDay)
-                        break;
-                    case 0:
-                        break;
-                
+            while (i != 7) {
+                var date = new Date();
+                var calculatDate = date.addDays(i);
+                var calculatDateArray = calculatDate.toString().split(' ');
+                var formatDayEN = Array.concat(calculatDateArray[0], calculatDateArray[2])
+                switch (formatDayEN[0].valueOf()) {
+                    case "Mon":
+                        formatDayEN[0] = "LUN"
+                        week.push(formatDayEN.join(' '))
+                        break;   
+                    case "Tue":
+                        formatDayEN[0] = "MAR"
+                        week.push(formatDayEN.join(' '))
+                        break;   
+                    case "Wed":
+                        formatDayEN[0] = "MER"
+                        week.push(formatDayEN.join(' '))
+                        break;   
+                    case "Thu":
+                        formatDayEN[0] = "JEU"
+                        week.push(formatDayEN.join(' '))
+                        break;  
+                    case "Fri":
+                        formatDayEN[0] = "VEN"
+                        week.push(formatDayEN.join(' '))
+                        break;    
+                    case "Sat":
+                        break;     
+                    case "Sun":
+                        break;             
                     default:
-                        console.log('Sorry, we are out of ' + dateDay + '.');
                         break;
                 }
-                i++;
-                
+                i++
             }
-            return week;
-
+           return week;
         },
-    },
-    mounted() {
-      this.$nextTick(() => {
-        const swiperTop1 = this.$refs.swiperTop1.swiper
-        const swiperThumbs1 = this.$refs.swiperThumbs1.swiper
-        swiperTop1.controller.control = swiperThumbs1
-        swiperThumbs1.controller.control = swiperTop1
-
-        const swiperTop2 = this.$refs.swiperTop2.swiper
-        const swiperThumbs2 = this.$refs.swiperThumbs2.swiper
-        swiperTop2.controller.control = swiperThumbs2
-        swiperThumbs2.controller.control = swiperTop2
-
-        
-        const swiperTop3 = this.$refs.swiperTop3.swiper
-        const swiperThumbs3 = this.$refs.swiperThumbs3.swiper
-        swiperTop3.controller.control = swiperThumbs3
-        swiperThumbs3.controller.control = swiperTop3
-
-    
-        const swiperTop4 = this.$refs.swiperTop4.swiper
-        const swiperThumbs4 = this.$refs.swiperThumbs4.swiper
-        swiperTop4.controller.control = swiperThumbs4
-        swiperThumbs4.controller.control = swiperTop4
-        
-
-        const swiperTop5 = this.$refs.swiperTop5.swiper
-        const swiperThumbs5 = this.$refs.swiperThumbs5.swiper
-        swiperTop5.controller.control = swiperThumbs5
-        swiperThumbs5.controller.control = swiperTop5
-      })
-    },
-    methods:{
-        
     },
 }
 </script>

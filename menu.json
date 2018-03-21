@@ -2,9 +2,11 @@
     "data":{
         "classic_menus": [
             {
+                "id": 0,
                 "name": "Faux filet et sa sauce au vin rouge",
-                "price": "15",
-                "day": "LUN",
+                "price": 15,
+                "shortDate": "VEN 23",
+                "longDate": "Vendredi 6 avril",
                 "images": {
                     "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
                     "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
@@ -20,11 +22,13 @@
                   "dish": "faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre",
                   "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
                 }
-            }, 
+            },
             {
+              "id": 1,
               "name": "Faux filet et sa sauce au vin rouge",
-              "price": "15",
-              "day": "LUN",
+              "price": 15,
+              "shortDate": "VEN 23",
+              "longDate": "Vendredi 6 avril",
               "images": {
                 "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
                 "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
@@ -42,10 +46,13 @@
               }
             }
         ],
-        "veggie_menus": [{
+        "veggie_menus": [
+          {
+            "id": 3,
             "name": "Faux filet et sa sauce au vin rouge",
-            "price": "15",
-            "day": "LUN",
+            "price": 15,
+            "shortDate": "VEN 23",
+            "longDate": "Vendredi 6 avril",
             "images": {
               "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
               "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
@@ -63,9 +70,11 @@
             }
           },
           {
+            "id": 4,
             "name": "Faux filet et sa sauce au vin rouge",
-            "price": "15",
-            "day": "LUN",
+            "price": 15,
+            "shortDate": "VEN 23",
+            "longDate": "Vendredi 6 avril",
             "images": {
               "entry": "TON_URL_DE_LIMAGE_DE_LENTREE",
               "dish": "TON_URL_DE_LIMAGE_DU_PLAT",
