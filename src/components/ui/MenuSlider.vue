@@ -373,7 +373,7 @@ export default {
     props:{
         currentMenuDay: {
             type: String,
-            required: false,
+            required: true,
         }
     },
     data() {
@@ -414,5 +414,8 @@ export default {
             this.$emit('currentMenuDay', data)
         }
     },
+    created(){
+        this.$emit('md-changed');
+    }
 }
 </script>

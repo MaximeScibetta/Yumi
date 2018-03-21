@@ -16,11 +16,20 @@ export default {
     },
     data(){
         return{
-            currentMenuDay: null,
+            currentMenuDay: this.getCurrentDay()
         }
     }, 
     methods:{
         getCurrentDay(data){
+            if(!data){
+                var event = new Date();
+                var options = {year: 'numeric', month: 'numeric', day: 'numeric' };
+
+                var formatDate = event.toLocaleDateString('fr-FR', options).replace(/\//g,'');
+                
+                // expected output: 21032018
+                return formatDate
+            }
             this.currentMenuDay = data;
         }
     }
