@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <menu-slider @currentMenuDay="getCurrentDay"></menu-slider>
+        <menu-slider @currentMenuDay="getCurrentDay" :currentMenuDay="currentMenuDay"></menu-slider>
     </div>
 </template>
 
@@ -16,12 +16,12 @@ export default {
     },
     data(){
         return{
-            currentDay: null,
+            currentMenuDay: null,
         }
     }, 
     methods:{
         getCurrentDay(data){
-            this.currentDay = data;
+            this.currentMenuDay = data;
         }
     }
 }

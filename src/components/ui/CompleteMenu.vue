@@ -69,6 +69,12 @@
 <script>
 export default {
     name: 'CompleteMenu',
+    props:{
+        currentMenuDay: {
+            type: String,
+            required: false,
+        }
+    },
 
 }
 </script>

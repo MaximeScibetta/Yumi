@@ -277,7 +277,7 @@
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
-                        <button @click="addMenu(menu); showKart = true" v-scroll-to="'#drinks'" class="addKart">
+                        <button @click="addMenu([menu, menu.idDate]); showKart = true" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
                         <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
@@ -308,7 +308,7 @@
             </md-tab>
 </template>
         </md-tabs>
-        <complete-menu id="drinks"></complete-menu>
+        <complete-menu id="drinks" :currentMenuDay="currentMenuDay"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">
             <md-dialog-title>Récapitulatif</md-dialog-title>
             <md-dialog-content>
@@ -369,6 +369,12 @@ export default {
         swiperSlide,
         Slider,
         SliderItem
+    },
+    props:{
+        currentMenuDay: {
+            type: String,
+            required: false,
+        }
     },
     data() {
       return {
