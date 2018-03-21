@@ -1,3 +1,5 @@
+
+import router from './router'
 export const mutations = {
     addMenu(state, payload){
         let id = payload[0].id,
@@ -16,6 +18,9 @@ export const mutations = {
     },
     removeMenu(state, payload) {
         delete state.myShopKart[payload]
+        if(router.history.current.name === 'Kart'){
+            location.reload();
+        }
     },
     addDrinkToMenu(state, payload){
         let id = payload[0].id, 

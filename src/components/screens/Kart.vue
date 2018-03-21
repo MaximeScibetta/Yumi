@@ -10,7 +10,7 @@
                             <div class="item__image">
                                 <img :src="item.image" alt="">
                                 <p class="date">{{item.shortDate}}</p>
-                                <button class="delete">Supprimer</button>
+                                <button class="delete" @click="removeMenu(item.currentMenuDay)">Supprimer</button>
                             </div>
                             <div class="item__description">
                                 <p class="title">{{item.name}}</p>
@@ -100,7 +100,7 @@
                                     <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
                                 </template>
                                 <p class="item__price">{{item.price}} €</p>
-                                <button class="delete">Supprimer</button>
+                                <button class="delete" @click="removeMenu(item.currentMenuDay)">Supprimer</button>
                             </div>
                             <div class="item__quantity">
                                 <p>Quantité:</p>
@@ -246,8 +246,6 @@ import {mapGetters, mapMutations} from 'vuex'
 
 export default {
     name: 'Kart',
-    components: {
-    },
     data(){
         return{
             startCommande: false,
@@ -267,5 +265,10 @@ export default {
             'priceKart'
         ]),
     },
+    methods: {
+        ...mapMutations([
+            'removeMenu'
+        ])
+    }
 }
 </script>

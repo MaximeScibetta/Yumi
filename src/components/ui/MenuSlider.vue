@@ -278,7 +278,7 @@
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
                 
-                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true; remove15toPrice()" v-scroll-to="'#drinks'" class="addKart">
+                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true; remove15toPrice()" class="addKart">
                             Supprimer du panier
                         </button>
 

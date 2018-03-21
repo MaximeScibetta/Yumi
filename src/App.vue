@@ -20,9 +20,8 @@
         <postal-input v-if="$route.name == 'Home'"></postal-input>
     </div>
     
-        <transition name="fadeLeft">
     <router-view/>
-        </transition>
+    
     <footer-item></footer-item>
   </div>
 </template>
