@@ -230,7 +230,7 @@ export const store = new Vuex.Store({
                     "dessert": "chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat"
                 }
             }, 
-        ]
+        ],
     },
     mutations,
     getters
