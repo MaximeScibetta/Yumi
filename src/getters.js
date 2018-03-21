@@ -47,4 +47,10 @@ export const getters = {
         }
         return week;
     },
+    myShopKart(state){
+        return state.myShopKart
+    },
+    priceKart(state){
+        return state.priceKart
+    }
 }

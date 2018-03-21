@@ -277,9 +277,15 @@
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
-                        <button @click="addMenu([menu, menu.idDate]); showKart = true" v-scroll-to="'#drinks'" class="addKart">
+                
+                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true; remove15toPrice()" v-scroll-to="'#drinks'" class="addKart">
+                            Supprimer du panier
+                        </button>
+
+                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true; add15toPrice()" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
+                               
                         <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
                     </div>
                     <md-tabs>
@@ -314,14 +320,19 @@
             <md-dialog-content>
                 <div class="description">
                     <ul class="description__content">
-                        <li><p>Potage vert, Faux filet veggie et sa sauce au vin rouge, Crème au chocolat</p></li>
-                        <li><p>Potage vert, Faux filet veggie et sa sauce au vin rouge, Crème au chocolat</p></li>
-                        <li><p>Bouteille de vin 50cl</p></li>
+                        <template v-for="item in myShopKart">
+                            <li><p>{{item.name}}</p></li>
+                            <template v-if="item.drinks.length != 0" v-for="drink in item.drinks">
+                                <li>
+                                    <p>{{drink.name}}</p>
+                                </li>
+                            </template>
+                        </template>
                     </ul>
                     <div class="description__price">
                         <dl>
                             <dt>Articles :</dt>
-                            <dd>33,00 €</dd>
+                            <dd>{{priceKart}} €</dd>
                             <dt>Livraison :</dt>
                             <dd>1,50 €</dd>
                             <dt>T.V.A. :</dt>
@@ -403,19 +414,24 @@ export default {
     computed: {
         ...mapGetters([
             'weekClassicMenu',
-            'weekDay'
+            'weekDay',
+            'myShopKart',
+            'priceKart'
         ]),
     },
     methods: {
         ...mapMutations([
-            'addMenu'
+            'addMenu',
+            'add15toPrice',
+            'removeMenu',
+            'remove15toPrice'
         ]),
         emitValue(data){
             this.$emit('currentMenuDay', data)
-        }
+        },
     },
     created(){
         this.$emit('md-changed');
-    }
+    },
 }
 </script>
