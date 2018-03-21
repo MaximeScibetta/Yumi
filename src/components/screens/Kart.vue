@@ -114,7 +114,7 @@
                         <div class="description__price">
                             <dl>
                                 <dt>Articles :</dt>
-                                <dd>33,00 €</dd>
+                                <dd>{{priceKart}} €</dd>
                                 <dt>Livraison :</dt>
                                 <dd>1,50 €</dd>
                                 <dt>T.V.A. :</dt>
@@ -126,7 +126,7 @@
                         <button class="commande" @click="startCommande = true">Passer la commande</button>
                     </div>
                 </div>
-                <md-dialog :md-active.sync="startCommande">
+                <md-dialog id="modalForm" :md-active.sync="startCommande">
                     <md-dialog-title>Formulaire</md-dialog-title>
                     <md-dialog-content>
                         <md-field>

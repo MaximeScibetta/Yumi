@@ -256,7 +256,7 @@
             <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
             :id="menu.idDate" 
             :md-label="menu.shortDate">
-                <p class="date">{{menu.longDate}}</p>
+                <p class="dateMenu">{{menu.longDate}}</p>
                 <h1>{{menu.name}}</h1>
                 <div class="image">
                     <slider animation="fade">
@@ -345,7 +345,7 @@
             </md-dialog-content>
             <md-dialog-actions>                
                 <md-button class="x" @click="showKart = false"><md-icon>close</md-icon></md-button>
-                <md-button class="buy" @click="showKart = false">Passer la commande</md-button>
+                <md-button class="buy" @click="showKart = false; $router.push({ name: 'Kart'})">Passer la commande</md-button>
             </md-dialog-actions>
         </md-dialog>
         <md-dialog class="payData" id="payData" :md-active.sync="payData">
@@ -368,7 +368,6 @@
 import CompleteMenu from './CompleteMenu'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import { Slider, SliderItem } from 'vue-easy-slider'
-import moment from 'moment'
 
 import {mapGetters, mapMutations} from 'vuex'
 import { totalmem } from 'os';

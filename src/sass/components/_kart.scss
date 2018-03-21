@@ -393,3 +393,9 @@
 
     }
 }
+
+@include mq($from: 0px, $until: desktop){
+    #modalForm{
+        display: none;
+    }
+}
