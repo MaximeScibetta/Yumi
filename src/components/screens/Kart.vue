@@ -267,8 +267,18 @@ export default {
     },
     methods: {
         ...mapMutations([
-            'removeMenu'
+            'removeMenu',
+            'setKartValueInState',
         ])
+    },
+    created(){
+        if(Object.keys(this.myShopKart).length === 0){
+            let kartFromStorage = JSON.parse(localStorage.getItem('datas')) || []
+            this.setKartValueInState(kartFromStorage)
+        }
+    },
+    updated(){
+        localStorage.setItem('datas', JSON.stringify(this.myShopKart))
     }
 }
 </script>

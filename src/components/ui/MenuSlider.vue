@@ -423,7 +423,8 @@ export default {
             'addMenu',
             'add15toPrice',
             'removeMenu',
-            'remove15toPrice'
+            'remove15toPrice',
+            'setKartValueInState',
         ]),
         emitValue(data){
             this.$emit('currentMenuDay', data)
@@ -431,6 +432,13 @@ export default {
     },
     created(){
         this.$emit('md-changed');
+        if(Object.keys(this.myShopKart).length === 0){
+            let kartFromStorage = JSON.parse(localStorage.getItem('datas')) || []
+            this.setKartValueInState(kartFromStorage)
+        }
     },
+    updated(){
+        localStorage.setItem('datas', JSON.stringify(this.myShopKart))
+    }
 }
 </script>

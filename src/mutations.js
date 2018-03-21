@@ -15,12 +15,14 @@ export const mutations = {
         let newObject = { id, name, price, date, drinks, quantity, currentMenuDay, image, shortDate }
 
         state.myShopKart[currentMenuDay] = newObject;
+        localStorage.setItem('datas', JSON.stringify(state.myShopKart))
     },
     removeMenu(state, payload) {
         delete state.myShopKart[payload]
         if(router.history.current.name === 'Kart'){
             location.reload();
         }
+        localStorage.setItem('datas', JSON.stringify(state.myShopKart))
     },
     addDrinkToMenu(state, payload){
         let id = payload[0].id, 
@@ -40,5 +42,9 @@ export const mutations = {
     remove15toPrice(state) {
         let currentPrice = state.priceKart;
         state.priceKart = currentPrice - 15;
+    },
+    // Set value of kart in state
+    setKartValueInState(state, payload) {
+        state.myShopKart = payload
     }
 }
