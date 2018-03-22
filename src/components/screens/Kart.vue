@@ -269,17 +269,21 @@ export default {
         ...mapMutations([
             'removeMenu',
             'setKartValueInState',
-        ])
+        ]),
+        getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
     },
     created(){
         if(Object.keys(this.myShopKart).length === 0){
-            let kartFromStorage = JSON.parse(localStorage.getItem('datas')) || []
+            let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
         }
     },
     updated(){
-        localStorage.clear();
-        localStorage.setItem('datas', JSON.stringify(this.myShopKart))
+        // document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
     }
 }
 </script>

@@ -22,7 +22,7 @@ export const mutations = {
         if(router.history.current.name === 'Kart'){
             location.reload();
         }
-        localStorage.setItem('datas', JSON.stringify(state.myShopKart))
+        document.cookie = `yumyKart=${JSON.stringify(state.myShopKart)}; expires=31536e3, ${new Date()}`;
     },
     addDrinkToMenu(state, payload){
         let id = payload[0].id, 
@@ -47,9 +47,4 @@ export const mutations = {
     setKartValueInState(state, payload) {
         state.myShopKart = payload
     },
-    getCookie(name) {
-        var value = "; " + document.cookie;
-        var parts = value.split("; " + name + "=");
-        if (parts.length == 2) return parts.pop().split(";").shift();
-    }
 }

@@ -430,11 +430,16 @@ export default {
         emitValue(data){
             this.$emit('currentMenuDay', data)
         },
+        getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
     },
     created(){
         this.$emit('md-changed');
         if(Object.keys(this.myShopKart).length === 0){
-            let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || [];
+            let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
         }
     },
