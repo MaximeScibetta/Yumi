@@ -278,6 +278,7 @@ export default {
         }
     },
     updated(){
+        localStorage.clear();
         localStorage.setItem('datas', JSON.stringify(this.myShopKart))
     }
 }

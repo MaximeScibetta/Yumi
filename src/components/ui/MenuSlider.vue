@@ -289,7 +289,7 @@
                         <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
                     </div>
                     <md-tabs>
-                        <md-tab id="plats" md-label="plats">
+                        <md-tab id="plats" md-label="menu">
                             <ul>
                                 <li>Entrée</li>
                                 <li>{{menu.dish.entry}}</li>
@@ -299,7 +299,7 @@
                                 <li>{{menu.dish.dessert}}</li>
                             </ul>
                         </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
+                        <md-tab id="ingredient" md-label="ingrédients">
                             <ul>
                                 <li>Entrée</li>
                                 <li>{{menu.ingredient.entry}}</li>
@@ -425,6 +425,7 @@ export default {
             'removeMenu',
             'remove15toPrice',
             'setKartValueInState',
+            'getCookie'
         ]),
         emitValue(data){
             this.$emit('currentMenuDay', data)
@@ -433,12 +434,13 @@ export default {
     created(){
         this.$emit('md-changed');
         if(Object.keys(this.myShopKart).length === 0){
-            let kartFromStorage = JSON.parse(localStorage.getItem('datas')) || []
+            let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || [];
             this.setKartValueInState(kartFromStorage)
         }
     },
     updated(){
-        localStorage.setItem('datas', JSON.stringify(this.myShopKart))
+        document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
     }
 }
+
 </script>
