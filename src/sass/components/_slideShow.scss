@@ -1,0 +1,108 @@
+@include mq($from: 0px) {
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    // height: 600px;
+    #javascript-gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: $Rsu;
+        order: 1;
+        // width: 20%;
+        a{
+            &:nth-child(2){
+                margin: 0 $Rtu ;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+    #fullimagecontainer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      order: 0;
+        //   width: 80%;
+      img{
+          width: 100%;
+          height: 100%;
+      }
+
+    }
+    @include mq($from: 500px){
+        flex-direction: row;
+        #javascript-gallery{
+            width: 20%;
+            order: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: inherit; 
+            margin-right: $Rsu;
+            a {
+              &:nth-child(2) {
+                margin: 0;
+              }
+            }
+        }
+        #fullimagecontainer{
+            width: 80%;
+            order: 1;
+        }
+    }
+}
+@include mq($from: 1100px) {
+    .menuContent .md-tab{
+        align-items: flex-start;
+        .image{
+            width: 47%;
+            margin-top: $Rsu;
+            #javascript-gallery{
+                margin-top: 0;
+            }
+        }
+    }
+}
+//   .image  section img {
+//     width: 100%;
+//     height: auto
+//   }
+//   .image  figure {
+//     margin: 0;
+//     position: relative
+//   }
+//   .image  div#javascript-gallery a img,
+//   .image  figure img {
+//     width: 100%
+//   }
+  .image  figure:hover figcaption {
+    opacity: 1;
+    transition: all .5s ease-in-out
+  }
+  .image  figure figcaption {
+    transition: all .5s ease-in-out;
+    position: relative;
+    top: -60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    opacity: 0;
+    padding: 20px
+  }
+  .image  div#javascript-gallery a {
+    // -ms-flex: 1 1 5%;
+    // flex: 1 1 5%;
+    // opacity: .3;
+    // transition: .3s
+  }
+  .image  div#javascript-gallery a:focus,
+  .image  div#javascript-gallery a:hover {
+    opacity: 1
+  }
+}
+

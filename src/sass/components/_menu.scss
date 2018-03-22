@@ -1,22 +1,22 @@
 @include mq($from: 0px){
     .menuContent{
-        .image{
-            // height: 200px;
-            display: block;
-            content: "";
-            margin-top: $Rsu;
-            // height: 50vh;
-            // width: 100%;
-            height: 470px;
-            width: 600px;
-            background-size: cover;
-            background-position: center;
-            overflow: hidden;
-            .slider{
-              height: 100% !important;
-            }
+        // .image{
+        //     // height: 200px;
+        //     display: block;
+        //     content: "";
+        //     margin-top: $Rsu;
+        //     // height: 50vh;
+        //     // width: 100%;
+        //     height: 470px;
+        //     width: 600px;
+        //     background-size: cover;
+        //     background-position: center;
+        //     overflow: hidden;
+        //     .slider{
+        //       height: 100% !important;
+        //     }
 
-        }
+        // }
         .addToKart {
             background: $white;
             padding: $Ru $Rsu;
@@ -76,10 +76,10 @@
                    flex-wrap: wrap;
                    padding: 0;
                     .image {
-                      max-width: 60%;
+                      // max-width: 60%;
                     }
                     .group{
-                        width: 37%;
+                        width: 50%;
                         margin-left: $Ru;
                         display: flex;
                         flex-direction: column;

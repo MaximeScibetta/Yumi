@@ -9,248 +9,6 @@
                 </label>
             </div>
         </div>
-        <md-tabs key="1" v-show="veggieMode" md-active-tab="tab-day1" md-dynamic-height class="days">
-            <md-tab id="tab-day1" md-label="LUN 2">
-                <h1>Faux filet veggie et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop1">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs1">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
-                </div>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">15€</span>
-                        <button @click="showKart = true" v-scroll-to="'#drinks'" class="addKart">
-                            + Ajouter au panier
-                        </button>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="plats">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>Potage vert</li>
-                                <li>Plat</li>
-                                <li>Faux filet veggie et sa sauce au vin rouge</li>
-                                <li>Dessert</li>
-                                <li>Crème au chocolat</li>
-                            </ul>
-                        </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta</li>
-                                <li>Plat</li>
-                                <li>faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre</li>
-                                <li>Dessert</li>
-                                <li>chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-            <md-tab id="tab-day2" md-label="MAR 3">
-                <h1>Faux filet veggie et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop2">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs2">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
-                </div>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">15€</span>
-                        <button class="addKart">
-                            + Ajouter au panier
-                        </button>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="plats">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>Potage vert</li>
-                                <li>Plat</li>
-                                <li>Faux filet veggie et sa sauce au vin rouge</li>
-                                <li>Dessert</li>
-                                <li>Crème au chocolat</li>
-                            </ul>
-                        </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta</li>
-                                <li>Plat</li>
-                                <li>faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre</li>
-                                <li>Dessert</li>
-                                <li>chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-            <md-tab id="tab-day3" md-label="MER 4">
-                <h1>Faux filet veggie et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop3">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs3">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
-                </div>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">15€</span>
-                        <button class="addKart">
-                            + Ajouter au panier
-                        </button>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="plats">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>Potage vert</li>
-                                <li>Plat</li>
-                                <li>Faux filet veggie et sa sauce au vin rouge</li>
-                                <li>Dessert</li>
-                                <li>Crème au chocolat</li>
-                            </ul>
-                        </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta</li>
-                                <li>Plat</li>
-                                <li>faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre</li>
-                                <li>Dessert</li>
-                                <li>chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-            <md-tab id="tab-day4" md-label="JEU 5">
-                <h1>Faux filet veggie et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop4">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs4">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
-                </div>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">15€</span>
-                        <button class="addKart">
-                            + Ajouter au panier
-                        </button>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="plats">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>Potage vert</li>
-                                <li>Plat</li>
-                                <li>Faux filet veggie et sa sauce au vin rouge</li>
-                                <li>Dessert</li>
-                                <li>Crème au chocolat</li>
-                            </ul>
-                        </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta</li>
-                                <li>Plat</li>
-                                <li>faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre</li>
-                                <li>Dessert</li>
-                                <li>chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-            <md-tab id="tab-day5" md-label="VEN 6">
-                <h1>Faux filet veggie et sa sauce au vin rouge</h1>
-                <div class="image">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop5">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                        <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
-                        <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-                    </swiper>
-                    <!-- swiper2 Thumbs -->
-                    <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs5">
-                        <swiper-slide class="slide-1"></swiper-slide>
-                        <swiper-slide class="slide-2"></swiper-slide>
-                        <swiper-slide class="slide-3"></swiper-slide>
-                    </swiper>
-                </div>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">15€</span>
-                        <button class="addKart">
-                            + Ajouter au panier
-                        </button>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="plats">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>Potage vert</li>
-                                <li>Plat</li>
-                                <li>Faux filet veggie et sa sauce au vin rouge</li>
-                                <li>Dessert</li>
-                                <li>Crème au chocolat</li>
-                            </ul>
-                        </md-tab>
-                        <md-tab id="ingredient" md-label="ingredient">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>oignon, ail, huile d'olive, bouillon de poulet, brocoli, asperge, épinard, sel, poivre, fromage feta</li>
-                                <li>Plat</li>
-                                <li>faux-filet de boeuf, oignon rouge, thym, vin rouge, eau, beurre, sel, poivre</li>
-                                <li>Dessert</li>
-                                <li>chocolat noir, jaune d'oeuf, blanc d'oeuf, lait, sucre vanillé, sucre, maïzena, crème liquide, chocolat</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-        </md-tabs>
         <md-tabs key="2"  v-show="!veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
 <template v-for="day in weekDay">
             <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
@@ -258,22 +16,7 @@
             :md-label="menu.shortDate">
                 <p class="dateMenu">{{menu.longDate}}</p>
                 <h1>{{menu.name}}</h1>
-                <div class="image">
-                    <slider animation="fade">
-                        <slider-item>
-                            <div :style="'background: url('+menu.images.entry+'); height: 100%; width: 100%; background-size: cover; background-position: center;'">
-                            </div>
-                        </slider-item>
-                        <slider-item>
-                            <div :style="'background: url('+menu.images.dish+'); height: 100%; width: 100%; background-size: cover; background-position: center;'">
-                            </div>
-                        </slider-item>
-                        <slider-item>
-                            <div :style="'background: url('+menu.images.dessert+'); height: 100%; width: 100%; background-size: cover; background-position: center;'">
-                            </div>
-                        </slider-item>
-                    </slider>
-                </div>
+                <slider-show :images="menu.images"></slider-show>
                 <div class="group">
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
@@ -366,6 +109,7 @@
 
 <script>
 import CompleteMenu from './CompleteMenu'
+import SliderShow from './SliderShow'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import { Slider, SliderItem } from 'vue-easy-slider'
 
@@ -378,7 +122,8 @@ export default {
         swiper, 
         swiperSlide,
         Slider,
-        SliderItem
+        SliderItem,
+        SliderShow
     },
     props:{
         currentMenuDay: {
@@ -442,6 +187,9 @@ export default {
             let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
         }
+
+
+        
     },
     updated(){
         document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
