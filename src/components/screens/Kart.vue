@@ -14,7 +14,7 @@
                             </div>
                             <div class="item__description">
                                 <p class="title">{{item.name}}</p>
-                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
+                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true; addDrinkDay = item.currentMenuDay;">+ Ajouter une boisson</button>
                                 <template v-else v-for="(drink, key) in item.drinks">
                                     <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
                                 </template>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="item__description">
                                 <p class="title">{{item.name}}</p>
-                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true">+ Ajouter une boisson</button>
+                                <button v-if="item.drinks.length === 0" class="addMore" @click="addDrink = true; addDrinkDay = item.currentMenuDay;">+ Ajouter une boisson</button>
                                 <template v-else v-for="(drink, key) in item.drinks">
                                     <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
                                 </template>
@@ -176,57 +176,7 @@
                             <div class="complete__menu--item">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
                                 <div class="info">
-                                    <button class="add">+</button>
-                                    <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
-                                <div class="info">
-                                    <button class="add">+</button>
-                                    <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
-                                <div class="info">
-                                    <button class="add">+</button>
-                                    <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
-                                <div class="info">
-                                    <button class="add">+</button>
-                                    <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
-                                <div class="info">
-                                    <button class="add">+</button>
-                                    <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
-                                <div class="info">
-                                    <button class="add">+</button>
+                                    <button class="add" @click="addDrinkToMenu([{'id': 48, 'name': 'Bouteille d\'eau', 'price': 3}, addDrinkDay]); addDrink = false;">+</button>
                                     <div class="info__data">
                                         <p>Bouteille d'eau 50cl</p>
                                         <p>3,00 €</p>
@@ -250,6 +200,7 @@ export default {
         return{
             startCommande: false,
             addDrink: false,
+            addDrinkDay: null,
             form: {
                 firstName: null,
                 surname: null,
@@ -269,6 +220,7 @@ export default {
         ...mapMutations([
             'removeMenu',
             'setKartValueInState',
+            'addDrinkToMenu'
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
@@ -283,7 +235,8 @@ export default {
         }
     },
     updated(){
-        // document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
+        document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
+        // console.log('upadte')
     }
 }
 </script>

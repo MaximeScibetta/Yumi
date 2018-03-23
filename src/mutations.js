@@ -22,7 +22,6 @@ export const mutations = {
         if(router.history.current.name === 'Kart'){
             location.reload();
         }
-        document.cookie = `yumyKart=${JSON.stringify(state.myShopKart)}; expires=31536e3, ${new Date()}`;
     },
     addDrinkToMenu(state, payload){
         let id = payload[0].id, 
