@@ -104,7 +104,7 @@
                             </div>
                             <div class="item__quantity">
                                 <p>Quantité:</p>
-                                <input type="number" min="0" max="100" :value="item.quantity">
+                                <input type="number" min="0" max="100" v-model="item.quantity">
                             </div>
                         </div>
                     </template>
@@ -220,7 +220,8 @@ export default {
         ...mapMutations([
             'removeMenu',
             'setKartValueInState',
-            'addDrinkToMenu'
+            'addDrinkToMenu',
+            'moreQuantity'
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
@@ -236,7 +237,6 @@ export default {
     },
     updated(){
         document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
-        // console.log('upadte')
     }
 }
 </script>
