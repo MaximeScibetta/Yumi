@@ -15,12 +15,59 @@ export const mutations = {
         let newObject = { id, name, price, date, drinks, quantity, currentMenuDay, image, shortDate }
 
         state.myShopKart[currentMenuDay] = newObject;
-        localStorage.setItem('datas', JSON.stringify(state.myShopKart))
+
+        // CALUATE PRICE
+            var priceKart = 0;
+            if (Object.keys(state.myShopKart).length !== 0) {
+                Object.keys(state.myShopKart).map(item => {
+                    priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
+                    if (state.myShopKart[item].drinks.length !== 0) {
+                        state.myShopKart[item].drinks.map(drink => {
+                            priceKart += drink.price * parseFloat(drink.quantity);
+                        })
+                    }
+                })
+            }
+            state.priceKart = priceKart;
     },
     removeMenu(state, payload) {
-        delete state.myShopKart[payload]
         if(router.history.current.name === 'Kart'){
-            location.reload();
+            delete state.myShopKart[payload]
+            let kartContent = JSON.stringify(this.myShopKart) || JSON.stringify({});
+            document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
+
+            // CALUATE PRICE
+            var priceKart = 0;
+            if (Object.keys(state.myShopKart).length !== 0) {
+                Object.keys(state.myShopKart).map(item => {
+                    priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
+                    if (state.myShopKart[item].drinks.length !== 0) {
+                        state.myShopKart[item].drinks.map(drink => {
+                            priceKart += drink.price * parseFloat(drink.quantity);
+                        })
+                    }
+                })
+            }
+            state.priceKart = priceKart;
+
+            // location.reload();
+        } else {
+
+            // CALUATE PRICE
+            var priceKart = 0;
+            if (Object.keys(state.myShopKart).length !== 0) {
+                Object.keys(state.myShopKart).map(item => {
+                    priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
+                    if (state.myShopKart[item].drinks.length !== 0) {
+                        state.myShopKart[item].drinks.map(drink => {
+                            priceKart += drink.price * parseFloat(drink.quantity);
+                        })
+                    }
+                })
+            }
+            state.priceKart = priceKart;
+
+            delete state.myShopKart[payload]
         }
     },
     addDrinkToMenu(state, payload){
@@ -33,17 +80,39 @@ export const mutations = {
         let newObject = { id, name, price, quantity, currentMenuDay }
 
         state.myShopKart[currentMenuDay].drinks.push(newObject)
-    },
-    add15toPrice(state){
-        let currentPrice = state.priceKart;
-        state.priceKart = currentPrice + 15;
-    },
-    remove15toPrice(state) {
-        let currentPrice = state.priceKart;
-        state.priceKart = currentPrice - 15;
+
+        // CALUATE PRICE
+        var priceKart = 0;
+        if (Object.keys(state.myShopKart).length !== 0) {
+            Object.keys(state.myShopKart).map(item => {
+                priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
+                if (state.myShopKart[item].drinks.length !== 0) {
+                    state.myShopKart[item].drinks.map(drink => {
+                        priceKart += drink.price * parseFloat(drink.quantity);
+                    })
+                }
+            })
+        }
+        state.priceKart = priceKart;
+
     },
     // Set value of kart in state
     setKartValueInState(state, payload) {
         state.myShopKart = payload
     },
+    price(state){
+        // CALUATE PRICE
+        var priceKart = 0;
+        if (Object.keys(state.myShopKart).length !== 0) {
+            Object.keys(state.myShopKart).map(item => {
+                priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
+                if (state.myShopKart[item].drinks.length !== 0) {
+                    state.myShopKart[item].drinks.map(drink => {
+                        priceKart += drink.price * parseFloat(drink.quantity);
+                    })
+                }
+            })
+        }
+        state.priceKart = priceKart;
+    }
 }

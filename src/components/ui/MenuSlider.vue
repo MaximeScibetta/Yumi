@@ -21,11 +21,11 @@
                     <div class="addToKart">
                         <span class="price">{{menu.price}}€</span>
                 
-                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true; remove15toPrice()" class="addKart">
+                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
                             Supprimer du panier
                         </button>
 
-                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true; add15toPrice()" v-scroll-to="'#drinks'" class="addKart">
+                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
                             + Ajouter au panier
                         </button>
                                
@@ -77,11 +77,11 @@
                             <dt>Articles :</dt>
                             <dd>{{priceKart}} €</dd>
                             <dt>Livraison :</dt>
-                            <dd>1,50 €</dd>
+                            <dd>{{deliveryPrice}}0 €</dd>
                             <dt>T.V.A. :</dt>
-                            <dd>12,00 %</dd>
+                            <dd>Comprise</dd>
                             <dt class="end">Montant :</dt>
-                            <dd class="end">34,50 €</dd>
+                            <dd class="end">{{priceKart + deliveryPrice}}0 €</dd>
                         </dl>
                     </div>
                 </div>
@@ -363,8 +363,6 @@
 <script>
 import CompleteMenu from './CompleteMenu'
 import SliderShow from './SliderShow'
-import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import { Slider, SliderItem } from 'vue-easy-slider'
 
 import {mapGetters, mapMutations} from 'vuex'
 import { totalmem } from 'os';
@@ -372,10 +370,6 @@ export default {
     name: 'MenuSlider',
     components: {
         CompleteMenu,
-        swiper, 
-        swiperSlide,
-        Slider,
-        SliderItem,
         SliderShow
     },
     props:{
@@ -388,23 +382,6 @@ export default {
       return {
         veggieMode: false,
         payData: false,
-        swiperOptionTop: {
-          spaceBetween: 10,
-          loop: true,
-          loopedSlides: 3, //looped slides should be the same
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-          }
-        },
-        swiperOptionThumbs: {
-          spaceBetween: 10,
-          slidesPerView: 3,
-          touchRatio: 0.2,
-          loop: true,
-          loopedSlides: 3, //looped slides should be the same
-          slideToClickedSlide: true,
-        },
         showKart: false,
       }
     },
@@ -413,15 +390,14 @@ export default {
             'weekClassicMenu',
             'weekDay',
             'myShopKart',
-            'priceKart'
+            'priceKart',
+            'deliveryPrice'
         ]),
     },
     methods: {
         ...mapMutations([
             'addMenu',
-            'add15toPrice',
             'removeMenu',
-            'remove15toPrice',
             'setKartValueInState',
             'getCookie'
         ]),
@@ -431,7 +407,11 @@ export default {
         getCookie(name) {
             var value = "; " + document.cookie;
             var parts = value.split("; " + name + "=");
-            if (parts.length == 2) return parts.pop().split(";").shift();
+            if (parts.length == 2) {
+                return parts.pop().split(";").shift();
+            }else{
+                return JSON.stringify({});
+            }
         }
     },
     created(){
@@ -440,12 +420,10 @@ export default {
             let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
         }
-
-
-        
     },
     updated(){
-        document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
+        let kartContent = JSON.stringify(this.myShopKart) || {};
+        document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
     }
 }
 

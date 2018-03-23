@@ -51,6 +51,9 @@ export const getters = {
         return state.myShopKart
     },
     priceKart(state){
-        return state.priceKart
+        return state.priceKart;
+    },
+    deliveryPrice(state){
+        return state.deliveryPrice;
     }
 }

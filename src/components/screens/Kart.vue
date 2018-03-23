@@ -20,9 +20,9 @@
                                 </template>
                                 <div class="item__quantity">
                                     <p>Quantité:</p>
-                                    <input type="number" min="0" max="100" :value="item.quantity">
+                                    <input type="number" min="0" max="100" v-model="item.quantity"  @click="price()">
                                 </div>
-                                <p class="item__price">{{item.price}} €</p>
+                                <p class="item__price">{{item.price * parseFloat(item.quantity) }}  €</p>
                             </div>
                         </div>
                     </template>
@@ -33,13 +33,13 @@
                         <div class="description__price">
                             <dl>
                                 <dt>Articles :</dt>
-                                <dd>33,00 €</dd>
+                                <dd>{{priceKart}} €</dd>
                                 <dt>Livraison :</dt>
-                                <dd>1,50 €</dd>
+                                <dd>{{deliveryPrice}}0 €</dd>
                                 <dt>T.V.A. :</dt>
-                                <dd>12,00 %</dd>
+                                <dd>Comprise</dd>
                                 <dt class="end">Montant :</dt>
-                                <dd class="end">34,50 €</dd>
+                                <dd class="end">{{priceKart + 1.5}}0 €</dd>
                             </dl>
                         </div>
                         <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
@@ -99,12 +99,12 @@
                                 <template v-else v-for="(drink, key) in item.drinks">
                                     <p :key="key" class="boisson">{{drink.quantity}}x {{drink.name}}</p>
                                 </template>
-                                <p class="item__price">{{item.price}} €</p>
+                                <p class="item__price">{{item.price * parseFloat(item.quantity)}} €</p>
                                 <button class="delete" @click="removeMenu(item.currentMenuDay)">Supprimer</button>
                             </div>
                             <div class="item__quantity">
                                 <p>Quantité:</p>
-                                <input type="number" min="0" max="100" v-model="item.quantity">
+                                <input type="number" min="0" max="100" v-model="item.quantity" @click="price()">
                             </div>
                         </div>
                     </template>
@@ -116,11 +116,11 @@
                                 <dt>Articles :</dt>
                                 <dd>{{priceKart}} €</dd>
                                 <dt>Livraison :</dt>
-                                <dd>1,50 €</dd>
+                                <dd>{{deliveryPrice}}0 €</dd>
                                 <dt>T.V.A. :</dt>
-                                <dd>12,00 %</dd>
+                                <dd>Comprise</dd>
                                 <dt class="end">Montant :</dt>
-                                <dd class="end">34,50 €</dd>
+                                <dd class="end">{{priceKart + 1.5}}0 €</dd>
                             </dl>
                         </div>
                         <button class="commande" @click="startCommande = true">Passer la commande</button>
@@ -213,7 +213,8 @@ export default {
     computed: {
         ...mapGetters([
             'myShopKart',
-            'priceKart'
+            'priceKart',
+            'deliveryPrice'
         ]),
     },
     methods: {
@@ -221,7 +222,8 @@ export default {
             'removeMenu',
             'setKartValueInState',
             'addDrinkToMenu',
-            'moreQuantity'
+            'price',
+
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
@@ -233,10 +235,12 @@ export default {
         if(Object.keys(this.myShopKart).length === 0){
             let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
+            this.price()
         }
     },
     updated(){
-        document.cookie = `yumyKart=${JSON.stringify(this.myShopKart)}; expires=31536e3, ${new Date()}`;
+        let kartContent = JSON.stringify(this.myShopKart) || {};
+        document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
     }
 }
 </script>

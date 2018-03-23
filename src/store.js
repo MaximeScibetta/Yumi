@@ -238,6 +238,7 @@ export const store = new Vuex.Store({
         ],
         myShopKart: {},
         priceKart: 0,
+        deliveryPrice: 1.50,
     },
     mutations,
     getters
