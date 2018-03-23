@@ -2,10 +2,6 @@
   <div id="app">
     <top-nav></top-nav>
     <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
-        <swiper-slide style="background-image: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t34.0-12/29019396_10213809633987226_1672873170_n.png?oh=c74508f4b49e4303b3e8478c53654258&oe=5AB37029');">
-        </swiper-slide>
-        <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513267048331-5611cad62e41?ixlib=rb-0.3.5&s=06a5f840ce65add98e535354489598b9&auto=format&fit=crop&w=1350&q=80');">
-        </swiper-slide>
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');">
         </swiper-slide>
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=1350&q=80');">
@@ -47,9 +43,10 @@ export default {
   },
   data() {
     return {
-      swiperOptions: {
-          spaceBetween: 30,
-          loop: true,
+      swiperOptions: {  
+        autoplay: {
+          delay: 5000,
+        },
           pagination: {
               el: '.swiper-pagination',
               clickable: true
@@ -65,5 +62,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../assets/css/main.css';
+  @import './assets/css/main.css';
 </style>

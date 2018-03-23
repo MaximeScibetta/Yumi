@@ -194,6 +194,51 @@
       }
     }
     .md-dialog.payData{
+      .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        .right{
+          margin-top: $Rlu;
+        }
+        .left, .right{
+          width: 100%;
+          h2{
+            font-weight: 600;
+            margin-bottom: $Ru;
+            font-size: 2rem;
+          }
+          &>div {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            justify-content: center;
+            &+div{
+              margin-top: $Rsu;
+            }
+            svg {
+              width: 30px;
+              height: 30px;
+              margin-right: $Rsu;
+            }
+            svg,
+            p {
+              display: inline-flex;
+              align-self: center;
+            }
+          }
+        }
+        @include mq($from: tablet){
+          flex-direction: row;
+          .right{
+            margin-top: 0;
+          }
+          .left, .right{
+            width: 50%;
+          }
+        }
+      }
       .md-dialog-actions{
         height: 30px !important;
         min-height: inherit;

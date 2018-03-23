@@ -19,7 +19,7 @@
             left: 75%;
             content: "";
             width: 100px;height: 50px;
-            background: url('https://scontent.fbru1-1.fna.fbcdn.net/v/t35.0-12/s2048x2048/29391311_10213805573245710_189346069_o.png?oh=b77be9637766ae941153e0b0961d039e&oe=5AB37353');
+            background: url('../arrow.png');
             background-size: contain;
             background-repeat: no-repeat;
             @include mq($from: 500px){
