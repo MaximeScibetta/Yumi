@@ -5,7 +5,7 @@
             <div class="complete__menu--item">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
                 <div class="info">
-                    <button class="add" @click="addDrinkToMenu([{'id': 48, 'name': 'Bouteille d\'eau', 'price': 3}, currentMenuDay])">+</button>
+                    <button class="add" @click="emitValue(true); addDrinkToMenu([{'id': 48, 'name': 'Bouteille d\'eau', 'price': 3}, currentMenuDay])">+</button>
                     <div class="info__data">
                         <p>Bouteille d'eau 50cl</p>
                         <p>3,00 €</p>
@@ -30,6 +30,9 @@ export default {
         ...mapMutations([
             'addDrinkToMenu'
         ]),
+        emitValue(data){
+            this.$emit('openRecap', data)
+        }
     },
 
 }

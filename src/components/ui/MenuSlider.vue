@@ -57,7 +57,7 @@
             </md-tab>
 </template>
         </md-tabs>
-        <complete-menu id="drinks" :currentMenuDay="currentMenuDay"></complete-menu>
+        <complete-menu @openRecap="showKart = true" id="drinks" :currentMenuDay="currentMenuDay"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">
             <md-dialog-title>Récapitulatif</md-dialog-title>
             <md-dialog-content>
