@@ -75,7 +75,14 @@
                             <md-option value="12:30-13:00">12h30 - 13h00</md-option>
                             <md-option value="13:00-13:30">13h00 - 13h30</md-option>
                             <md-option value="13:30-14:00">13h30 - 14h00</md-option>
-                            <md-option value="14:00-14:30">14h00 - 14h30</md-option>
+                            <md-option value="18:00-18:30">18h00 - 18h30</md-option>
+                            <md-option value="13:30-19:00">18h30 - 19h00</md-option>
+                            <md-option value="19:00-19:30">19h00 - 19h30</md-option>
+                            <md-option value="19:30-20:00">19h30 - 20h00</md-option>
+                            <md-option value="20:00-20:30">20h00 - 20h30</md-option>
+                            <md-option value="20:30-21:00">20h30 - 21h00</md-option>
+                            <md-option value="21:00-21:30">21h00 - 21h30</md-option>
+                            <md-option value="21:30-22:00">21h30 - 22h00</md-option>
                         </md-select>
                     </md-field>
                     <button class="commande">Acheter</button>

@@ -2,6 +2,9 @@ export const getters = {
     weekClassicMenu(state){
         return state.classic_menus;
     },
+    weekVeggieMenu(state) {
+        return state.veggie_menus;
+    },
     weekDay() {
         var week = [];
         var i = 0;
@@ -11,7 +14,7 @@ export const getters = {
             return date;
         }
         while (i != 7) {
-            var date = new Date();
+            var date = new Date('April 2, 2018');
             var calculatDate = date.addDays(i);
             var calculatDateArray = calculatDate.toString().split(' ');
             var formatDayEN = Array.concat(calculatDateArray[0], calculatDateArray[2])

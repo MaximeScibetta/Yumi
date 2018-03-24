@@ -16,6 +16,7 @@
             class="postal__input"
             v-model="form.country.label"
             placeholder="Où souhaitez-vous être livré ?"
+            @change="val => { form.country.data = val; checkLocation() }"
             :options="{ countries: ['BE'] }">
         </places>
     </div>
@@ -31,14 +32,23 @@ export default {
     },
     data() {
         return {
-        form: {
-            country: {
-            label: null,
-            data: {},
+            form: {
+                country: {
+                    label: null,
+                    data: {},
+                },
             },
-        },
         };
     },
+    methods: {
+        checkLocation(){
+            if(parseFloat(this.form.country.data.postcode) >= 1000 && parseFloat(this.form.country.data.postcode) <= 1190){
+                console.log('OKKKKKKKKK')
+            }else{
+                console.error('NOOOOOOOOOOOO')
+            }
+        }
+    }
 }
 </script>
 

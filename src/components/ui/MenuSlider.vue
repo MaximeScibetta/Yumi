@@ -8,10 +8,60 @@
                     <div class="can-toggle__switch" data-checked="Veggie" data-unchecked="Classic"></div>
                 </label>
             </div>
-        </div>
-        <md-tabs key="2"  v-show="!veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
+        </div>        
+        <md-tabs key="1"  v-if="veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
 <template v-for="day in weekDay">
-            <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" :key="menu.id"
+            <md-tab v-for="menu in weekVeggieMenu" v-if="menu.shortDate === day" 
+            :key="menu.id"
+            :id="menu.idDate" 
+            :md-label="menu.shortDate">
+                <p class="dateMenu">{{menu.longDate}}</p>
+                <h1>{{menu.name}}</h1>
+                <slider-show :images="menu.images"></slider-show>
+                <div class="group">
+                    <div class="addToKart">
+                        <span class="price">{{menu.price}}€</span>
+                
+                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
+                            Supprimer du panier
+                        </button>
+
+                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
+                            + Ajouter au panier
+                        </button>
+                               
+                        <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
+                    </div>
+                    <md-tabs>
+                        <md-tab id="plats" md-label="menu">
+                            <ul>
+                                <li>Entrée</li>
+                                <li>{{menu.dish.entry}}</li>
+                                <li>Plat</li>
+                                <li>{{menu.dish.dish}}</li>
+                                <li>Dessert</li>
+                                <li>{{menu.dish.dessert}}</li>
+                            </ul>
+                        </md-tab>
+                        <md-tab id="ingredient" md-label="ingrédients">
+                            <ul>
+                                <li>Entrée</li>
+                                <li>{{menu.ingredient.entry}}</li>
+                                <li>Plat</li>
+                                <li>{{menu.ingredient.dish}}</li>
+                                <li>Dessert</li>
+                                <li>{{menu.ingredient.dessert}}</li>
+                            </ul>
+                        </md-tab>
+                    </md-tabs>
+                </div>
+            </md-tab>
+</template>
+        </md-tabs>
+        <md-tabs key="2"  v-if="!veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
+<template v-for="day in weekDay">
+            <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" 
+            :key="menu.id"
             :id="menu.idDate" 
             :md-label="menu.shortDate">
                 <p class="dateMenu">{{menu.longDate}}</p>
@@ -388,6 +438,7 @@ export default {
     computed: {
         ...mapGetters([
             'weekClassicMenu',
+            'weekVeggieMenu',
             'weekDay',
             'myShopKart',
             'priceKart',
