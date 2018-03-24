@@ -2,13 +2,13 @@
     <div class="complete">
         <h1><span>Compléter votre repas</span></h1>
         <div class="complete__menu">
-            <div class="complete__menu--item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+            <div class="complete__menu--item" v-for="drink in drinks" :key="drink.id">
+                <img :src="drink.image" width="300" height="200" alt="">
                 <div class="info">
-                    <button class="add" @click="emitValue(true); addDrinkToMenu([{'id': 48, 'name': 'Bouteille d\'eau', 'price': 3}, currentMenuDay])">+</button>
+                    <button class="add" @click="emitValue(true); addDrinkToMenu([drink, currentMenuDay])">+</button>
                     <div class="info__data">
-                        <p>Bouteille d'eau 50cl</p>
-                        <p>3,00 €</p>
+                        <p>{{drink.name}} {{drink.format}}</p>
+                        <p>{{drink.price}}0 €</p>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import {mapMutations} from 'vuex'
+import {mapMutations, mapGetters} from 'vuex'
 export default {
     name: 'CompleteMenu',
     props:{
@@ -34,6 +34,11 @@ export default {
             this.$emit('openRecap', data)
         }
     },
+    computed: {
+        ...mapGetters([
+            'drinks'
+        ])
+    }
 
 }
 </script>

@@ -5,6 +5,9 @@ export const getters = {
     weekVeggieMenu(state) {
         return state.veggie_menus;
     },
+    drinks(state) {
+        return state.drinks;
+    },
     weekDay() {
         var week = [];
         var i = 0;

@@ -2265,6 +2265,36 @@ export const store = new Vuex.Store({
               }
             }
         ],
+        drinks: [
+            {
+                "id":  99,
+                "name": "Eau plate",
+                "image": "http://yumybruxelles.be/spa.jpg",
+                "format": "50cl",
+                "price": 1.5
+            },
+            {
+                "id": 100,
+                "name": "Eau pétillante",
+                "image": "http://yumybruxelles.be/eaupet.jpg",
+                "format": "50cl",
+                "price": 1.5
+            },
+            {
+                "id": 101,
+                "name": "Coca-Coal normal",
+                "image": "http://yumybruxelles.be/cocal.jpg",
+                "format": "50cl",
+                "price": 1.5
+            },
+            {
+                "id": 102,
+                "name": "Coca-Coal light",
+                "image": "http://yumybruxelles.be/cocan.jpg",
+                "format": "50cl",
+                "price": 1.5
+            }
+        ],
         myShopKart: {},
         priceKart: 0,
         deliveryPrice: 1.50,
