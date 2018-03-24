@@ -131,7 +131,7 @@
                             <dt>T.V.A. :</dt>
                             <dd>Comprise</dd>
                             <dt class="end">Montant :</dt>
-                            <dd class="end">{{priceKart + deliveryPrice}}0 €</dd>
+                            <dd class="end">{{priceKart + deliveryPrice}} €</dd>
                         </dl>
                     </div>
                 </div>

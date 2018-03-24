@@ -82,7 +82,7 @@
                             <md-option value="20:00-20:30">20h00 - 20h30</md-option>
                             <md-option value="20:30-21:00">20h30 - 21h00</md-option>
                             <md-option value="21:00-21:30">21h00 - 21h30</md-option>
-                            <md-option value="21:30-22:00">21h30 - 22h00</md-option>
+                            <md-option value="21:30-19:00">21h30 - 19h00</md-option>
                         </md-select>
                     </md-field>
                     <button class="commande">Acheter</button>
@@ -180,13 +180,13 @@
                     <md-dialog-title>Compléter votre menu</md-dialog-title>
                     <md-dialog-content>
                         <div class="complete__menu">
-                            <div class="complete__menu--item">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRefQ9i_envvQNj9DXOX9QT4YInamnu9i80e8xaYhRNPbcKn7fW" width="300" height="200" alt="">
+                            <div class="complete__menu--item" v-for="drink in drinks" :key="drink.id">
+                                <img :src="drink.image" width="300" height="200" alt="">
                                 <div class="info">
-                                    <button class="add" @click="addDrinkToMenu([{'id': 48, 'name': 'Bouteille d\'eau', 'price': 3}, addDrinkDay]); addDrink = false;">+</button>
+                                    <button class="add" @click="addDrinkToMenu([drink, addDrinkDay]); addDrink = false;">+</button>
                                     <div class="info__data">
-                                        <p>Bouteille d'eau 50cl</p>
-                                        <p>3,00 €</p>
+                                        <p>{{drink.name}} {{drink.format}}</p>
+                                        <p>{{drink.price}}0 €</p>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +221,8 @@ export default {
         ...mapGetters([
             'myShopKart',
             'priceKart',
-            'deliveryPrice'
+            'deliveryPrice',
+            'drinks'
         ]),
     },
     methods: {
@@ -230,7 +231,6 @@ export default {
             'setKartValueInState',
             'addDrinkToMenu',
             'price',
-
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
