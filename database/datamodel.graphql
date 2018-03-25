@@ -1,0 +1,10 @@
+type UserData {
+  id: ID! @unique
+  firstname: String!
+  surname: String!
+  email: String!
+  time: String!
+  address: String!
+  priceKart: Int!
+  userKart: [String!]!
+}
