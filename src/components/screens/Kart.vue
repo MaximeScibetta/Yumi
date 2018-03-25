@@ -85,7 +85,7 @@
                             <md-option value="21:30-19:00">21h30 - 19h00</md-option>
                         </md-select>
                     </md-field>
-                    <button class="commande">Acheter</button>
+                    <button class="commande" @click="send([form, myShopKart, priceKart])">Acheter</button>
                 </div>
             </div>
         </div>
@@ -160,17 +160,24 @@
                             <md-icon>access_time</md-icon>
                             <label for="movie">Tranche horaire</label>
                             <md-select v-model="form.time" name="time" id="time">
-                                <md-option value="12:00-12:30">12h00 - 12h30</md-option>
-                                <md-option value="12:30-13:00">12h30 - 13h00</md-option>
-                                <md-option value="13:00-13:30">13h00 - 13h30</md-option>
-                                <md-option value="13:30-14:00">13h30 - 14h00</md-option>
-                                <md-option value="14:00-14:30">14h00 - 14h30</md-option>
+                            <md-option value="12:00-12:30">12h00 - 12h30</md-option>
+                            <md-option value="12:30-13:00">12h30 - 13h00</md-option>
+                            <md-option value="13:00-13:30">13h00 - 13h30</md-option>
+                            <md-option value="13:30-14:00">13h30 - 14h00</md-option>
+                            <md-option value="18:00-18:30">18h00 - 18h30</md-option>
+                            <md-option value="13:30-19:00">18h30 - 19h00</md-option>
+                            <md-option value="19:00-19:30">19h00 - 19h30</md-option>
+                            <md-option value="19:30-20:00">19h30 - 20h00</md-option>
+                            <md-option value="20:00-20:30">20h00 - 20h30</md-option>
+                            <md-option value="20:30-21:00">20h30 - 21h00</md-option>
+                            <md-option value="21:00-21:30">21h00 - 21h30</md-option>
+                            <md-option value="21:30-19:00">21h30 - 19h00</md-option>
                             </md-select>
                         </md-field>
                     </md-dialog-content>
                     <md-dialog-actions>
                         <md-button class="x" @click="startCommande = false"><md-icon>close</md-icon></md-button>
-                        <md-button class="buy" @click="startCommande = false">Acheter</md-button>
+                        <md-button class="buy" @click="send([form, myShopKart, priceKart])">Acheter</md-button>
                     </md-dialog-actions>
                 </md-dialog>
                 <md-dialog id="addDrink" class="addDrink" :md-active.sync="addDrink">
@@ -231,11 +238,15 @@ export default {
             'setKartValueInState',
             'addDrinkToMenu',
             'price',
+            'sendData'
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
             var parts = value.split("; " + name + "=");
             if (parts.length == 2) return parts.pop().split(";").shift();
+        },
+        send(data){
+            console.log(data)
         }
     },
     created(){
