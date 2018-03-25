@@ -64,3 +64,16 @@ html{
 .md-dialog{
     z-index: 11 !important;
 }
+
+.emailRequest{
+    text-align: center;
+    height: 100vh;
+    width: 100vh;
+    z-index: 100 !important;
+    svg{
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: $Ru;
+    }
+}
