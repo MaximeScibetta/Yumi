@@ -24,6 +24,7 @@
 
 <script>
 import Places from 'vue-places'
+import {mapGetters, mapMutations} from 'vuex'
 
 export default {
     name: 'PostalInput',
@@ -41,13 +42,21 @@ export default {
         };
     },
     methods: {
-        checkLocation(){
-            if(parseFloat(this.form.country.data.postcode) >= 1000 && parseFloat(this.form.country.data.postcode) <= 1190){
-                console.log('OKKKKKKKKK')
+        checkLocation(data){
+            if(this.form.country.data.city === 'Liège' || this.form.country.data.name === 'Liège'){
+                this.$emit('checkLocationn', true)
+                this.location(true)
+            }else if(this.form.country.data.administrative === 'Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest' || this.form.country.data.name === 'Bruxelles'){
+                this.$emit('checkLocationn', true)
+                this.location(true)
             }else{
-                console.error('NOOOOOOOOOOOO')
+                this.$emit('checkLocationn', false)
+                this.location(false)
             }
-        }
+        },
+        ...mapMutations([
+            'location'
+        ])
     }
 }
 </script>

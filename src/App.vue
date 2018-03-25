@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" @click="checkLocation()">
     <top-nav></top-nav>
     <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');">
@@ -10,15 +10,19 @@
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
-    <postal-input v-if="$route.name == 'Home'"></postal-input>
+    <!-- <postal-input v-if="$route.name == 'Home'"></postal-input> -->
     <div class="horse">
         <value v-if="$route.name != 'Kart'"></value>
-        <postal-input v-if="$route.name == 'Home'"></postal-input>
+        <postal-input @checkLocationn="emitLocation" v-if="$route.name == 'Home'"></postal-input>
     </div>
     
     <router-view/>
     
     <footer-item></footer-item>
+    <md-snackbar style="background-color: #84bc29;" @md-closed="emitLocation" :md-position="position" :md-duration="isInfinity ? Infinity : duration" :md-active.sync="showSnackbar" md-persistent>
+      <span>Nous ne livrons pas à cette endroit.</span>
+      <md-button class="md-primary" @click="showSnackbar = false">Réessayer</md-button>
+    </md-snackbar>
   </div>
 </template>
 
@@ -30,7 +34,7 @@ import PostalInput from './components/ui/PostalInput'
 import Value from './components/ui/Value'
 import FooterItem from './components/ui/Footer'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-
+import {mapGetters, mapMutations} from 'vuex'
 export default {
   name: 'App',
   components: {
@@ -55,8 +59,35 @@ export default {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev'
           }
+      },
+      locationIsGood: null,
+      showSnackbar: false,
+      position: 'center',
+      duration: 4000,
+      isInfinity: true
+    }
+  },
+  methods: {
+    emitLocation(data){
+        this.locationIsGood = data;
+        if(data === false){
+          this.showSnackbar = true;
+        }else{
+          this.showSnackbar = false;
+        }
+    },
+    checkLocation(){
+      if(!this.location){
+        this.showSnackbar = true;
+      }else{
+        this.showSnackbar = false;
       }
     }
+  },
+  computed: {
+    ...mapGetters([
+        'location'
+    ]),
   },
 }
 </script>

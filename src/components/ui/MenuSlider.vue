@@ -442,7 +442,8 @@ export default {
             'weekDay',
             'myShopKart',
             'priceKart',
-            'deliveryPrice'
+            'deliveryPrice',
+            'location'
         ]),
     },
     methods: {

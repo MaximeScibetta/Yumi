@@ -61,5 +61,9 @@ export const getters = {
     },
     deliveryPrice(state){
         return state.deliveryPrice;
+    },
+    location(state){
+        return state.locationIsGood
     }
+ 
 }

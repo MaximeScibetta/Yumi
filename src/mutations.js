@@ -1,5 +1,6 @@
 
 import router from './router'
+import bus from './main.js'
 export const mutations = {
     addMenu(state, payload){
         let id = payload[0].id,
@@ -14,11 +15,11 @@ export const mutations = {
 
         let newObject = { id, name, price, date, drinks, quantity, currentMenuDay, image, shortDate }
 
-        state.myShopKart[currentMenuDay] = newObject;
+         state.myShopKart[currentMenuDay] = newObject;
 
         // CALUATE PRICE
             var priceKart = 0;
-            if (Object.keys(state.myShopKart).length !== 0) {
+        if (Object.keys(state.myShopKart).length !== 0) {
                 Object.keys(state.myShopKart).map(item => {
                     priceKart += state.myShopKart[item].price * parseFloat(state.myShopKart[item].quantity);
                     if (state.myShopKart[item].drinks.length !== 0) {
@@ -52,6 +53,7 @@ export const mutations = {
 
             // location.reload();
         } else {
+            delete state.myShopKart[payload]
 
             // CALUATE PRICE
             var priceKart = 0;
@@ -67,7 +69,6 @@ export const mutations = {
             }
             state.priceKart = priceKart;
 
-            delete state.myShopKart[payload]
         }
     },
     addDrinkToMenu(state, payload){
@@ -114,5 +115,8 @@ export const mutations = {
             })
         }
         state.priceKart = priceKart;
+    },
+    location(state, payload){
+        state.locationIsGood = payload;
     }
 }
