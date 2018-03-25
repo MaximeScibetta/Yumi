@@ -119,7 +119,4 @@ export const mutations = {
     location(state, payload){
         state.locationIsGood = payload;
     },
-    sendData(state, payload){
-        console.log(payload)
-    }
 }

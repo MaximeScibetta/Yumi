@@ -6,5 +6,5 @@ type UserData {
   time: String!
   address: String!
   priceKart: Int!
-  userKart: [String!]!
+  userKart: Json!
 }

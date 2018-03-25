@@ -15,6 +15,7 @@
     "apollo-link": "^1.2.1",
     "apollo-link-http": "^1.5.3",
     "graphql": "^0.13.1",
+    "graphql-tag": "^2.8.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-csso": "^3.0.1",

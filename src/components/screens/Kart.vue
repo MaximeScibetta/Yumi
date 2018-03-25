@@ -207,6 +207,8 @@
 
 <script>
 import {mapGetters, mapMutations} from 'vuex'
+import { apolloClient } from '../../apollo'
+import gql from 'graphql-tag'
 
 export default {
     name: 'Kart',
@@ -246,7 +248,42 @@ export default {
             if (parts.length == 2) return parts.pop().split(";").shift();
         },
         send(data){
-            console.log(data)
+            let firstname = data[0].firstName,
+                surname = data[0].surname,
+                address = data[0].address,
+                email = data[0].email,
+                time = data[0].time,
+                userKart = data[1],
+                priceKart = data[2];
+
+            apolloClient.mutate({
+                mutation: gql`
+                    mutation createUserData
+                        ($firstname: String!,
+                        $surname: String!,
+                        $email: String!,
+                        $time: String!,
+                        $address: String!,
+                        $priceKart: Int!,
+                        $userKart: Json!){
+                            createUserData(data: {
+                                firstname: $firstname, 
+                                surname: $surname, 
+                                email: $email,
+                                time: $time,
+                                address: $address,
+                                priceKart: $priceKart,
+                                userKart: $userKart}){
+                                    id
+                                }
+                        }
+                `,
+                variables: {
+                    firstname, surname, email, 
+                    time, address, priceKart, userKart
+                }
+
+            })
         }
     },
     created(){

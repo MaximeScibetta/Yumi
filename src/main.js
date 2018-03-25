@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { apolloProvider } from './apollo'
 
 Vue.config.productionTip = false
 
@@ -34,6 +35,7 @@ Vue.use(VueScrollTo, {
 
 /* eslint-disable no-new */
 new Vue({
+  provide: apolloProvider.provide(),
   el: '#app',
   router,
   store,
