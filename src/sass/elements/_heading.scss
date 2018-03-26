@@ -2,6 +2,7 @@ h1 {
     margin: $Ru 0;
     font-weight: 600;
     width: 100%;
+    text-transform: uppercase;
     @include mq($from: 1100px) {
       margin-bottom: $Rsu;
     }

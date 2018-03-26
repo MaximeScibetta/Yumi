@@ -2,11 +2,11 @@
     <div class="image">
         <div id="javascript-gallery" tabindex="0">
 
-            <a @click.prevent="currentImage = images.dish" :href="images.dish">
-                <img :src="images.dish" alt="">
-            </a>
-            <a @click.prevent="currentImage = images.entry" :href="images.entry">
+            <a @click.prevent="currentImage = images.entry" :href="images.dish">
                 <img :src="images.entry" alt="">
+            </a>
+            <a @click.prevent="currentImage = images.dish" :href="images.entry">
+                <img :src="images.dish" alt="">
             </a>
             <a @click.prevent="currentImage = images.dessert" :href="images.dessert">
                 <img :src="images.dessert" alt="">

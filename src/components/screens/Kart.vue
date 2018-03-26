@@ -39,7 +39,7 @@
                                 <dt>T.V.A. :</dt>
                                 <dd>Comprise</dd>
                                 <dt class="end">Montant :</dt>
-                                <dd class="end">{{priceKart + 1.5}}0 €</dd>
+                                <dd class="end">{{priceKart + 1.5}} €</dd>
                             </dl>
                         </div>
                         <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
@@ -82,7 +82,7 @@
                             <md-option value="20:00-20:30">20h00 - 20h30</md-option>
                             <md-option value="20:30-21:00">20h30 - 21h00</md-option>
                             <md-option value="21:00-21:30">21h00 - 21h30</md-option>
-                            <md-option value="21:30-19:00">21h30 - 19h00</md-option>
+                            <md-option value="21:30-22:00">21h30 - 22h00</md-option>
                         </md-select>
                     </md-field>
                     <button class="commande" @click="send([form, myShopKart, priceKart])">Acheter</button>
@@ -127,7 +127,7 @@
                                 <dt>T.V.A. :</dt>
                                 <dd>Comprise</dd>
                                 <dt class="end">Montant :</dt>
-                                <dd class="end">{{priceKart + 1.5}}0 €</dd>
+                                <dd class="end">{{priceKart + 1.5}} €</dd>
                             </dl>
                         </div>
                         <button class="commande" @click="startCommande = true">Passer la commande</button>
