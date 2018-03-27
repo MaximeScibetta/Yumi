@@ -64,17 +64,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -179,17 +179,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -294,17 +294,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -409,17 +409,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -524,17 +524,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -639,17 +639,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -754,17 +754,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -869,17 +869,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -984,17 +984,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -1099,17 +1099,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "LE_TITRE_DE_TON_DESSERT"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -1193,17 +1193,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1308,17 +1308,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1423,17 +1423,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1538,17 +1538,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1653,17 +1653,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1768,17 +1768,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1883,17 +1883,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1998,17 +1998,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -2113,17 +2113,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -2228,17 +2228,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/22636/nati-01-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=3c652ce6cc0c8d8d0cf5dc2bc7376891"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Salade Caesar végétarienne",
                 "dish": "Hamburger végétarien",
-                "dessert": "LE_TITRE_DE_TON_DESSERT"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "miel, sucre, beurre de cachuète, chocolat noir, céréales de riz croustillantes, beurre, sel"
+                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -2268,31 +2268,52 @@ export const store = new Vuex.Store({
         drinks: [
             {
                 "id":  99,
-                "name": "Eau plate",
+                "name": "SPA intense minérale",
                 "image": "http://yumybruxelles.be/spa.jpg",
                 "format": "50cl",
                 "price": 1.5
             },
             {
                 "id": 100,
-                "name": "Eau pétillante",
-                "image": "http://yumybruxelles.be/eaupet.jpg",
+                "name": "SPA eau minérale",
+                "image": "http://yumybruxelles.be/spa_pet.jpg",
                 "format": "50cl",
                 "price": 1.5
             },
             {
                 "id": 101,
-                "name": "Coca-Coal normal",
-                "image": "http://yumybruxelles.be/cocal.jpg",
-                "format": "50cl",
+                "name": "Coca-Cola original",
+                "image": "http://yumybruxelles.be/coca.jpg",
+                "format": "33cl",
                 "price": 1.5
             },
             {
                 "id": 102,
-                "name": "Coca-Coal light",
-                "image": "http://yumybruxelles.be/cocan.jpg",
-                "format": "50cl",
+                "name": "Coca-Cola zero",
+                "image": "http://yumybruxelles.be/coca_zero.jpg",
+                "format": "33cl",
                 "price": 1.5
+            },
+            {
+                "id": 103,
+                "name": "Stella Artois",
+                "image": "http://yumybruxelles.be/strella.jpg",
+                "format": "25cl",
+                "price": 2.0
+            },
+            {
+                "id": 104,
+                "name": "Vin blanc Pinot Grigio, 2016",
+                "image": "http://yumybruxelles.be/vin_blanc.jpg",
+                "format": "25cl",
+                "price": 7.0
+            },
+            {
+                "id": 105,
+                "name": "Vin rouge, Montepulciano d'Abruzzo, 2016",
+                "image": "http://yumybruxelles.be/vin_rouge.jpg",
+                "format": "325cl",
+                "price": 7.0
             }
         ],
         myShopKart: {},

@@ -3,11 +3,13 @@ import Router from 'vue-router'
 import Home from '@/components/screens/Home'
 import Kart from '@/components/screens/Kart'
 import About from '@/components/screens/About'
+import Faq from '@/components/screens/Faq'
 
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -23,7 +25,12 @@ export default new Router({
       path: '/apropos',
       name: 'About',
       component: About
-    }
+    },
+    {
+      path: '/faq',
+      name: 'Faq',
+      component: Faq
+    },
 
   ]
 })

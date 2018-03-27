@@ -11,9 +11,9 @@
         <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
     </swiper>
     <postal-input @checkLocationn="emitLocation" v-if="$route.name == 'Home'"></postal-input>
-    <div class="horse">
-        <value v-if="$route.name != 'Kart'"></value>
-        <postal-input @checkLocationn="emitLocation" v-if="$route.name == 'Home'"></postal-input>
+    <div class="horse" v-if="$route.name == 'Home'">
+        <value></value>
+        <postal-input @checkLocationn="emitLocation"></postal-input>
     </div>
     
     <router-view/>
@@ -140,12 +140,13 @@
                   <md-field>
                       <md-icon>email</md-icon>
                       <label for="email">Email</label>
-                      <md-input name="email" id="email"/>
+                      <md-input name="email" id="email" v-model="email"/>
                   </md-field>
+                  <span class="error" v-if="error">{{error}}</span>
             </div>
           </md-dialog-content>
           <md-dialog-actions>                
-              <md-button class="buy" @click="emailRequest = false">Voter</md-button>
+              <md-button class="buy" @click="sendEmail()">Voter</md-button>
           </md-dialog-actions>
       </md-dialog>
   </div>
@@ -160,6 +161,8 @@ import Value from './components/ui/Value'
 import FooterItem from './components/ui/Footer'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import {mapGetters, mapMutations} from 'vuex'
+import { apolloClient } from './apollo'
+import gql from 'graphql-tag'
 export default {
   name: 'App',
   components: {
@@ -192,6 +195,8 @@ export default {
       duration: 4000,
       isInfinity: true,
       emailRequest: false,
+      email: '',
+      error: null,
     }
   },
   methods: {
@@ -211,6 +216,30 @@ export default {
         this.showSnackbar = true;
       }else{
         this.showSnackbar = false;
+      }
+    },
+    sendEmail(){
+      let email = this.email;
+
+      if(email !== ''){
+          apolloClient.mutate({
+            mutation: gql`
+              mutation createUserEmail(
+                $email: String!
+              ){
+                createUserEmail(data: {email: $email}){
+                  id
+                }
+              }
+            `,
+            variables: {
+              email,
+            }
+          }).then(data => {
+            this.emailRequest = false;
+          })
+      }else{
+          this.error = 'Ajoutez votre email et réessayez.'
       }
     }
   },

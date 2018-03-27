@@ -8,7 +8,7 @@
                     <button class="add" @click="emitValue(true); addDrinkToMenu([drink, currentMenuDay])">+</button>
                     <div class="info__data">
                         <p>{{drink.name}} {{drink.format}}</p>
-                        <p>{{drink.price}}0 €</p>
+                        <p>{{drink.price}}€</p>
                     </div>
                 </div>
             </div>

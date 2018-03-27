@@ -2,25 +2,29 @@
     <div class="about">
         <h1>À propos de nous</h1>
         <div class="about__content green">
-            <h2>Qui sommes-nous ?</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin interdum massa, malesuada euismod nulla luctus in.
+                Yumy c’est avant tout l’histoire de deux amis (Thomas et Nicolas), à la base coloc’, désireux de manger délicieusement et sainement au quotidien sans devoir se prendre trop la tête en faisant attention au budget. 
             </p>
             <p>
-                Curabitur vel magna nec mauris finibus ultrices a at velit. Phasellus ultrices egestas lacinia. Duis vel dapibus ligula. Curabitur id est purus. Sed molestie molestie blandit.
+                En effet, il n’est pas toujours évident pour nous d’être parfaitement organisé pour nos repas durant toute la semaine. Même de bonne volonté, préparer soi-même le bon petit plat imaginé le matin peut vite devenir très utopique : contretemps, manque de courage, boulot ou encore trop tard pour faire les courses, etc… les raisons étaient nombreuses et justifiées (parfois pas…).
             </p>
- 
+            <p>
+                Du coup, la mère de Thomas, grande cuisinière dans l’âme, se dévouait pour nous faire des petits plats « healthy » à notre demande. Elle accompagnait souvent le repas d’un potage comme entrée et finissait par un délicieux petit dessert. Un vrai régal. Nicolas proposa tout de suite de rémunérer ces « menus » qui lui étaient presque « livrés » à l’appartement. De là, est né Yumy… 
+            </p>
         </div>
         <div class="about__image" style="background:no-repeat url(https://images.unsplash.com/photo-1502004960551-dc67f7c24cb3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9ffa9224ea62436ebb99ebf25c50be60&auto=format&fit=crop&w=1320&q=80);"></div>
         <div class="about__image" style="background:no-repeat url(https://images.unsplash.com/photo-1446611720526-39d16597055c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2541f0d3222aba7ef68a2fd741e9babb&auto=format&fit=crop&w=1350&q=80);"></div>
         <div class="about__content transparent">
-            <h2>Qui sommes-nous ?</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin interdum massa, malesuada euismod nulla luctus in.
+                Chez Yumy, on a trouvé la solution : vous préparer un menu délicieux et équilibré, concocté au petit matin par notre chef suivant les goûts et les saisons, ensuite livré chez vous/ au boulot, le tout pour un prix raisonnable.
             </p>
             <p>
-                Curabitur vel magna nec mauris finibus ultrices a at velit. Phasellus ultrices egestas lacinia. Duis vel dapibus ligula. Curabitur id est purus. Sed molestie molestie blandit.
+                Pour ce faire, nous mettons un point d’honneur sur la qualité et l’origine des produits que nous utilisons. Ainsi, nous travaillons au maximum avec des producteurs locaux belges. Au quotidien, notre talentueux Chef sélectionne soigneusement les produits les plus frais et savoureux auprès de producteurs contrôlés et agréés pour vous satisfaire. Ainsi plus besoin de se rabattre sur la barquette de frites-mayo ou la pita du coin…
             </p>
+            <p>
+                Chez Yumy, ce n’est plus vous qui allez au restaurant, mais c’est lui qui vient à vous !
+            </p>
+            <p>L'équipe Yumy.</p>
         </div>
     </div>
 </template>

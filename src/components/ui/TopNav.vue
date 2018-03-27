@@ -93,10 +93,10 @@
                     </g>
                 </svg>
                 <ul>
-                    <li class="active" @click="menuIsOpen = false" ><router-link to="/">Menus</router-link></li>
-                    <li @click="menuIsOpen = false" ><router-link to="/apropos">Qui sommes-nous</router-link></li>
-                    <li>Nous contacter</li>
-                    <li>Foire aux questions</li>
+                    <li @click="menuIsOpen = false" ><router-link to="/">Menus</router-link></li>
+                    <li @click="menuIsOpen = false" ><router-link to="/apropos">À propos</router-link></li>
+                    <li><a href="mailto:yumi@info.be">Nous contacter</a></li>
+                    <li @click="menuIsOpen = false" ><router-link to="/faq">F.A.Q</router-link></li>
                 </ul>
             </div>
         </div>
@@ -105,10 +105,6 @@
                 <ul>
                     <li>
                         <router-link to="/">Menus</router-link>
-                        <!-- <ul class="dropdown">
-                            <li><router-link to="/">Classique</router-link></li>
-                            <li><router-link to="/">Veggie</router-link></li>
-                        </ul> -->
                     </li>
                     <li><a href="mailto:yumi@info.be">Nous contacter</a></li>
                 </ul>
@@ -159,8 +155,8 @@
             </router-link>
             <div class="right">
                 <ul>
-                    <li><router-link to="/apropos">Qui sommes-nous</router-link></li>
-                    <li>F.A.Q</li>
+                    <li><router-link to="/apropos">À propos</router-link></li>
+                    <li><router-link to="/faq">F.A.Q</router-link></li>
                     <li>
                         <router-link class="svg" to="/panier">
                             <svg version="1.1" id="kart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">

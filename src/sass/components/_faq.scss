@@ -1,0 +1,30 @@
+@include mq($from: 0px){
+    .faq{
+        padding: 0 1.2rem;
+        @include mq($from: desktop){
+            padding: 0 $Rhu;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-top: 0;
+            margin-bottom: $Ru;
+            padding-top: 96px;
+        }
+       
+        &__item{
+            .q{
+                font-weight: 600;
+                display: block;
+            }
+            .r{
+                max-width: 700px;
+                margin-top: 6px;
+                &:first-of-type{
+                    margin-top: 12px;
+                }
+            }
+            padding: 24px 0;
+            border-bottom: 1px solid $green;
+        }
+    }
+}

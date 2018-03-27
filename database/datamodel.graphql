@@ -8,3 +8,8 @@ type UserData {
   priceKart: Int!
   userKart: Json!
 }
+
+type UserEmail {
+  id: ID! @unique
+  email: String!
+}

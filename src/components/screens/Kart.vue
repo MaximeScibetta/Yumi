@@ -42,7 +42,7 @@
                                 <dd class="end">{{priceKart + 1.5}} €</dd>
                             </dl>
                         </div>
-                        <button v-if="!startCommande" class="commande" @click="startCommande = true">Passer la commande</button>
+                        <button v-if="!startCommande && Object.keys(myShopKart).length !== 0" class="commande" @click="startCommande = true">Passer la commande</button>
                     </div>
                 </div>
                 <div class="recap__form" v-if="startCommande">
@@ -130,7 +130,7 @@
                                 <dd class="end">{{priceKart + 1.5}} €</dd>
                             </dl>
                         </div>
-                        <button class="commande" @click="startCommande = true">Passer la commande</button>
+                        <button v-if="Object.keys(myShopKart).length !== 0" class="commande" @click="startCommande = true">Passer la commande</button>
                     </div>
                 </div>
                 <md-dialog id="modalForm" :md-active.sync="startCommande">
@@ -171,9 +171,10 @@
                             <md-option value="20:00-20:30">20h00 - 20h30</md-option>
                             <md-option value="20:30-21:00">20h30 - 21h00</md-option>
                             <md-option value="21:00-21:30">21h00 - 21h30</md-option>
-                            <md-option value="21:30-19:00">21h30 - 19h00</md-option>
+                            <md-option value="21:30-22:00">21h30 - 22h00</md-option>
                             </md-select>
                         </md-field>
+                        <span class="error" v-if="error">{{error}}</span>
                     </md-dialog-content>
                     <md-dialog-actions>
                         <md-button class="x" @click="startCommande = false"><md-icon>close</md-icon></md-button>
@@ -193,7 +194,7 @@
                                     <button class="add" @click="addDrinkToMenu([drink, addDrinkDay]); addDrink = false;">+</button>
                                     <div class="info__data">
                                         <p>{{drink.name}} {{drink.format}}</p>
-                                        <p>{{drink.price}}0 €</p>
+                                        <p>{{drink.price}} €</p>
                                     </div>
                                 </div>
                             </div>
@@ -217,12 +218,13 @@ export default {
             startCommande: false,
             addDrink: false,
             addDrinkDay: null,
+            error: null,
             form: {
-                firstName: null,
-                surname: null,
-                email: null,
-                address: null,
-                time: null,
+                firstName: '',
+                surname: '',
+                email: '',
+                address: '',
+                time: '',
             }
         }
     },
@@ -240,7 +242,8 @@ export default {
             'setKartValueInState',
             'addDrinkToMenu',
             'price',
-            'sendData'
+            'sendData',
+            'cleanKart'
         ]),
         getCookie(name) {
             var value = "; " + document.cookie;
@@ -256,34 +259,42 @@ export default {
                 userKart = data[1],
                 priceKart = data[2];
 
-            apolloClient.mutate({
-                mutation: gql`
-                    mutation createUserData
-                        ($firstname: String!,
-                        $surname: String!,
-                        $email: String!,
-                        $time: String!,
-                        $address: String!,
-                        $priceKart: Int!,
-                        $userKart: Json!){
-                            createUserData(data: {
-                                firstname: $firstname, 
-                                surname: $surname, 
-                                email: $email,
-                                time: $time,
-                                address: $address,
-                                priceKart: $priceKart,
-                                userKart: $userKart}){
-                                    id
-                                }
-                        }
-                `,
-                variables: {
-                    firstname, surname, email, 
-                    time, address, priceKart, userKart
-                }
+            if(firstname !== '' && surname !== '' && address !== '' && email !== '' && time !== ''){
+                apolloClient.mutate({
+                    mutation: gql`
+                        mutation createUserData
+                            ($firstname: String!,
+                            $surname: String!,
+                            $email: String!,
+                            $time: String!,
+                            $address: String!,
+                            $priceKart: Int!,
+                            $userKart: Json!){
+                                createUserData(data: {
+                                    firstname: $firstname, 
+                                    surname: $surname, 
+                                    email: $email,
+                                    time: $time,
+                                    address: $address,
+                                    priceKart: $priceKart,
+                                    userKart: $userKart}){
+                                        id
+                                    }
+                            }
+                    `,
+                    variables: {
+                        firstname, surname, email, 
+                        time, address, priceKart, userKart
+                    }
 
-            })
+                }).then( data => {
+                    this.startCommande = false;
+                    this.cleanKart()
+                    
+                })
+            }else{
+                this.error = 'Tous les champs ne sont pas complets, complétez-les et réessayez.'
+            }
         }
     },
     created(){

@@ -119,4 +119,10 @@ export const mutations = {
     location(state, payload){
         state.locationIsGood = payload;
     },
+    cleanKart(state) {
+        state.myShopKart = {};
+        state.priceKart = 0;
+        let kartContent = JSON.stringify(this.myShopKart) || JSON.stringify({});
+        document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
+    }
 }

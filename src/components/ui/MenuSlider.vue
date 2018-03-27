@@ -85,11 +85,11 @@
                         <md-tab id="plats" md-label="menu">
                             <ul>
                                 <li>Entrée</li>
-                                <li>{{menu.dish.entry}}</li>
+                                <li @click="$emit('currentImage', 'entry')">{{menu.dish.entry}}</li>
                                 <li>Plat</li>
-                                <li>{{menu.dish.dish}}</li>
+                                <li @click="$emit('currentImage',  'dish')">{{menu.dish.dish}}</li>
                                 <li>Dessert</li>
-                                <li>{{menu.dish.dessert}}</li>
+                                <li @click="$emit('currentImage', 'dessert')">{{menu.dish.dessert}}</li>
                             </ul>
                         </md-tab>
                         <md-tab id="ingredient" md-label="ingrédients">
