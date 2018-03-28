@@ -95,7 +95,7 @@
                 <ul>
                     <li @click="menuIsOpen = false" ><router-link to="/">Menus</router-link></li>
                     <li @click="menuIsOpen = false" ><router-link to="/apropos">À propos</router-link></li>
-                    <li><a href="mailto:yumi@info.be">Nous contacter</a></li>
+                    <li><a href="mailto:contact@yumybruxelles.be">Nous contacter</a></li>
                     <li @click="menuIsOpen = false" ><router-link to="/faq">F.A.Q</router-link></li>
                 </ul>
             </div>
@@ -106,7 +106,7 @@
                     <li>
                         <router-link to="/">Menus</router-link>
                     </li>
-                    <li><a href="mailto:yumi@info.be">Nous contacter</a></li>
+                    <li><a href="mailto:contact@yumybruxelles.be">Nous contacter</a></li>
                 </ul>
             </div>
             <router-link class="svg" to="/">

@@ -5,12 +5,12 @@
                 <h2>À propos</h2>
                 <router-link to="/">CGV</router-link>
                 <router-link to="/">Mentions légales</router-link>
-                <router-link to="/">FAQ</router-link>
+                <router-link to="/faq">FAQ</router-link>
             </div>
             <div class="middle">
                 <h2>Contactez-nous</h2>
-                <p>+32 4 71 37 86 19</p>
-                <a href="mailto:yumi@info.be">yumi@info.be</a>
+                <!-- <p>+32 4 71 37 86 19</p> -->
+                <a href="mailto:contact@yumybruxelles.be">contact@yumybruxelles.be</a>
             </div>
         </div>
         <div class="right">

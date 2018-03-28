@@ -1,6 +1,6 @@
 <template> 
     <div class="faq">
-        <h1>Foire au questions</h1>
+        <h1>Foire aux questions</h1>
         <ul>
             <li class="faq__item">
                 <span class="q">Yumy, c’est quoi ?</span>

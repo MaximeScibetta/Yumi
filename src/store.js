@@ -2312,7 +2312,7 @@ export const store = new Vuex.Store({
                 "id": 105,
                 "name": "Vin rouge, Montepulciano d'Abruzzo, 2016",
                 "image": "http://yumybruxelles.be/vin_rouge.jpg",
-                "format": "325cl",
+                "format": "25cl",
                 "price": 7.0
             }
         ],

@@ -12,8 +12,8 @@
                 Du coup, la mère de Thomas, grande cuisinière dans l’âme, se dévouait pour nous faire des petits plats « healthy » à notre demande. Elle accompagnait souvent le repas d’un potage comme entrée et finissait par un délicieux petit dessert. Un vrai régal. Nicolas proposa tout de suite de rémunérer ces « menus » qui lui étaient presque « livrés » à l’appartement. De là, est né Yumy… 
             </p>
         </div>
-        <div class="about__image" style="background:no-repeat url(https://images.unsplash.com/photo-1502004960551-dc67f7c24cb3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9ffa9224ea62436ebb99ebf25c50be60&auto=format&fit=crop&w=1320&q=80);"></div>
-        <div class="about__image" style="background:no-repeat url(https://images.unsplash.com/photo-1446611720526-39d16597055c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2541f0d3222aba7ef68a2fd741e9babb&auto=format&fit=crop&w=1350&q=80);"></div>
+        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/faq.jpg); background-size: cover; background-position: center;"></div>
+        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/faq2.jpg); background-size: cover; background-position: center;"></div>
         <div class="about__content transparent">
             <p>
                 Chez Yumy, on a trouvé la solution : vous préparer un menu délicieux et équilibré, concocté au petit matin par notre chef suivant les goûts et les saisons, ensuite livré chez vous/ au boulot, le tout pour un prix raisonnable.
