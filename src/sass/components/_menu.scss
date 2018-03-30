@@ -169,19 +169,25 @@
               }
             }
             .md-dialog-actions{
-              position: absolute;
-              top: 0;
-              width: 100%;
-              height: 100%;
+            //   position: absolute;
+            //   top: 0;
+            //   width: 100%;
+            //   height: 100%;
               .buy{
-                  width: auto !important;
-                  bottom: 6px;
-                  position: absolute;
+                width: auto !important;
+            //       width: auto !important;
+            //       bottom: 6px;
+            //       position: absolute;
               }
-              .x{
-                top: 0 !important;
-                right: 0;
+              .md-button:not(.buy){
+                .md-button-content {
+                  color: $green;
+                }
               }
+            //   .x{
+            //     top: 0 !important;
+            //     right: 0;
+            //   }
             }
           }
 
@@ -194,6 +200,11 @@
       }
     }
     .md-dialog.payData{
+      max-height: 445px;
+      z-index: 20 !important;
+      margin: 0;
+      width: 100vw;
+      margin-top: 53px;
       .flex{
         display: flex;
         flex-direction: column;

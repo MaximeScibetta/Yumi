@@ -3,127 +3,102 @@
         background: $green;
         color: $white;
         display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        justify-content: flex-start;
+        flex-direction: column;
         flex-wrap: nowrap;
-        padding: $Rsu;
+        padding: $Rlu $Rsu;
         margin-top: $Rhu;
-        @include mq($from: desktop){
-            text-align: center;
-            padding: $Ru $Rhu;
-        }
-        a{
-            text-decoration: none;
-            color: $white;
-            display: block;
-            margin-top: $Rtu;
-        }
+        text-align: center;
+        align-self: center;
         svg{
-            height: 40px;
-            width: 40px;
             fill: $white;
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: 600;
-            margin-bottom: $Rsu;
-        }
-        .middle{
-            h2{
-                margin-top: $Rlu;
+            path{
+                fill:$white;
             }
         }
-        .group{
-            display: flex;
-            flex-direction: column;
-            @include mq($from: 600px) {
-                flex-direction: row;
-                justify-content: space-between;
-                width: 50%;
-                @include mq($from: desktop){
-                    width: 55%;
+        &__top{
+            max-width: 430px;
+            margin: 0 auto;
+            padding-bottom: 24px;
+            .header{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                margin-bottom: 48px;
+                #logo{
+                    width: 150px;
+                    margin: 0 auto;
                 }
-                .middle{
-                    h2{
-                        margin-top: inherit;
+                .social{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    margin-top: 12px;
+                    a{
+                        &:first-of-type{
+                            margin-right: 24px;
+                        }
+                        svg {
+                          width: 30px;
+                          height: 30px;
+                        }
+                        &:hover{
+                            svg{
+                                fill: $brown;
+                                path{
+                                    fill: $brown;
+                                }
+                            }
+                        }
                     }
                 }
             }
-
-        }
-        // .left{
-            // h2{
-            //     font-size: 2rem;
-            //     font-weight: 600;
-            //     margin-bottom: $Rsu;
-            // }
-        //     p{
-        //         margin-bottom: $Rtu;
-        //     }
-        //     a{
-        //         text-decoration: underline;
-        //         &:hover{
-        //             cursor: pointer;
-        //         }
-        //     }
-        //     @include mq($from: 500px){
-        //         display: flex;
-        //         flex-direction: row;
-        //         justify-content: flex-start;
-        //         flex-wrap: nowrap;
-        //         h2{
-        //             margin: 0 $Rlu 0 0;
-        //             align-self: flex-end;
-        //         }
-        //         p{
-        //             margin: 0 $Ru 0 0;
-        //             align-self: flex-end;
-        //         }
-        //         a{
-        //             margin: 0;
-        //             align-self: flex-end;
-        //         }
-        //     }
-        // }
-        @include mq($from: 800px){
-            flex-direction: row;
-            .right{
-                margin-top: 0;
-                svg{
-                    width: 20px;
-                    height: 20px;
+            .contact{
+                margin-bottom: 24px;
+                a{
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+            .menu{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    li{
+                        &:first-of-type{
+                            margin-right: 24px;
+                        }
+                        a{
+                            color: white;
+                        }
+                        &:hover{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
             }
         }
-
-        .right {
-          margin: $Rsu 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          flex-wrap: nowrap;
-          @include mq($from: desktop) {
-            flex-direction: row;
-            align-self: center;
-            svg {
-              height: 30px;
-              width: 30px;
+        &__bottom{
+            padding-top: 24px;
+            border-top: 1px solid $white;
+            max-width: 430px;
+            margin: 0 auto;
+            .copyright{
+                font-size: 12px;
+                a{
+                    color: $white;
+                    text-decoration: underline;
+                }
             }
-            a:nth-child(2) {
-              margin: 0 $Ru;
-              margin-top: $Rtu;
-              height: 20px;
+            .payment{
+                margin-top: 24px;
             }
-          }
-          a {
-            &:hover {
-              cursor: pointer;
-              svg {
-                fill: $brown;
-              }
-            }
-          }
         }
-
     }
 }

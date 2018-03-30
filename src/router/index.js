@@ -7,32 +7,32 @@ import Faq from '@/components/screens/Faq'
 
 
 Vue.use(Router)
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/panier',
+    name: 'Kart',
+    component: Kart
+  },
+  {
+    path: '/apropos',
+    name: 'About',
+    component: About
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: Faq
+  },
 
-export default new Router({
-  mode: 'history',
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/panier',
-      name: 'Kart',
-      component: Kart
-    }, 
-    {
-      path: '/apropos',
-      name: 'About',
-      component: About
-    },
-    {
-      path: '/faq',
-      name: 'Faq',
-      component: Faq
-    },
+];
 
-  ],
+const router =  new Router({
+  routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
@@ -44,3 +44,9 @@ export default new Router({
     }
   }
 })
+
+router.beforeEach((to, from, next) => {
+  next()
+})
+
+export default router

@@ -137,8 +137,8 @@
                 </div>
             </md-dialog-content>
             <md-dialog-actions>                
-                <md-button class="x" @click="showKart = false"><md-icon>close</md-icon></md-button>
                 <md-button class="buy" @click="showKart = false; $router.push({ name: 'Kart'})">Passer la commande</md-button>
+                <md-button class="md-accent" @click="showKart = false;" style="color: red;">Continuer vos achats</md-button>
             </md-dialog-actions>
         </md-dialog>
         <md-dialog class="payData" id="payData" :md-active.sync="payData">

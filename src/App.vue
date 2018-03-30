@@ -1,5 +1,5 @@
 <template>
-  <div id="app" @click="checkLocation()">
+  <div id="app">
     <top-nav></top-nav>
     <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
         <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');">
@@ -19,14 +19,6 @@
     <router-view/>
     
     <footer-item></footer-item>
-    <md-snackbar style="background-color: #84bc29;" @md-closed="emitLocation" :md-position="position" :md-duration="isInfinity ? Infinity : duration" :md-active.sync="showSnackbar" md-persistent>
-      <span>Nous ne livrons pas à cette endroit.</span>
-      <md-button class="md-primary" @click="showSnackbar = false">Réessayer</md-button>
-    </md-snackbar>
-    <md-snackbar style="background-color: #84bc29;" @md-closed="emitLocation" :md-position="position" :md-duration="isInfinity ? Infinity : duration" :md-active.sync="shoowSnackbar" md-persistent>
-      <span>Vous n'avez pas indiqué d'adresse de livraison.</span>
-      <md-button class="md-primary" @click="shoowSnackbar = false">Réessayer</md-button>
-    </md-snackbar>
       <md-dialog class="emailRequest" id="emailRequest" :md-active.sync="emailRequest">
           <md-button class="x" @click="emailRequest = false"><md-icon>close</md-icon></md-button>
           <md-dialog-title>Nous sommes désolés, nous ne livrons pas à cette adresse</md-dialog-title>
@@ -189,8 +181,6 @@ export default {
           }
       },
       locationIsGood: null,
-      showSnackbar: false,
-      shoowSnackbar: false,
       position: 'center',
       duration: 4000,
       isInfinity: true,
@@ -203,20 +193,8 @@ export default {
     emitLocation(data){
         this.locationIsGood = data;
         if(data === false){
-          this.showSnackbar = true;
           this.emailRequest = true;
-        }else{
-          this.showSnackbar = false;
         }
-    },
-    checkLocation(){
-      if(this.location === null){
-        this.shoowSnackbar = true;
-      } else if(this.location === false){
-        this.showSnackbar = true;
-      }else{
-        this.showSnackbar = false;
-      }
     },
     sendEmail(){
       let email = this.email;
@@ -241,13 +219,20 @@ export default {
       }else{
           this.error = 'Ajoutez votre email et réessayez.'
       }
-    }
+    },
+    ...mapMutations([
+      'kartSize'
+    ])
   },
   computed: {
     ...mapGetters([
         'location'
     ]),
   },
+  mounted(){
+    console.log('mounted')
+    this.kartSize()
+  }
 }
 </script>
 

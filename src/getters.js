@@ -64,6 +64,9 @@ export const getters = {
     },
     location(state){
         return state.locationIsGood
+    },
+    kartSize(state){
+        return state.kartSize;
     }
  
 }

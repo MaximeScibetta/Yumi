@@ -2,6 +2,14 @@
     .navigation {
         position: fixed;
         width: calc(100vw);
+
+        // @include mq($from: 400px){
+        //     width: calc(100vw - 4.8rem);
+        // }
+        // @include mq($from: desktop) {
+        //   width: calc(100vw - 9.6rem);
+        // }
+
         z-index: 20;
         a{
             text-decoration: none;
@@ -14,6 +22,20 @@
                     color: $green;
                     position: absolute;
                     left: -12px;
+                }
+            }
+            .badge {
+                background-color: $green;
+                color: $white;
+                padding: 2px 6px;
+                font-size: 11px;
+                border-radius: 50px;
+                position: absolute;
+                top: 6px;
+                right: 2px;
+                @include mq($from: desktop){
+                    top: -12px;
+                    right: -12px;
                 }
             }
         }

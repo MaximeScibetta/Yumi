@@ -2306,17 +2306,25 @@ export const store = new Vuex.Store({
                 "name": "Vin blanc Pinot Grigio, 2016",
                 "image": "http://yumybruxelles.be/vin_blanc.jpg",
                 "format": "25cl",
-                "price": 7.0
+                "price": 6.0
             },
             {
                 "id": 105,
                 "name": "Vin rouge, Montepulciano d'Abruzzo, 2016",
                 "image": "http://yumybruxelles.be/vin_rouge.jpg",
                 "format": "25cl",
-                "price": 7.0
+                "price": 6.0
+            },
+            {
+                "id": 106,
+                "name": "Curitus",
+                "image": "http://yumybruxelles.be/vin_rouge.jpg",
+                "format": "33cl",
+                "price": 2.0
             }
         ],
         myShopKart: {},
+        kartSize: 0,
         priceKart: 0,
         deliveryPrice: 1.50,
         locationIsGood: null,

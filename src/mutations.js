@@ -29,10 +29,21 @@ export const mutations = {
                     }
                 })
             }
-            state.priceKart = priceKart;
+        state.priceKart = priceKart;
+        state.kartSize++;
     },
     removeMenu(state, payload) {
         if(router.history.current.name === 'Kart'){
+            if (state.myShopKart[payload].drinks.length !== 0) {
+                state.kartSize--
+                state.myShopKart[payload].drinks.map( drink => {
+                    console.log(drink)
+                    state.kartSize--
+                })
+            }else{
+                state.kartSize--
+            }
+
             delete state.myShopKart[payload]
             let kartContent = JSON.stringify(this.myShopKart) || JSON.stringify({});
             document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
@@ -70,6 +81,7 @@ export const mutations = {
             state.priceKart = priceKart;
 
         }
+
     },
     addDrinkToMenu(state, payload){
         let id = payload[0].id, 
@@ -95,6 +107,7 @@ export const mutations = {
             })
         }
         state.priceKart = priceKart;
+        state.kartSize++;
 
     },
     // Set value of kart in state
@@ -122,7 +135,22 @@ export const mutations = {
     cleanKart(state) {
         state.myShopKart = {};
         state.priceKart = 0;
+        state.kartSize = 0;
         let kartContent = JSON.stringify(this.myShopKart) || JSON.stringify({});
         document.cookie = `yumyKart=${kartContent}; expires=31536e3, ${new Date()}`;
+    },
+    kartSize(state){
+        var size = 0;
+        if (Object.keys(state.myShopKart).length !== 0) {
+            Object.keys(state.myShopKart).map(item => {
+                size++;
+                if (state.myShopKart[item].drinks.length !== 0) {
+                    state.myShopKart[item].drinks.map(drink => {
+                        size++;
+                    })
+                }
+            })
+        }
+        state.kartSize = size;
     }
 }

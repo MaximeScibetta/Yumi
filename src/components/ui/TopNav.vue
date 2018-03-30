@@ -85,6 +85,7 @@
                         </g>
                     </g>
                 </svg>
+                <span class="badge" v-if="kartSize !== 0">{{kartSize}}</span>
             </router-link>
             <div class="menu" :class="{isOpen: menuIsOpen}">
                 <svg @click="menuIsOpen = false"  width="64" version="1.1" xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
@@ -184,6 +185,7 @@
                                     </g>
                                 </g>
                             </svg>
+                            <span class="badge" v-if="kartSize !== 0">{{kartSize}}</span>
                         </router-link>
                     </li>
                 </ul>
@@ -193,12 +195,18 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
     name: 'TopNav',
     data(){
         return{
             menuIsOpen: false,
         }
+    },
+    computed:{
+        ...mapGetters([
+            'kartSize'
+        ])
     }
 }
 </script>

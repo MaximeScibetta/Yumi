@@ -1,0 +1,20 @@
+
+.swal2-actions{
+    display: none !important;
+}
+.swal2-popup.swal2-modal.swal2-show{
+    font-size: 14px;
+}
+p:not(:first-of-type){
+    margin-top: 12px;
+}
+p b{
+    font-weight: 600;
+}
+
+.swal2-footer{
+    a{
+        color: #3085d6;
+        font-weight: 600;
+    }
+}

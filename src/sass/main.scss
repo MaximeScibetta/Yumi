@@ -27,13 +27,16 @@
 @import "components/menu";
 @import "components/slideShow";
 @import "components/faq";
+@import "components/svg";
+
 
 
 
 html{
     font-size: 62.5%;
     background-color: $background;
-    width: 100%; 
+    width: 100vw; 
+    overflow-x: hidden;
     body{
         position: relative;
         font-size: 1.6rem;
