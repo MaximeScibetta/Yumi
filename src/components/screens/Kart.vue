@@ -1,5 +1,5 @@
 <template>
-    <div class="kart">
+    <div class="kart" id="coordonees">
         <div class="kart__mobile">
             <div class="recap" v-if="Object.keys(myShopKart).length !== 0">
                 <div class="recap__content" v-if="!startCommande">
@@ -42,7 +42,7 @@
                                 <dd class="end">{{priceKart + 1.5}} €</dd>
                             </dl>
                         </div>
-                        <button v-if="!startCommande && Object.keys(myShopKart).length !== 0" class="commande" @click="startCommande = true">Passer la commande</button>
+                        <button v-if="!startCommande && Object.keys(myShopKart).length !== 0" class="commande" @click="startCommande = true;" v-scroll-to="'#coordonees'">Passer la commande</button>
                     </div>
                 </div>
                 <div class="recap__form" v-if="startCommande">
