@@ -495,7 +495,7 @@ export const store = new Vuex.Store({
                 "id": 22,
                 "name": "Saumon poêlé accompagné de câpres siciliennes",
                 "price": 15,
-                "shortDate": "MAR 1",
+                "shortDate": "MAR 01",
                 "longDate": "Mardi 1 mai",
                 "idDate": "01052018",
                 "images": {
@@ -518,7 +518,7 @@ export const store = new Vuex.Store({
                 "id": 23,
                 "name": "Garganelli sauce bolognaise",
                 "price": 15,
-                "shortDate": "MER 2",
+                "shortDate": "MER 02",
                 "longDate": "Mercredi 2 mai",
                 "idDate": "02052018",
                 "images": {
@@ -541,7 +541,7 @@ export const store = new Vuex.Store({
                 "id": 24,
                 "name": "Poulet Tikki Masala",
                 "price": 15,
-                "shortDate": "JEU 3",
+                "shortDate": "JEU 03",
                 "longDate": "Jeudi 3 mai",
                 "idDate": "03052018",
                 "images": {
@@ -564,7 +564,7 @@ export const store = new Vuex.Store({
                 "id": 25,
                 "name": "Pâtes gratinées au fromage et homard",
                 "price": 15,
-                "shortDate": "VEN 4",
+                "shortDate": "VEN 04",
                 "longDate": "Vendredi 4 mai",
                 "idDate": "04052018",
                 "images": {
@@ -587,7 +587,7 @@ export const store = new Vuex.Store({
                 "id": 26,
                 "name": "Poulet Gochujang",
                 "price": 15,
-                "shortDate": "LUN 7",
+                "shortDate": "LUN 07",
                 "longDate": "Lundi 7 mai",
                 "idDate": "07052018",
                 "images": {
@@ -610,7 +610,7 @@ export const store = new Vuex.Store({
                 "id": 27,
                 "name": "Saumon poêlé accompagné de câpres siciliennes",
                 "price": 15,
-                "shortDate": "MAR 8",
+                "shortDate": "MAR 08",
                 "longDate": "Mardi 8 mai",
                 "idDate": "08052018",
                 "images": {
@@ -633,7 +633,7 @@ export const store = new Vuex.Store({
                 "id": 28,
                 "name": "Garganelli sauce bolognaise",
                 "price": 15,
-                "shortDate": "MER 9",
+                "shortDate": "MER 09",
                 "longDate": "Mercredi 9 mai",
                 "idDate": "09052018",
                 "images": {
@@ -1509,7 +1509,7 @@ export const store = new Vuex.Store({
               "id": 71,
               "name": "Assortiment de la terre",
               "price": 15,
-              "shortDate": "MAR 1",
+              "shortDate": "MAR 01",
               "longDate": "Mardi 1 mai",
               "idDate": "01052018v",
               "images": {
@@ -1532,7 +1532,7 @@ export const store = new Vuex.Store({
               "id": 72,
               "name": "Hamburger végétarien",
               "price": 15,
-              "shortDate": "MER 2",
+              "shortDate": "MER 02",
               "longDate": "Mercredi 2 mai",
               "idDate": "02052018v",
               "images": {
@@ -1555,7 +1555,7 @@ export const store = new Vuex.Store({
               "id": 73,
               "name": "Pâtes Pomodoro",
               "price": 15,
-              "shortDate": "JEU 3",
+              "shortDate": "JEU 03",
               "longDate": "Jeudi 3 mai",
               "idDate": "03052018v",
               "images": {
@@ -1578,7 +1578,7 @@ export const store = new Vuex.Store({
               "id": 74,
               "name": "Bol de riz Tofu",
               "price": 15,
-              "shortDate": "VEN 4",
+              "shortDate": "VEN 04",
               "longDate": "Vendredi 4 mai",
               "idDate": "04052018v",
               "images": {
@@ -1601,7 +1601,7 @@ export const store = new Vuex.Store({
               "id": 75,
               "name": "Bol de quinoa et ses légumes",
               "price": 15,
-              "shortDate": "LUN 7",
+              "shortDate": "LUN 07",
               "longDate": "Lundi 7 mai",
               "idDate": "07052018v",
               "images": {
@@ -1624,7 +1624,7 @@ export const store = new Vuex.Store({
               "id": 76,
               "name": "Assortiment de la terre",
               "price": 15,
-              "shortDate": "MAR 8",
+              "shortDate": "MAR 08",
               "longDate": "Mardi 8 mai",
               "idDate": "08052018v",
               "images": {
@@ -1647,7 +1647,7 @@ export const store = new Vuex.Store({
               "id": 77,
               "name": "Hamburger végétarien",
               "price": 15,
-              "shortDate": "MER 9",
+              "shortDate": "MER 09",
               "longDate": "Mercredi 9 mai",
               "idDate": "09052018v",
               "images": {

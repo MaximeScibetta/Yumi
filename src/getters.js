@@ -12,11 +12,11 @@ export const getters = {
         var week = [];
         var i = 0;
         Date.prototype.addDays = function (days) {
-            var date = new Date(this.valueOf());
-            date.setDate(date.getDate() + days);
-            return date;
+            // var date = new Date(this.valueOf());
+            this.setDate(this.getDate() + days);
+            return this;
         }
-        while (i != 7) {
+        while (i !== 7) {
             var date = new Date();
             var calculatDate = date.addDays(i);
             var calculatDateArray = calculatDate.toString().split(' ');

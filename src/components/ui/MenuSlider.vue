@@ -14,13 +14,9 @@
                     md-dynamic-height 
                     class="days" 
                     v-on:md-changed="emitValue">
-            <template v-for="day in weekDay">
-                        <md-tab v-for="(menu, index) in newVeggieMenu" v-if="menu.shortDate === day" 
-                        :item="menu"
-                        :index="index"
-                        :key="menu.id"
-                        :id="menu.idDate" 
-                        :md-label="day">
+                    <md-tab v-for="(menu, key) in newVeggieMenu" 
+                        :key="key"
+                        :md-label="menu.shortDate">
                             <p class="dateMenu">{{menu.longDate}}</p>
                             <h1>{{menu.name}}</h1>
                             <slider-show :images="menu.images"></slider-show>
@@ -61,21 +57,16 @@
                                     </md-tab>
                                 </md-tabs>
                             </div>
-                        </md-tab>
-            </template>
+                    </md-tab>
         </md-tabs>
         <md-tabs    key="2" 
                     v-else 
                     md-dynamic-height 
                     class="days" 
                     v-on:md-changed="emitValue">
-            <template v-for="day in weekDay">
-                        <md-tab v-for="(menu, index) in newClassicMenu" v-if="menu.shortDate === day" 
-                        :item="menu"
-                        :index="index"
-                        :key="menu.id"
-                        :id="menu.idDate" 
-                        :md-label="day">
+                    <md-tab v-for="(menu, key) in newClassicMenu"
+                        :key="key"
+                        :md-label="menu.shortDate">
                             <p class="dateMenu">{{menu.longDate}}</p>
                             <h1>{{menu.name}}</h1>
                             <slider-show :images="menu.images"></slider-show>
@@ -116,8 +107,7 @@
                                     </md-tab>
                                 </md-tabs>
                             </div>
-                        </md-tab>
-            </template>
+                    </md-tab>
         </md-tabs>
         <complete-menu @openRecap="showKart = true" id="drinks" :currentMenuDay="currentMenuDay"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">

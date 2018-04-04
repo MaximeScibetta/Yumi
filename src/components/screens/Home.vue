@@ -16,22 +16,22 @@ export default {
     },
     data(){
         return{
-            currentMenuDay: this.getCurrentDay()
+            currentMenuDay: '',
         }
     }, 
     methods:{
-        getCurrentDay(data){
-            if(!data){
-                var event = new Date();
-                var options = {year: 'numeric', month: 'numeric', day: 'numeric' };
+        getCurrentDay(){
+            var date = new Date();
+            var options = {year: 'numeric', month: 'numeric', day: 'numeric' };
 
-                var formatDate = event.toLocaleDateString('fr-FR', options).replace(/\//g,'');
-                
-                // expected output: 21032018
-                return formatDate
-            }
-            this.currentMenuDay = data;
+            var formatDate = date.toLocaleDateString('fr-FR', options).replace(/\//g,'');
+            
+            // expected output: 21032018
+            this.currentMenuDay = formatDate
         }
+    },
+    mounted(){
+        this.getCurrentDay()
     }
 }
 </script>

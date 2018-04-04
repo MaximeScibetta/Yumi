@@ -17,9 +17,7 @@
         <value></value>
         <postal-input @checkLocationn="emitLocation"></postal-input>
     </div>
-    
-    <router-view/>
-    
+    <router-view></router-view>
     <footer-item></footer-item>
       <md-dialog class="emailRequest" id="emailRequest" :md-active.sync="emailRequest">
           <md-button class="x" @click="emailRequest = false"><md-icon>close</md-icon></md-button>
