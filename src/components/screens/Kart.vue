@@ -282,7 +282,7 @@ export default {
                             $email: String!,
                             $time: String!,
                             $address: String!,
-                            $priceKart: Int!,
+                            $priceKart: Float!,
                             $userKart: Json!){
                                 createUserData(data: {
                                     firstname: $firstname, 

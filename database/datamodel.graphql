@@ -5,8 +5,9 @@ type UserData {
   email: String!
   time: String!
   address: String!
-  priceKart: Int!
+  priceKart: Float!
   userKart: Json!
+  createdAt: DateTime!
 }
 
 type UserEmail {
