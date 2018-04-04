@@ -16,19 +16,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 2 avril",
                 "idDate": "02042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -39,19 +39,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 3 avril",
                 "idDate": "03042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -64,17 +64,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -108,17 +108,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 6 avril",
                 "idDate": "06042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/vendentry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -131,19 +131,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 9 avril",
                 "idDate": "09042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -154,19 +154,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 10 avril",
                 "idDate": "10042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -179,17 +179,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -223,17 +223,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 13 avril",
                 "idDate": "13042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -246,19 +246,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 16 avril",
                 "idDate": "16042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -269,19 +269,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 17 avril",
                 "idDate": "17042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -294,17 +294,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -338,17 +338,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 20 avril",
                 "idDate": "20042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -361,19 +361,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 23 avril",
                 "idDate": "23042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -384,19 +384,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 24 avril",
                 "idDate": "24042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -409,17 +409,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -453,17 +453,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 27 avril",
                 "idDate": "27042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -476,19 +476,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 30 avril",
                 "idDate": "23042018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -499,19 +499,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 1 mai",
                 "idDate": "01052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -524,17 +524,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -568,17 +568,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 4 mai",
                 "idDate": "04052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -591,19 +591,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 7 mai",
                 "idDate": "07052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -614,19 +614,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 8 mai",
                 "idDate": "08052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -639,17 +639,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -683,17 +683,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 11 mai",
                 "idDate": "11052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -706,19 +706,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 7 mai",
                 "idDate": "07052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -729,19 +729,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 8 mai",
                 "idDate": "08052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -754,17 +754,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -798,17 +798,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 11 mai",
                 "idDate": "11052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -821,19 +821,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 14 mai",
                 "idDate": "14052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -844,19 +844,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 15 mai",
                 "idDate": "15052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -869,17 +869,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -913,17 +913,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 18 mai",
                 "idDate": "18052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -936,19 +936,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 19 mai",
                 "idDate": "19052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -959,19 +959,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 22 mai",
                 "idDate": "22052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -984,17 +984,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -1028,17 +1028,17 @@ export const store = new Vuex.Store({
                 "longDate": "Vendredi 25 mai",
                 "idDate": "25052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/18754/chefs-1199-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=39916ad7a87336ef6b40c7b52582fd26",
+                    "entry": "http://yumybruxelles.be/images/lundientry.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/16067/chefs-615-12750-editchefs-426-10797-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=915%2C495%2C1375%2C1375&s=f06c437112251ac0cbaa4a2f436758ae",
                     "dessert": "https://munchery.imgix.net/menu-items/14770/cw-04-8882-edit-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1245%2C380%2C1620%2C1620&s=57e1ef3fd253f822ee22f240c0890a02"
                 },
                 "dish": {
-                    "entry": "Salade grecque",
+                    "entry": "Oeuf poché et ses légumes",
                     "dish": "Pâtes gratinées au fromage et homard",
                     "dessert": "Cheescake aux fraises"
                 },
                 "ingredient": {
-                    "entry": "laitue romaine, pois chiche, concombre, tomate, vinaigre de sherry, olive, fromage feta, oignon rouge, aneth",
+                    "entry": "Avocat, oeuf, lard grillé, épinard, brocoli, asperge, tomate cerise, pain brun, huile d'olive, sel, poivre",
                     "dish": "béchamel, pâtes, fromage Parmigiano-Reggiano, homard, tomate, vinaigrette au citron, chapelure Panko, huile de canola, persil, seil, poivre",
                     "dessert": "base cheescake, purrée de fraises, croûte de sablé"
                 }
@@ -1051,19 +1051,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 26 mai",
                 "idDate": "26052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/20867/shakingbeef-menu-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=2d0cf77c6d51b0380a91844e353d5d83",
+                    "entry": "http://yumybruxelles.be/images/entreLundi.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/22604/chef-922-gochujang-glazed-chicken-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1334%2C422%2C3091%2C3091&s=eccc0ac3159921e0a468fe1debc27788",
-                    "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                    "entry": "Salade de boeuf",
+                    "entry": "Soupe aux brocolis et gingembre",
                     "dish": "Poulet Gochujang",
-                    "dessert": "Brownie au chocolat"
+                    "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                    "entry": "filet de bœuf, oignon rouge, citron vert, sauce de bœuf (vinaigre, sauce soja, sauce de poisson, sauce soja aux champinons, vin de riz, sucre), cresson, beurre salé, ail, sel, poivre noir",
+                    "entry": "Brocoli, gingembre, ail, jus de citron, curcuma, cayenne, poivre noir, lait de coco, bouillon de poulet",
                     "dish": "poulet grillé, chou, riz au jasmin, brocoli, bok choy, carotte, pâte de chili, poivron rouge, gochujang chili pâte, huile de canola, ail, sauce de poisson, sauce soja, gingembre, vinaigre de riz, sauce hoisin, sel, huile de sésame, oignon vert, graine de sésame, cassonade, feuille de laurier",
-                    "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                    "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -1074,19 +1074,19 @@ export const store = new Vuex.Store({
                 "longDate": "Mardi 29 mai",
                 "idDate": "29052018",
                 "images": {
-                    "entry": "https://munchery.imgix.net/menu-items/19844/chefs-1300-v1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=11640404e77680f377e0cd1c8739230f",
+                    "entry": "http://yumybruxelles.be/images/soupe.jpg",
                     "dish": "https://munchery.imgix.net/menu-items/20000/2016-07-8-22755-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=525%2C55%2C1905%2C1905&s=9ee5598533153cd77a8517faffd9cb46",
-                    "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
                 },
                 "dish": {
-                    "entry": "Pain artisanal proscuitto & cambozola",
+                    "entry": "Soupe aux carottes et butternut",
                     "dish": "Saumon poêlé accompagné de câpres siciliennes",
-                    "dessert": "Cheesecake au chocolat"
+                    "dessert": "Pudding au graines de chia"
                 },
                 "ingredient": {
-                    "entry": "Pain artisanal, oignon, raisin, vinaigre balsamique, gorgonzola, prosciutto, jus de citron, thym",
+                    "entry": "Carotte, butternut, oignion, parmesan, graine de sésame, curcuma, huile d'olive",
                     "dish": "saumon, pommes de terre, haricot vert, ail, crème fraiche, lait, pignons de pin, raisins, huile d’olive, jus de citron, câpres, sel, poivre noir, persil, flocons de chili, poivre",
-                    "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                    "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
                 }
             },
             {
@@ -1099,17 +1099,17 @@ export const store = new Vuex.Store({
                 "images": {
                     "entry": "https://munchery.imgix.net/menu-items/17611/chefs-869-719-edit.jpg?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=810%2C200%2C1335%2C1335&s=6368379425afb3aa93e5b104daad810a",
                     "dish": "https://munchery.imgix.net/menu-items/22195/chefs-1217-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=daf6ca374474fb64e803e95ecfbfc9e0",
-                    "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                    "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
                 },
                 "dish": {
                     "entry": "Salade d'amandes fumées",
                     "dish": "Garganelli sauce bolognaise",
-                    "dessert": "Pudding au graines de chia"
+                    "dessert": "Tiramisu"
                 },
                 "ingredient": {
                     "entry": "patate douce , chou frisé, amande, fromage Manchego, compotte de pommes, groseille, huile d'olive, vinaigre de cidre de pomme, échalote, moutarde à grains entiers, sucre, sel, poivre noir",
                     "dish": "saucisse de porc, tomate fraiche, pâtes, oignon, céleri, carotte, huile d'olive, hule de canola, roquette, ail, basiclic, pignon de pin, sel, jus de citron, poivre noir",
-                    "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                    "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
                 }
             },
             {
@@ -1145,19 +1145,19 @@ export const store = new Vuex.Store({
                 "longDate": "Lundi 2 avril",
                 "idDate": "02042018v",
                 "images": {
-                  "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                  "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                   "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                  "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                  "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
                 },
                 "dish": {
-                  "entry": "Salade de lentilles, de pois chiches et de fetas",
+                  "entry": "Toast aux avocats",
                   "dish": "Bol de quinoa et ses légumes",
-                  "dessert": "Brownie au chocolat"
+                  "dessert": "Gateau au chocolat"
                 },
                 "ingredient": {
-                  "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                  "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                   "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                  "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                  "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
                 }
             },
             {
@@ -1170,17 +1170,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1193,17 +1193,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1224,7 +1224,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1260,19 +1260,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 9 avril",
               "idDate": "09042018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1285,17 +1285,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1308,17 +1308,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1339,7 +1339,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1375,19 +1375,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 16 avril",
               "idDate": "16042018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1400,17 +1400,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1423,17 +1423,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1454,7 +1454,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1490,19 +1490,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 23 avril",
               "idDate": "23042018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1515,17 +1515,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1538,17 +1538,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1569,7 +1569,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1605,19 +1605,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 30 avril",
               "idDate": "23042018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1630,17 +1630,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1653,17 +1653,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1684,7 +1684,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1720,19 +1720,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 7 mai",
               "idDate": "07052018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1745,17 +1745,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1768,17 +1768,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1799,7 +1799,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1835,19 +1835,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 7 mai",
               "idDate": "07052018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1860,17 +1860,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1883,17 +1883,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -1914,7 +1914,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -1950,19 +1950,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 14 mai",
               "idDate": "14052018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -1975,17 +1975,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -1998,17 +1998,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -2029,7 +2029,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -2065,19 +2065,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 19 mai",
               "idDate": "19052018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -2090,17 +2090,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -2113,17 +2113,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -2144,7 +2144,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -2180,19 +2180,19 @@ export const store = new Vuex.Store({
               "longDate": "Lundi 26 mai",
               "idDate": "26052018v",
               "images": {
-                "entry": "https://munchery.imgix.net/menu-items/18881/lentil-feta-chickpea-salad-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1209%2C153%2C3571%2C3571&s=81b429fefbbf3fbb0049f631ea752f8b",
+                "entry": "http://yumybruxelles.be/images/lundiVeg.jpg",
                 "dish": "https://munchery.imgix.net/menu-items/20719/chefs-1419-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=002c0b3756ab0e32aa73691d728338dc",
-                "dessert": "https://munchery.imgix.net/menu-items/22637/nati-02-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=af089d7939628b04cd65c78ce2402746"
+                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
               },
               "dish": {
-                "entry": "Salade de lentilles, de pois chiches et de fetas",
+                "entry": "Toast aux avocats",
                 "dish": "Bol de quinoa et ses légumes",
-                "dessert": "Brownie au chocolat"
+                "dessert": "Gateau au chocolat"
               },
               "ingredient": {
-                "entry": "pois chiche, artichaut, lentille, fromage feta, huile de canola, huile d'olive, oignon rouge, roquette, vinaigre de vin rouge, eau, jus de citron, sel, ail, vinaigre de riz, sucre, poivre noir, feuille de laurier, ",
+                "entry": "Avocat, ail grillé, pain aux noix, huile d'olive, sel, poivre",
                 "dish": "betteraves, concombre, quinoa, pousse de daikon, sauce soja, carotte, radis, soja, gingembre mariné, oignon vert, vinaigre de vin rouge, huile d’olive, sel, vinaigre de riz, huile de sésame, sucre, poivre noir",
-                "dessert": "chocolat noir, lait condensé sucré, sucre, oeufs, beurre, farine, sucre brun, vanille, sel"
+                "dessert": "Chocolat 70%, sucre, oeuf, farine, beurre"
               }
             },
             {
@@ -2205,17 +2205,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22953/chefs-1628-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=edbaffea1f9ce3fb41fb07be401325c7",
                 "dish": "https://munchery.imgix.net/menu-items/22288/chefs-1582-v4-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=f7aff4ccaf3f7b52001068ad9a540bb9",
-                "dessert": "https://munchery.imgix.net/menu-items/22988/bakery-132-chocolate-cheesecake-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=1766%2C508%2C2419%2C2419&s=f93838cb611a0f2fa42c642b56af282c"
+                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
               },
               "dish": {
                 "entry": "Potage aux lentilles",
                 "dish": "Assortiment de la terre",
-                "dessert": "Cheesecake au chocolat"
+                "dessert": "Pudding au graines de chia"
               },
               "ingredient": {
                 "entry": "lentille, céleri, carotte, oignon, concentré de bouillon de légumes, crème sure, beurre, oignon vert, coriandre, sel, yogourt nature, ail, huile de canola, poivre serrano, cumin, menthe verte, poivre noir",
                 "dish": "riz, champignon, chou, bettraves, citron, pousses de pois, échalote, huile d’olive, vinaigre balsamique, eau, fromage Pecorino Romano, sel, pignon de pin, huile de canola, ail, poivre, lait, noisette",
-                "dessert": "speculoos, chocolat noir, beurre, fromage blanc, fromage frais (Philadelphia), crème liquide, jus de citron, sucre, oeufs"
+                "dessert": "Mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
               }
             },
             {
@@ -2228,17 +2228,17 @@ export const store = new Vuex.Store({
               "images": {
                 "entry": "https://munchery.imgix.net/menu-items/22365/chefs-1578-v4-1-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=ff7e901e35f6f5171efa50c6f22c59e7",
                 "dish": "https://munchery.imgix.net/menu-items/22864/chefs-1611-v2-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2500%2C2500&s=e527a72409f60d81f73b15f32e42274e",
-                "dessert": "https://munchery.imgix.net/menu-items/20199/chefs-1383-jpg.?dpr=2.0&q=70&sharp=3&vib=10&gam=-10&w=344&h=344&fit=crop&rect=0%2C0%2C2200%2C2200&s=402d8640e4398c2b3ff9c4c5addbfb28"
+                "dessert": "http://yumybruxelles.be/images/tiramisu.jpg"
               },
               "dish": {
-                "entry": "Salade Caesar végétarienne",
+                "entry": "Salade verte",
                 "dish": "Hamburger végétarien",
-                "dessert": "Pudding au graines de chia"
+                "dessert": "Tiramisu"
               },
               "ingredient": {
                 "entry": "laitue romaine, chou frisé, citron, Tahini, pois chiche, jus de citron, eau, pignon de pin, huile d'olive, câpres, moutarde de Dijon, levure nutritionelle, huile de canola, ail",
                 "dish": "burger végétarien (eau, protéines de blé, huile de coco, protéine de pomme de terre, arôme naturels, extrait de levure, sel, protéine de soja, gomme xanthane, thiamine, zinc, niacine, vitamine B6, riboflavine, vitamine B12), mayonnaise, cornichon, harissa vinaigrette, laitue romaine, concombre, radis, carotte, vinaigre de riz, sucre, persil, sel, romarin, thym, origan, poivre noir ",
-                "dessert": "mangue, lait de coco, ananas, noix de coco, graine de chia, flocons de noix de coco sucrés, jus d'ananas, sirop d'érable, sucre"
+                "dessert": "Mascarpone, oeuf, sucre en poudre, café noir, boudoirs, cacao"
               }
             },
             {
@@ -2259,7 +2259,7 @@ export const store = new Vuex.Store({
                 "dessert": "Biscuit au chocolat et noix de pécan"
               },
               "ingredient": {
-                "entry": "petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir",
+                "entry": "Petite laitue de gemme, blé, tomate, mayonnaise végétalienne, oignon rouge, concombre, radis, huile d'olive, vinaigre de riz, aneth, persil, jus de citron, sel, ail, sucre, graine de céleri, poivre noir, maïs",
                 "dish": "spaghetti, tomate fraiche, fromage Parmigiano Reggiano, basilic, beurre, huile d'olove, ail, sel, flocon de chili, poivre noir",
                 "dessert": "lait condensé, pépites de chocolat mi-sucré, farine, cassonade, avoine, beurre, noix de pécan, blanc d'œuf, pâte à la vanille, bicarbonate de soude, sel"
               }
@@ -2317,10 +2317,10 @@ export const store = new Vuex.Store({
             },
             {
                 "id": 106,
-                "name": "Curitus",
-                "image": "http://yumybruxelles.be/vin_rouge.jpg",
-                "format": "33cl",
-                "price": 2.0
+                "name": "Bière Curtius",
+                "image": "http://yumybruxelles.be/curtius.jpeg",
+                "format": "37,5cl",
+                "price": 3.5
             }
         ],
         myShopKart: {},

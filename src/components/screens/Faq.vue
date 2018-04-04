@@ -4,11 +4,11 @@
         <ul>
             <li class="faq__item">
                 <span class="q">Yumy, c’est quoi ?</span>
-                <p class="r">Yumy c’est le resto’ chez qui débarque vous : nous proposons chaque jour deux menus (classique/végétarien) différents comprenant entrée, plat et dessert pour la somme fixe de 15 euros. Commandé en ligne, il est livré là où vous le voudrez dans les 30 minutes.</p>
+                <p class="r">Yumy c’est le resto’ qui débarque chez vous : nous proposons chaque jour deux menus (classique/végétarien) différents comprenant entrée, plat et dessert pour la somme fixe de 15 euros. Commandé en ligne, il est livré là où vous le voudrez dans les 30 minutes.</p>
             </li>
             <li class="faq__item">
                 <span class="q">Quels sont les moyens de paiement autorisés ?</span>
-                <p class="r">Nous acceptons les virements par carte bancaire (Visa, MasterCard, Maestro, American Express) mais également via Paypal. Nous acceptons aussi le paiement par cash à condition que vous ayez le montant exact. A défaut, le « reste » sera crédité sur votre compte. Ainsi, nos courageux livreurs ne commettent pas d’erreur dans la gestion des comptes.</p>
+                <p class="r">Nous acceptons les virements par carte bancaire (Visa, MasterCard, Maestro, American Express) mais également via Paypal. Nous acceptons aussi le paiement par cash à condition que vous ayez le montant exact. À défaut, le « reste » sera crédité sur votre compte. Ainsi, nos courageux livreurs ne commettent pas d’erreur dans la gestion des comptes.</p>
             </li>
             <li class="faq__item">
                 <span class="q">Quelles sont les zones de livraison ?</span>
@@ -26,13 +26,13 @@
             </li>
             <li class="faq__item">
                 <span class="q">Où en est ma commande ?</span>
-                <p class="r">Une fois votre délicieux menu commandé, vous recevrez un e-mail (ou sms si vous avez entré votre numéro de téléphone) de confirmation de votre commande ainsi qu’un lien afin de consulter l’état votre commande. Une fois le livreur en bas de chez vous, vous recevrez alors un deuxième et dernier e-mail/sms pour vous inviter à venir récupérer votre commande.</p>
+                <p class="r">Une fois votre délicieux menu commandé, vous recevrez un e-mail (ou sms si vous avez entré votre numéro de téléphone) de confirmation de votre commande ainsi qu’un lien afin de consulter l’état de votre commande. Une fois le livreur en bas de chez vous, vous recevrez alors un deuxième et dernier e-mail/sms pour vous inviter à venir récupérer votre commande.</p>
             </li>
             <li class="faq__item">
                 <span class="q">Une formule abonnement existe-t-elle ?</span>
-                <p class="r">Chez Yumy, nous voulons être reconnaissant auprès de nos clients les plus fidèles ! Ainsi, si vous vous inscrivez à notre formule 3, 4, 5 menus par semaine, bénéficiez d’une ristourne importante le totale de votre commande.</p>
+                <p class="r">Chez Yumy, nous voulons être reconnaissant auprès de nos clients les plus fidèles ! Ainsi, si vous vous inscrivez à notre formule 3, 4, 5 menus par semaine, vous bénéficiez d’une ristourne importante sur le totale de votre commande.</p>
                 <p class="r">Si vous êtes une entreprise et désirez collaborer avec nous, c’est tout à fait possible !</p>
-                <p class="r">Que ce soit pour une réunion ou encore un évènement particulier, Yumy se charge des menus ! N’ayez pas de crainte. Pour plus d’infos, envoyez-nous un e-mail à l’adresse suivante : contact@yumy.be</p>
+                <p class="r">Que ce soit pour une réunion ou encore un évènement particulier, Yumy se charge des menus ! N’ayez pas de crainte. Pour plus d’infos, envoyez-nous un e-mail à l’adresse suivante : contact@yumybruxelles.be</p>
             </li>
             <li class="faq__item">
                 <span class="q">J’ai un code promo mais je ne sais pas comment l’utiliser ? </span>

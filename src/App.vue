@@ -2,9 +2,11 @@
   <div id="app">
     <top-nav></top-nav>
     <swiper :options="swiperOptions" v-if="$route.name != 'Kart'">
-        <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1507010228826-fd02d8c83ddf?ixlib=rb-0.3.5&s=f2300fd0e920a202a946f248f487a482&auto=format&fit=crop&w=1341&q=80');">
+        <swiper-slide style="background-image: url('http://yumybruxelles.be/images/1.jpg');">
         </swiper-slide>
-        <swiper-slide style="background-image: url('https://images.unsplash.com/photo-1513663580958-665b7ef55d1b?ixlib=rb-0.3.5&s=a9b2518212c6d756fd90eaf3755cadc2&auto=format&fit=crop&w=1350&q=80');">
+        <swiper-slide style="background-image: url('http://yumybruxelles.be/images/2.jpg');">
+        </swiper-slide>
+        <swiper-slide style="background-image: url('http://yumybruxelles.be/images/3.jpg');">
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>

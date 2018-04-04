@@ -22,7 +22,7 @@ export default {
     methods:{
         getCurrentDay(data){
             if(!data){
-                var event = new Date('April 02, 2018');
+                var event = new Date();
                 var options = {year: 'numeric', month: 'numeric', day: 'numeric' };
 
                 var formatDate = event.toLocaleDateString('fr-FR', options).replace(/\//g,'');

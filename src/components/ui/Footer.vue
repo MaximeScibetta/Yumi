@@ -75,7 +75,7 @@
             </div>
             <div class="contact">
                 <a href="mailto:contact@yumybruxelles.be">contact@yumybruxelles.be</a>
-                <p>Nom de la société:  Yumy Burxelles sprl</p>
+                <p>Nom de la société:  Yumy Bruxelles sprl</p>
             </div>
             <div class="menu">
                 <ul>

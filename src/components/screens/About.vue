@@ -12,14 +12,14 @@
                 Du coup, la mère de Thomas, grande cuisinière dans l’âme, se dévouait pour nous faire des petits plats « healthy » à notre demande. Elle accompagnait souvent le repas d’un potage comme entrée et finissait par un délicieux petit dessert. Un vrai régal. Nicolas proposa tout de suite de rémunérer ces « menus » qui lui étaient presque « livrés » à l’appartement. De là, est né Yumy… 
             </p>
         </div>
-        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/faq.jpg); background-size: cover; background-position: center;"></div>
-        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/faq2.jpg); background-size: cover; background-position: center;"></div>
+        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/images/faaq.jpg); background-size: cover; background-position: center;"></div>
+        <div class="about__image" style="background:no-repeat url(http://yumybrussels.be/images/faq2.jpg); background-size: cover; background-position: center;"></div>
         <div class="about__content transparent">
             <p>
                 Chez Yumy, on a trouvé la solution : vous préparer un menu délicieux et équilibré, concocté au petit matin par notre chef suivant les goûts et les saisons, ensuite livré chez vous/ au boulot, le tout pour un prix raisonnable.
             </p>
             <p>
-                Pour ce faire, nous mettons un point d’honneur sur la qualité et l’origine des produits que nous utilisons. Ainsi, nous travaillons au maximum avec des producteurs locaux belges. Au quotidien, notre talentueux Chef sélectionne soigneusement les produits les plus frais et savoureux auprès de producteurs contrôlés et agréés pour vous satisfaire. Ainsi plus besoin de se rabattre sur la barquette de frites-mayo ou la pita du coin…
+                Pour ce faire, nous mettons un point d’honneur sur la qualité et l’origine des produits que nous utilisons. Ainsi, nous travaillons au maximum avec des producteurs locaux. Au quotidien, notre talentueux Chef sélectionne soigneusement les produits les plus frais et savoureux auprès de producteurs contrôlés et agréés pour vous satisfaire. Ainsi plus besoin de se rabattre sur la barquette de frites-mayo ou la pita du coin…
             </p>
             <p>
                 Chez Yumy, ce n’est plus vous qui allez au restaurant, mais c’est lui qui vient à vous !
