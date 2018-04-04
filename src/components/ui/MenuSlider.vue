@@ -9,103 +9,115 @@
                 </label>
             </div>
         </div>        
-        <md-tabs key="1"  v-if="veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
-<template v-for="day in weekDay">
-            <md-tab v-for="menu in weekVeggieMenu" v-if="menu.shortDate === day" 
-            :key="menu.id"
-            :id="menu.idDate" 
-            :md-label="menu.shortDate">
-                <p class="dateMenu">{{menu.longDate}}</p>
-                <h1>{{menu.name}}</h1>
-                <slider-show :images="menu.images"></slider-show>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">{{menu.price}}€</span>
-                
-                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
-                            Supprimer du panier
-                        </button>
+        <md-tabs    key="1" 
+                    v-if="veggieMode" 
+                    md-dynamic-height 
+                    class="days" 
+                    v-on:md-changed="emitValue">
+            <template v-for="day in weekDay">
+                        <md-tab v-for="(menu, index) in newVeggieMenu" v-if="menu.shortDate === day" 
+                        :item="menu"
+                        :index="index"
+                        :key="menu.id"
+                        :id="menu.idDate" 
+                        :md-label="day">
+                            <p class="dateMenu">{{menu.longDate}}</p>
+                            <h1>{{menu.name}}</h1>
+                            <slider-show :images="menu.images"></slider-show>
+                            <div class="group">
+                                <div class="addToKart">
+                                    <span class="price">{{menu.price}}€</span>
+                            
+                                    <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
+                                        Supprimer du panier
+                                    </button>
 
-                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
-                            + Ajouter au panier
-                        </button>
-                               
-                        <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="menu">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>{{menu.dish.entry}}</li>
-                                <li>Plat</li>
-                                <li>{{menu.dish.dish}}</li>
-                                <li>Dessert</li>
-                                <li>{{menu.dish.dessert}}</li>
-                            </ul>
+                                    <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
+                                        + Ajouter au panier
+                                    </button>
+                                        
+                                    <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
+                                </div>
+                                <md-tabs>
+                                    <md-tab id="plats" md-label="menu">
+                                        <ul>
+                                            <li>Entrée</li>
+                                            <li>{{menu.dish.entry}}</li>
+                                            <li>Plat</li>
+                                            <li>{{menu.dish.dish}}</li>
+                                            <li>Dessert</li>
+                                            <li>{{menu.dish.dessert}}</li>
+                                        </ul>
+                                    </md-tab>
+                                    <md-tab id="ingredient" md-label="ingrédients">
+                                        <ul>
+                                            <li>Entrée</li>
+                                            <li>{{menu.ingredient.entry}}</li>
+                                            <li>Plat</li>
+                                            <li>{{menu.ingredient.dish}}</li>
+                                            <li>Dessert</li>
+                                            <li>{{menu.ingredient.dessert}}</li>
+                                        </ul>
+                                    </md-tab>
+                                </md-tabs>
+                            </div>
                         </md-tab>
-                        <md-tab id="ingredient" md-label="ingrédients">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>{{menu.ingredient.entry}}</li>
-                                <li>Plat</li>
-                                <li>{{menu.ingredient.dish}}</li>
-                                <li>Dessert</li>
-                                <li>{{menu.ingredient.dessert}}</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-</template>
+            </template>
         </md-tabs>
-        <md-tabs key="2"  v-if="!veggieMode" md-dynamic-height class="days" v-on:md-changed="emitValue">
-<template v-for="day in weekDay">
-            <md-tab v-for="menu in weekClassicMenu" v-if="menu.shortDate === day" 
-            :key="menu.id"
-            :id="menu.idDate" 
-            :md-label="menu.shortDate">
-                <p class="dateMenu">{{menu.longDate}}</p>
-                <h1>{{menu.name}}</h1>
-                <slider-show :images="menu.images"></slider-show>
-                <div class="group">
-                    <div class="addToKart">
-                        <span class="price">{{menu.price}}€</span>
-                
-                        <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
-                            Supprimer du panier
-                        </button>
+        <md-tabs    key="2" 
+                    v-else 
+                    md-dynamic-height 
+                    class="days" 
+                    v-on:md-changed="emitValue">
+            <template v-for="day in weekDay">
+                        <md-tab v-for="(menu, index) in newClassicMenu" v-if="menu.shortDate === day" 
+                        :item="menu"
+                        :index="index"
+                        :key="menu.id"
+                        :id="menu.idDate" 
+                        :md-label="day">
+                            <p class="dateMenu">{{menu.longDate}}</p>
+                            <h1>{{menu.name}}</h1>
+                            <slider-show :images="menu.images"></slider-show>
+                            <div class="group">
+                                <div class="addToKart">
+                                    <span class="price">{{menu.price}}€</span>
+                            
+                                    <button v-if="myShopKart[menu.idDate]" @click="removeMenu(menu.idDate); showKart = true;" class="addKart">
+                                        Supprimer du panier
+                                    </button>
 
-                        <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
-                            + Ajouter au panier
-                        </button>
-                               
-                        <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
-                    </div>
-                    <md-tabs>
-                        <md-tab id="plats" md-label="menu">
-                            <ul>
-                                <li>Entrée</li>
-                                <li @click="$emit('currentImage', 'entry')">{{menu.dish.entry}}</li>
-                                <li>Plat</li>
-                                <li @click="$emit('currentImage',  'dish')">{{menu.dish.dish}}</li>
-                                <li>Dessert</li>
-                                <li @click="$emit('currentImage', 'dessert')">{{menu.dish.dessert}}</li>
-                            </ul>
+                                    <button v-else @click="addMenu([menu, menu.idDate]); showKart = true;" v-scroll-to="'#drinks'" class="addKart">
+                                        + Ajouter au panier
+                                    </button>
+                                        
+                                    <div class="payData" @click="payData = true"><md-icon>info_outline</md-icon><span>Moyens de paiement acceptés</span></div>
+                                </div>
+                                <md-tabs>
+                                    <md-tab id="plats" md-label="menu">
+                                        <ul>
+                                            <li>Entrée</li>
+                                            <li @click="$emit('currentImage', 'entry')">{{menu.dish.entry}}</li>
+                                            <li>Plat</li>
+                                            <li @click="$emit('currentImage',  'dish')">{{menu.dish.dish}}</li>
+                                            <li>Dessert</li>
+                                            <li @click="$emit('currentImage', 'dessert')">{{menu.dish.dessert}}</li>
+                                        </ul>
+                                    </md-tab>
+                                    <md-tab id="ingredient" md-label="ingrédients">
+                                        <ul>
+                                            <li>Entrée</li>
+                                            <li>{{menu.ingredient.entry}}</li>
+                                            <li>Plat</li>
+                                            <li>{{menu.ingredient.dish}}</li>
+                                            <li>Dessert</li>
+                                            <li>{{menu.ingredient.dessert}}</li>
+                                        </ul>
+                                    </md-tab>
+                                </md-tabs>
+                            </div>
                         </md-tab>
-                        <md-tab id="ingredient" md-label="ingrédients">
-                            <ul>
-                                <li>Entrée</li>
-                                <li>{{menu.ingredient.entry}}</li>
-                                <li>Plat</li>
-                                <li>{{menu.ingredient.dish}}</li>
-                                <li>Dessert</li>
-                                <li>{{menu.ingredient.dessert}}</li>
-                            </ul>
-                        </md-tab>
-                    </md-tabs>
-                </div>
-            </md-tab>
-</template>
+            </template>
         </md-tabs>
         <complete-menu @openRecap="showKart = true" id="drinks" :currentMenuDay="currentMenuDay"></complete-menu>
         <md-dialog class="recapKart" :md-active.sync="showKart">
@@ -415,7 +427,6 @@ import CompleteMenu from './CompleteMenu'
 import SliderShow from './SliderShow'
 
 import {mapGetters, mapMutations} from 'vuex'
-import { totalmem } from 'os';
 export default {  
     name: 'MenuSlider',
     components: {
@@ -433,6 +444,8 @@ export default {
         veggieMode: false,
         payData: false,
         showKart: false,
+        newClassicMenu: [],
+        newVeggieMenu: [],
       }
     },
     computed: {
@@ -464,6 +477,28 @@ export default {
             }else{
                 return JSON.stringify({});
             }
+        },
+        getClassicMenu(){
+            var newClassicMenu = [];
+            this.weekClassicMenu.map(menu => {
+                this.weekDay.map(day => {
+                    if(menu.shortDate === day){
+                        newClassicMenu.push(menu)
+                    }
+                })
+            })
+            this.newClassicMenu = newClassicMenu;
+        },
+        getVeggieMenu(){
+            var newVeggieMenu = [];
+            this.weekVeggieMenu.map(menu => {
+                this.weekDay.map(day => {
+                    if(menu.shortDate === day){
+                        newVeggieMenu.push(menu)
+                    }
+                })
+            })
+            this.newVeggieMenu = newVeggieMenu;
         }
     },
     created(){
@@ -472,6 +507,8 @@ export default {
             let kartFromStorage = JSON.parse(this.getCookie("yumyKart")) || {};
             this.setKartValueInState(kartFromStorage)
         }
+        this.getClassicMenu()
+        this.getVeggieMenu()
     },
     updated(){
         let kartContent = JSON.stringify(this.myShopKart) || {};
