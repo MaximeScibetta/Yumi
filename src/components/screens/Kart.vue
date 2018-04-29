@@ -85,6 +85,13 @@
                             <md-option value="21:30-22:00">21h30 - 22h00</md-option>
                         </md-select>
                     </md-field>
+                    <md-field>
+                        <md-icon>card_giftcard</md-icon>
+                        <label for="code">Code de réduction</label>
+                        <md-input name="code" id="code" v-model="form.reduction"/>
+                        <!-- <md-icon v-if="checkReductionCode === -1">clear</md-icon> -->
+                        <md-icon v-if="checkReductionCode !== -1">done</md-icon>
+                    </md-field>
                     <button class="commande" @click="send([form, myShopKart, priceKart])">Acheter</button>
                 </div>
             </div>
@@ -180,6 +187,14 @@
                             <md-option value="21:30-22:00">21h30 - 22h00</md-option>
                             </md-select>
                         </md-field>
+                        <md-field>
+                            <md-icon>card_giftcard</md-icon>
+                            <label for="code">Code de réduction</label>
+                            <md-input name="code" id="code" v-model="form.reduction"/>
+                            <!-- <md-icon v-if="checkReductionCode === -1">clear</md-icon> -->
+                            <md-icon v-if="checkReductionCode !== -1">done</md-icon>
+                            <!-- <span class="error" v-if="checkReductionCode === -1">Le code de réduction que vous avez rentré est incorect</span> -->
+                        </md-field>
                         <span class="error" v-if="error">{{error}}</span>
                     </md-dialog-content>
                     <md-dialog-actions>
@@ -233,12 +248,14 @@ export default {
             addDrink: false,
             addDrinkDay: null,
             error: null,
+            reductionCodeIsGood: '',
             form: {
                 firstName: '',
                 surname: '',
                 email: '',
                 address: '',
                 time: '',
+                reduction: '',
             }
         }
     },
@@ -247,8 +264,12 @@ export default {
             'myShopKart',
             'priceKart',
             'deliveryPrice',
-            'drinks'
+            'drinks',
+            'reductionCode'
         ]),
+        checkReductionCode(){
+            return this.reductionCode.findIndex(this.findCodeInArray)
+        }
     },
     methods: {
         ...mapMutations([
@@ -270,6 +291,7 @@ export default {
                 address = data[0].address,
                 email = data[0].email,
                 time = data[0].time,
+                code = data[0].reduction,
                 userKart = data[1],
                 priceKart = data[2];
 
@@ -283,7 +305,8 @@ export default {
                             $time: String!,
                             $address: String!,
                             $priceKart: Float!,
-                            $userKart: Json!){
+                            $userKart: Json!,
+                            $code: String){
                                 createUserData(data: {
                                     firstname: $firstname, 
                                     surname: $surname, 
@@ -291,14 +314,15 @@ export default {
                                     time: $time,
                                     address: $address,
                                     priceKart: $priceKart,
-                                    userKart: $userKart}){
+                                    userKart: $userKart,
+                                    code: $code}){
                                         id
                                     }
                             }
                     `,
                     variables: {
                         firstname, surname, email, 
-                        time, address, priceKart, userKart
+                        time, address, priceKart, userKart, code
                     }
 
                 }).then( data => {
@@ -353,7 +377,10 @@ export default {
             }else{
                 this.error = 'Tous les champs ne sont pas complets, complétez-les et réessayez.';
             }
-        }
+        },
+        findCodeInArray(code){
+            return code === this.form.reduction.toUpperCase();
+        },
     },
     created(){
         if(Object.keys(this.myShopKart).length === 0){
@@ -368,3 +395,9 @@ export default {
     }
 }
 </script>
+
+<style>
+#code{
+    text-transform: uppercase;
+}
+</style>

@@ -6,7 +6,8 @@ import VueApollo from 'vue-apollo'
 
 const httpLink = new HttpLink({
     // You should use an absolute URL here
-    uri: 'https://eu1.prisma.sh/maxime-scibetta/database/dev',
+    uri: 'https://eu1.prisma.sh/yumy/yumi/dev',
+
 })
 
 

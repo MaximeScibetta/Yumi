@@ -67,6 +67,9 @@ export const getters = {
     },
     kartSize(state){
         return state.kartSize;
+    },
+    reductionCode(state){
+        return state.reductionCode
     }
  
 }
